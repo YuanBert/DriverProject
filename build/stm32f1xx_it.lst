@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccSIrBOe.s 			page 1
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -23,7 +23,7 @@ ARM GAS  /tmp/ccSIrBOe.s 			page 1
   20              		.thumb_func
   21              		.fpu softvfp
   23              	NMI_Handler:
-  24              	.LFB69:
+  24              	.LFB71:
   25              		.file 1 "Core/Src/stm32f1xx_it.c"
    1:Core/Src/stm32f1xx_it.c **** /**
    2:Core/Src/stm32f1xx_it.c ****   ******************************************************************************
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccSIrBOe.s 			page 1
   31:Core/Src/stm32f1xx_it.c ****   ******************************************************************************
   32:Core/Src/stm32f1xx_it.c ****   */
   33:Core/Src/stm32f1xx_it.c **** /* Includes ------------------------------------------------------------------*/
-ARM GAS  /tmp/ccSIrBOe.s 			page 2
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s 			page 2
 
 
   34:Core/Src/stm32f1xx_it.c **** #include "stm32f1xx_hal.h"
@@ -97,18 +97,6 @@ ARM GAS  /tmp/ccSIrBOe.s 			page 1
   28              		@ args = 0, pretend = 0, frame = 0
   29              		@ frame_needed = 0, uses_anonymous_args = 0
   30              		@ link register save eliminated.
-  31 0000 7047     		bx	lr
-  32              		.cfi_endproc
-  33              	.LFE69:
-  35              		.section	.text.HardFault_Handler,"ax",%progbits
-  36              		.align	1
-  37              		.global	HardFault_Handler
-  38              		.syntax unified
-  39              		.thumb
-  40              		.thumb_func
-  41              		.fpu softvfp
-  43              	HardFault_Handler:
-  44              	.LFB70:
   65:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN NonMaskableInt_IRQn 0 */
   66:Core/Src/stm32f1xx_it.c **** 
   67:Core/Src/stm32f1xx_it.c ****   /* USER CODE END NonMaskableInt_IRQn 0 */
@@ -116,34 +104,47 @@ ARM GAS  /tmp/ccSIrBOe.s 			page 1
   69:Core/Src/stm32f1xx_it.c **** 
   70:Core/Src/stm32f1xx_it.c ****   /* USER CODE END NonMaskableInt_IRQn 1 */
   71:Core/Src/stm32f1xx_it.c **** }
+  31              		.loc 1 71 0
+  32 0000 7047     		bx	lr
+  33              		.cfi_endproc
+  34              	.LFE71:
+  36              		.section	.text.HardFault_Handler,"ax",%progbits
+  37              		.align	1
+  38              		.global	HardFault_Handler
+  39              		.syntax unified
+  40              		.thumb
+  41              		.thumb_func
+  42              		.fpu softvfp
+  44              	HardFault_Handler:
+  45              	.LFB72:
   72:Core/Src/stm32f1xx_it.c **** 
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s 			page 3
+
+
   73:Core/Src/stm32f1xx_it.c **** /**
-ARM GAS  /tmp/ccSIrBOe.s 			page 3
-
-
   74:Core/Src/stm32f1xx_it.c **** * @brief This function handles Hard fault interrupt.
   75:Core/Src/stm32f1xx_it.c **** */
   76:Core/Src/stm32f1xx_it.c **** void HardFault_Handler(void)
   77:Core/Src/stm32f1xx_it.c **** {
-  45              		.loc 1 77 0
-  46              		.cfi_startproc
-  47              		@ Volatile: function does not return.
-  48              		@ args = 0, pretend = 0, frame = 0
-  49              		@ frame_needed = 0, uses_anonymous_args = 0
-  50              		@ link register save eliminated.
-  51              	.L3:
-  52 0000 FEE7     		b	.L3
-  53              		.cfi_endproc
-  54              	.LFE70:
-  56              		.section	.text.MemManage_Handler,"ax",%progbits
-  57              		.align	1
-  58              		.global	MemManage_Handler
-  59              		.syntax unified
-  60              		.thumb
-  61              		.thumb_func
-  62              		.fpu softvfp
-  64              	MemManage_Handler:
-  65              	.LFB71:
+  46              		.loc 1 77 0
+  47              		.cfi_startproc
+  48              		@ Volatile: function does not return.
+  49              		@ args = 0, pretend = 0, frame = 0
+  50              		@ frame_needed = 0, uses_anonymous_args = 0
+  51              		@ link register save eliminated.
+  52              	.L3:
+  53 0000 FEE7     		b	.L3
+  54              		.cfi_endproc
+  55              	.LFE72:
+  57              		.section	.text.MemManage_Handler,"ax",%progbits
+  58              		.align	1
+  59              		.global	MemManage_Handler
+  60              		.syntax unified
+  61              		.thumb
+  62              		.thumb_func
+  63              		.fpu softvfp
+  65              	MemManage_Handler:
+  66              	.LFB73:
   78:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN HardFault_IRQn 0 */
   79:Core/Src/stm32f1xx_it.c **** 
   80:Core/Src/stm32f1xx_it.c ****   /* USER CODE END HardFault_IRQn 0 */
@@ -162,28 +163,28 @@ ARM GAS  /tmp/ccSIrBOe.s 			page 1
   93:Core/Src/stm32f1xx_it.c **** */
   94:Core/Src/stm32f1xx_it.c **** void MemManage_Handler(void)
   95:Core/Src/stm32f1xx_it.c **** {
-  66              		.loc 1 95 0
-  67              		.cfi_startproc
-  68              		@ Volatile: function does not return.
-  69              		@ args = 0, pretend = 0, frame = 0
-  70              		@ frame_needed = 0, uses_anonymous_args = 0
-  71              		@ link register save eliminated.
-  72              	.L5:
-  73 0000 FEE7     		b	.L5
-  74              		.cfi_endproc
-  75              	.LFE71:
-  77              		.section	.text.BusFault_Handler,"ax",%progbits
-  78              		.align	1
-  79              		.global	BusFault_Handler
-  80              		.syntax unified
-  81              		.thumb
-  82              		.thumb_func
-ARM GAS  /tmp/ccSIrBOe.s 			page 4
+  67              		.loc 1 95 0
+  68              		.cfi_startproc
+  69              		@ Volatile: function does not return.
+  70              		@ args = 0, pretend = 0, frame = 0
+  71              		@ frame_needed = 0, uses_anonymous_args = 0
+  72              		@ link register save eliminated.
+  73              	.L5:
+  74 0000 FEE7     		b	.L5
+  75              		.cfi_endproc
+  76              	.LFE73:
+  78              		.section	.text.BusFault_Handler,"ax",%progbits
+  79              		.align	1
+  80              		.global	BusFault_Handler
+  81              		.syntax unified
+  82              		.thumb
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s 			page 4
 
 
-  83              		.fpu softvfp
-  85              	BusFault_Handler:
-  86              	.LFB72:
+  83              		.thumb_func
+  84              		.fpu softvfp
+  86              	BusFault_Handler:
+  87              	.LFB74:
   96:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN MemoryManagement_IRQn 0 */
   97:Core/Src/stm32f1xx_it.c **** 
   98:Core/Src/stm32f1xx_it.c ****   /* USER CODE END MemoryManagement_IRQn 0 */
@@ -202,25 +203,25 @@ ARM GAS  /tmp/ccSIrBOe.s 			page 1
  111:Core/Src/stm32f1xx_it.c **** */
  112:Core/Src/stm32f1xx_it.c **** void BusFault_Handler(void)
  113:Core/Src/stm32f1xx_it.c **** {
-  87              		.loc 1 113 0
-  88              		.cfi_startproc
-  89              		@ Volatile: function does not return.
-  90              		@ args = 0, pretend = 0, frame = 0
-  91              		@ frame_needed = 0, uses_anonymous_args = 0
-  92              		@ link register save eliminated.
-  93              	.L7:
-  94 0000 FEE7     		b	.L7
-  95              		.cfi_endproc
-  96              	.LFE72:
-  98              		.section	.text.UsageFault_Handler,"ax",%progbits
-  99              		.align	1
- 100              		.global	UsageFault_Handler
- 101              		.syntax unified
- 102              		.thumb
- 103              		.thumb_func
- 104              		.fpu softvfp
- 106              	UsageFault_Handler:
- 107              	.LFB73:
+  88              		.loc 1 113 0
+  89              		.cfi_startproc
+  90              		@ Volatile: function does not return.
+  91              		@ args = 0, pretend = 0, frame = 0
+  92              		@ frame_needed = 0, uses_anonymous_args = 0
+  93              		@ link register save eliminated.
+  94              	.L7:
+  95 0000 FEE7     		b	.L7
+  96              		.cfi_endproc
+  97              	.LFE74:
+  99              		.section	.text.UsageFault_Handler,"ax",%progbits
+ 100              		.align	1
+ 101              		.global	UsageFault_Handler
+ 102              		.syntax unified
+ 103              		.thumb
+ 104              		.thumb_func
+ 105              		.fpu softvfp
+ 107              	UsageFault_Handler:
+ 108              	.LFB75:
  114:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN BusFault_IRQn 0 */
  115:Core/Src/stm32f1xx_it.c **** 
  116:Core/Src/stm32f1xx_it.c ****   /* USER CODE END BusFault_IRQn 0 */
@@ -237,30 +238,30 @@ ARM GAS  /tmp/ccSIrBOe.s 			page 1
  127:Core/Src/stm32f1xx_it.c **** /**
  128:Core/Src/stm32f1xx_it.c **** * @brief This function handles Undefined instruction or illegal state.
  129:Core/Src/stm32f1xx_it.c **** */
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s 			page 5
+
+
  130:Core/Src/stm32f1xx_it.c **** void UsageFault_Handler(void)
-ARM GAS  /tmp/ccSIrBOe.s 			page 5
-
-
  131:Core/Src/stm32f1xx_it.c **** {
- 108              		.loc 1 131 0
- 109              		.cfi_startproc
- 110              		@ Volatile: function does not return.
- 111              		@ args = 0, pretend = 0, frame = 0
- 112              		@ frame_needed = 0, uses_anonymous_args = 0
- 113              		@ link register save eliminated.
- 114              	.L9:
- 115 0000 FEE7     		b	.L9
- 116              		.cfi_endproc
- 117              	.LFE73:
- 119              		.section	.text.DebugMon_Handler,"ax",%progbits
- 120              		.align	1
- 121              		.global	DebugMon_Handler
- 122              		.syntax unified
- 123              		.thumb
- 124              		.thumb_func
- 125              		.fpu softvfp
- 127              	DebugMon_Handler:
- 128              	.LFB74:
+ 109              		.loc 1 131 0
+ 110              		.cfi_startproc
+ 111              		@ Volatile: function does not return.
+ 112              		@ args = 0, pretend = 0, frame = 0
+ 113              		@ frame_needed = 0, uses_anonymous_args = 0
+ 114              		@ link register save eliminated.
+ 115              	.L9:
+ 116 0000 FEE7     		b	.L9
+ 117              		.cfi_endproc
+ 118              	.LFE75:
+ 120              		.section	.text.DebugMon_Handler,"ax",%progbits
+ 121              		.align	1
+ 122              		.global	DebugMon_Handler
+ 123              		.syntax unified
+ 124              		.thumb
+ 125              		.thumb_func
+ 126              		.fpu softvfp
+ 128              	DebugMon_Handler:
+ 129              	.LFB76:
  132:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN UsageFault_IRQn 0 */
  133:Core/Src/stm32f1xx_it.c **** 
  134:Core/Src/stm32f1xx_it.c ****   /* USER CODE END UsageFault_IRQn 0 */
@@ -279,72 +280,73 @@ ARM GAS  /tmp/ccSIrBOe.s 			page 1
  147:Core/Src/stm32f1xx_it.c **** */
  148:Core/Src/stm32f1xx_it.c **** void DebugMon_Handler(void)
  149:Core/Src/stm32f1xx_it.c **** {
- 129              		.loc 1 149 0
- 130              		.cfi_startproc
- 131              		@ args = 0, pretend = 0, frame = 0
- 132              		@ frame_needed = 0, uses_anonymous_args = 0
- 133              		@ link register save eliminated.
- 134 0000 7047     		bx	lr
- 135              		.cfi_endproc
- 136              	.LFE74:
- 138              		.section	.text.SysTick_Handler,"ax",%progbits
- 139              		.align	1
- 140              		.global	SysTick_Handler
- 141              		.syntax unified
- 142              		.thumb
- 143              		.thumb_func
- 144              		.fpu softvfp
- 146              	SysTick_Handler:
- 147              	.LFB75:
+ 130              		.loc 1 149 0
+ 131              		.cfi_startproc
+ 132              		@ args = 0, pretend = 0, frame = 0
+ 133              		@ frame_needed = 0, uses_anonymous_args = 0
+ 134              		@ link register save eliminated.
  150:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN DebugMonitor_IRQn 0 */
  151:Core/Src/stm32f1xx_it.c **** 
-ARM GAS  /tmp/ccSIrBOe.s 			page 6
-
-
  152:Core/Src/stm32f1xx_it.c ****   /* USER CODE END DebugMonitor_IRQn 0 */
  153:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN DebugMonitor_IRQn 1 */
  154:Core/Src/stm32f1xx_it.c **** 
  155:Core/Src/stm32f1xx_it.c ****   /* USER CODE END DebugMonitor_IRQn 1 */
  156:Core/Src/stm32f1xx_it.c **** }
+ 135              		.loc 1 156 0
+ 136 0000 7047     		bx	lr
+ 137              		.cfi_endproc
+ 138              	.LFE76:
+ 140              		.section	.text.SysTick_Handler,"ax",%progbits
+ 141              		.align	1
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s 			page 6
+
+
+ 142              		.global	SysTick_Handler
+ 143              		.syntax unified
+ 144              		.thumb
+ 145              		.thumb_func
+ 146              		.fpu softvfp
+ 148              	SysTick_Handler:
+ 149              	.LFB77:
  157:Core/Src/stm32f1xx_it.c **** 
  158:Core/Src/stm32f1xx_it.c **** /**
  159:Core/Src/stm32f1xx_it.c **** * @brief This function handles System tick timer.
  160:Core/Src/stm32f1xx_it.c **** */
  161:Core/Src/stm32f1xx_it.c **** void SysTick_Handler(void)
  162:Core/Src/stm32f1xx_it.c **** {
- 148              		.loc 1 162 0
- 149              		.cfi_startproc
- 150              		@ args = 0, pretend = 0, frame = 0
- 151              		@ frame_needed = 0, uses_anonymous_args = 0
- 152              		.loc 1 162 0
- 153 0000 08B5     		push	{r3, lr}
- 154              	.LCFI0:
- 155              		.cfi_def_cfa_offset 8
- 156              		.cfi_offset 3, -8
- 157              		.cfi_offset 14, -4
+ 150              		.loc 1 162 0
+ 151              		.cfi_startproc
+ 152              		@ args = 0, pretend = 0, frame = 0
+ 153              		@ frame_needed = 0, uses_anonymous_args = 0
+ 154 0000 08B5     		push	{r3, lr}
+ 155              	.LCFI0:
+ 156              		.cfi_def_cfa_offset 8
+ 157              		.cfi_offset 3, -8
+ 158              		.cfi_offset 14, -4
  163:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN SysTick_IRQn 0 */
  164:Core/Src/stm32f1xx_it.c **** 
  165:Core/Src/stm32f1xx_it.c ****   /* USER CODE END SysTick_IRQn 0 */
  166:Core/Src/stm32f1xx_it.c ****   osSystickHandler();
- 158              		.loc 1 166 0
- 159 0002 FFF7FEFF 		bl	osSystickHandler
- 160              	.LVL0:
- 161 0006 08BD     		pop	{r3, pc}
- 162              		.cfi_endproc
- 163              	.LFE75:
- 165              		.section	.text.EXTI4_IRQHandler,"ax",%progbits
- 166              		.align	1
- 167              		.global	EXTI4_IRQHandler
- 168              		.syntax unified
- 169              		.thumb
- 170              		.thumb_func
- 171              		.fpu softvfp
- 173              	EXTI4_IRQHandler:
- 174              	.LFB76:
+ 159              		.loc 1 166 0
+ 160 0002 FFF7FEFF 		bl	osSystickHandler
+ 161              	.LVL0:
  167:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN SysTick_IRQn 1 */
  168:Core/Src/stm32f1xx_it.c **** 
  169:Core/Src/stm32f1xx_it.c ****   /* USER CODE END SysTick_IRQn 1 */
  170:Core/Src/stm32f1xx_it.c **** }
+ 162              		.loc 1 170 0
+ 163 0006 08BD     		pop	{r3, pc}
+ 164              		.cfi_endproc
+ 165              	.LFE77:
+ 167              		.section	.text.EXTI4_IRQHandler,"ax",%progbits
+ 168              		.align	1
+ 169              		.global	EXTI4_IRQHandler
+ 170              		.syntax unified
+ 171              		.thumb
+ 172              		.thumb_func
+ 173              		.fpu softvfp
+ 175              	EXTI4_IRQHandler:
+ 176              	.LFB78:
  171:Core/Src/stm32f1xx_it.c **** 
  172:Core/Src/stm32f1xx_it.c **** /******************************************************************************/
  173:Core/Src/stm32f1xx_it.c **** /* STM32F1xx Peripheral Interrupt Handlers                                    */
@@ -356,554 +358,568 @@ ARM GAS  /tmp/ccSIrBOe.s 			page 1
  179:Core/Src/stm32f1xx_it.c **** /**
  180:Core/Src/stm32f1xx_it.c **** * @brief This function handles EXTI line4 interrupt.
  181:Core/Src/stm32f1xx_it.c **** */
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s 			page 7
+
+
  182:Core/Src/stm32f1xx_it.c **** void EXTI4_IRQHandler(void)
  183:Core/Src/stm32f1xx_it.c **** {
-ARM GAS  /tmp/ccSIrBOe.s 			page 7
-
-
- 175              		.loc 1 183 0
- 176              		.cfi_startproc
- 177              		@ args = 0, pretend = 0, frame = 0
- 178              		@ frame_needed = 0, uses_anonymous_args = 0
- 179 0000 08B5     		push	{r3, lr}
- 180              	.LCFI1:
- 181              		.cfi_def_cfa_offset 8
- 182              		.cfi_offset 3, -8
- 183              		.cfi_offset 14, -4
+ 177              		.loc 1 183 0
+ 178              		.cfi_startproc
+ 179              		@ args = 0, pretend = 0, frame = 0
+ 180              		@ frame_needed = 0, uses_anonymous_args = 0
+ 181 0000 08B5     		push	{r3, lr}
+ 182              	.LCFI1:
+ 183              		.cfi_def_cfa_offset 8
+ 184              		.cfi_offset 3, -8
+ 185              		.cfi_offset 14, -4
  184:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN EXTI4_IRQn 0 */
  185:Core/Src/stm32f1xx_it.c **** 
  186:Core/Src/stm32f1xx_it.c ****   /* USER CODE END EXTI4_IRQn 0 */
  187:Core/Src/stm32f1xx_it.c ****   HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_4);
- 184              		.loc 1 187 0
- 185 0002 1020     		movs	r0, #16
- 186 0004 FFF7FEFF 		bl	HAL_GPIO_EXTI_IRQHandler
- 187              	.LVL1:
- 188 0008 08BD     		pop	{r3, pc}
- 189              		.cfi_endproc
- 190              	.LFE76:
- 192              		.section	.text.DMA1_Channel1_IRQHandler,"ax",%progbits
- 193              		.align	1
- 194              		.global	DMA1_Channel1_IRQHandler
- 195              		.syntax unified
- 196              		.thumb
- 197              		.thumb_func
- 198              		.fpu softvfp
- 200              	DMA1_Channel1_IRQHandler:
- 201              	.LFB77:
+ 186              		.loc 1 187 0
+ 187 0002 1020     		movs	r0, #16
+ 188 0004 FFF7FEFF 		bl	HAL_GPIO_EXTI_IRQHandler
+ 189              	.LVL1:
  188:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN EXTI4_IRQn 1 */
  189:Core/Src/stm32f1xx_it.c **** 
  190:Core/Src/stm32f1xx_it.c ****   /* USER CODE END EXTI4_IRQn 1 */
  191:Core/Src/stm32f1xx_it.c **** }
+ 190              		.loc 1 191 0
+ 191 0008 08BD     		pop	{r3, pc}
+ 192              		.cfi_endproc
+ 193              	.LFE78:
+ 195              		.section	.text.DMA1_Channel1_IRQHandler,"ax",%progbits
+ 196              		.align	1
+ 197              		.global	DMA1_Channel1_IRQHandler
+ 198              		.syntax unified
+ 199              		.thumb
+ 200              		.thumb_func
+ 201              		.fpu softvfp
+ 203              	DMA1_Channel1_IRQHandler:
+ 204              	.LFB79:
  192:Core/Src/stm32f1xx_it.c **** 
  193:Core/Src/stm32f1xx_it.c **** /**
  194:Core/Src/stm32f1xx_it.c **** * @brief This function handles DMA1 channel1 global interrupt.
  195:Core/Src/stm32f1xx_it.c **** */
  196:Core/Src/stm32f1xx_it.c **** void DMA1_Channel1_IRQHandler(void)
  197:Core/Src/stm32f1xx_it.c **** {
- 202              		.loc 1 197 0
- 203              		.cfi_startproc
- 204              		@ args = 0, pretend = 0, frame = 0
- 205              		@ frame_needed = 0, uses_anonymous_args = 0
- 206 0000 08B5     		push	{r3, lr}
- 207              	.LCFI2:
- 208              		.cfi_def_cfa_offset 8
- 209              		.cfi_offset 3, -8
- 210              		.cfi_offset 14, -4
+ 205              		.loc 1 197 0
+ 206              		.cfi_startproc
+ 207              		@ args = 0, pretend = 0, frame = 0
+ 208              		@ frame_needed = 0, uses_anonymous_args = 0
+ 209 0000 08B5     		push	{r3, lr}
+ 210              	.LCFI2:
+ 211              		.cfi_def_cfa_offset 8
+ 212              		.cfi_offset 3, -8
+ 213              		.cfi_offset 14, -4
  198:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN DMA1_Channel1_IRQn 0 */
  199:Core/Src/stm32f1xx_it.c **** 
  200:Core/Src/stm32f1xx_it.c ****   /* USER CODE END DMA1_Channel1_IRQn 0 */
  201:Core/Src/stm32f1xx_it.c ****   HAL_DMA_IRQHandler(&hdma_adc1);
- 211              		.loc 1 201 0
- 212 0002 0248     		ldr	r0, .L17
- 213 0004 FFF7FEFF 		bl	HAL_DMA_IRQHandler
- 214              	.LVL2:
- 215 0008 08BD     		pop	{r3, pc}
-ARM GAS  /tmp/ccSIrBOe.s 			page 8
+ 214              		.loc 1 201 0
+ 215 0002 0248     		ldr	r0, .L17
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s 			page 8
 
 
- 216              	.L18:
- 217 000a 00BF     		.align	2
- 218              	.L17:
- 219 000c 00000000 		.word	hdma_adc1
- 220              		.cfi_endproc
- 221              	.LFE77:
- 223              		.section	.text.DMA1_Channel3_IRQHandler,"ax",%progbits
- 224              		.align	1
- 225              		.global	DMA1_Channel3_IRQHandler
- 226              		.syntax unified
- 227              		.thumb
- 228              		.thumb_func
- 229              		.fpu softvfp
- 231              	DMA1_Channel3_IRQHandler:
- 232              	.LFB78:
+ 216 0004 FFF7FEFF 		bl	HAL_DMA_IRQHandler
+ 217              	.LVL2:
  202:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN DMA1_Channel1_IRQn 1 */
  203:Core/Src/stm32f1xx_it.c **** 
  204:Core/Src/stm32f1xx_it.c ****   /* USER CODE END DMA1_Channel1_IRQn 1 */
  205:Core/Src/stm32f1xx_it.c **** }
+ 218              		.loc 1 205 0
+ 219 0008 08BD     		pop	{r3, pc}
+ 220              	.L18:
+ 221 000a 00BF     		.align	2
+ 222              	.L17:
+ 223 000c 00000000 		.word	hdma_adc1
+ 224              		.cfi_endproc
+ 225              	.LFE79:
+ 227              		.section	.text.DMA1_Channel3_IRQHandler,"ax",%progbits
+ 228              		.align	1
+ 229              		.global	DMA1_Channel3_IRQHandler
+ 230              		.syntax unified
+ 231              		.thumb
+ 232              		.thumb_func
+ 233              		.fpu softvfp
+ 235              	DMA1_Channel3_IRQHandler:
+ 236              	.LFB80:
  206:Core/Src/stm32f1xx_it.c **** 
  207:Core/Src/stm32f1xx_it.c **** /**
  208:Core/Src/stm32f1xx_it.c **** * @brief This function handles DMA1 channel3 global interrupt.
  209:Core/Src/stm32f1xx_it.c **** */
  210:Core/Src/stm32f1xx_it.c **** void DMA1_Channel3_IRQHandler(void)
  211:Core/Src/stm32f1xx_it.c **** {
- 233              		.loc 1 211 0
- 234              		.cfi_startproc
- 235              		@ args = 0, pretend = 0, frame = 0
- 236              		@ frame_needed = 0, uses_anonymous_args = 0
- 237 0000 08B5     		push	{r3, lr}
- 238              	.LCFI3:
- 239              		.cfi_def_cfa_offset 8
- 240              		.cfi_offset 3, -8
- 241              		.cfi_offset 14, -4
+ 237              		.loc 1 211 0
+ 238              		.cfi_startproc
+ 239              		@ args = 0, pretend = 0, frame = 0
+ 240              		@ frame_needed = 0, uses_anonymous_args = 0
+ 241 0000 08B5     		push	{r3, lr}
+ 242              	.LCFI3:
+ 243              		.cfi_def_cfa_offset 8
+ 244              		.cfi_offset 3, -8
+ 245              		.cfi_offset 14, -4
  212:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN DMA1_Channel3_IRQn 0 */
  213:Core/Src/stm32f1xx_it.c **** 
  214:Core/Src/stm32f1xx_it.c ****   /* USER CODE END DMA1_Channel3_IRQn 0 */
  215:Core/Src/stm32f1xx_it.c ****   HAL_DMA_IRQHandler(&hdma_usart3_rx);
- 242              		.loc 1 215 0
- 243 0002 0248     		ldr	r0, .L21
- 244 0004 FFF7FEFF 		bl	HAL_DMA_IRQHandler
- 245              	.LVL3:
- 246 0008 08BD     		pop	{r3, pc}
- 247              	.L22:
- 248 000a 00BF     		.align	2
- 249              	.L21:
- 250 000c 00000000 		.word	hdma_usart3_rx
- 251              		.cfi_endproc
- 252              	.LFE78:
- 254              		.section	.text.DMA1_Channel5_IRQHandler,"ax",%progbits
- 255              		.align	1
- 256              		.global	DMA1_Channel5_IRQHandler
- 257              		.syntax unified
- 258              		.thumb
- 259              		.thumb_func
- 260              		.fpu softvfp
- 262              	DMA1_Channel5_IRQHandler:
-ARM GAS  /tmp/ccSIrBOe.s 			page 9
-
-
- 263              	.LFB79:
+ 246              		.loc 1 215 0
+ 247 0002 0248     		ldr	r0, .L21
+ 248 0004 FFF7FEFF 		bl	HAL_DMA_IRQHandler
+ 249              	.LVL3:
  216:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN DMA1_Channel3_IRQn 1 */
  217:Core/Src/stm32f1xx_it.c **** 
  218:Core/Src/stm32f1xx_it.c ****   /* USER CODE END DMA1_Channel3_IRQn 1 */
  219:Core/Src/stm32f1xx_it.c **** }
+ 250              		.loc 1 219 0
+ 251 0008 08BD     		pop	{r3, pc}
+ 252              	.L22:
+ 253 000a 00BF     		.align	2
+ 254              	.L21:
+ 255 000c 00000000 		.word	hdma_usart3_rx
+ 256              		.cfi_endproc
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s 			page 9
+
+
+ 257              	.LFE80:
+ 259              		.section	.text.DMA1_Channel5_IRQHandler,"ax",%progbits
+ 260              		.align	1
+ 261              		.global	DMA1_Channel5_IRQHandler
+ 262              		.syntax unified
+ 263              		.thumb
+ 264              		.thumb_func
+ 265              		.fpu softvfp
+ 267              	DMA1_Channel5_IRQHandler:
+ 268              	.LFB81:
  220:Core/Src/stm32f1xx_it.c **** 
  221:Core/Src/stm32f1xx_it.c **** /**
  222:Core/Src/stm32f1xx_it.c **** * @brief This function handles DMA1 channel5 global interrupt.
  223:Core/Src/stm32f1xx_it.c **** */
  224:Core/Src/stm32f1xx_it.c **** void DMA1_Channel5_IRQHandler(void)
  225:Core/Src/stm32f1xx_it.c **** {
- 264              		.loc 1 225 0
- 265              		.cfi_startproc
- 266              		@ args = 0, pretend = 0, frame = 0
- 267              		@ frame_needed = 0, uses_anonymous_args = 0
- 268 0000 08B5     		push	{r3, lr}
- 269              	.LCFI4:
- 270              		.cfi_def_cfa_offset 8
- 271              		.cfi_offset 3, -8
- 272              		.cfi_offset 14, -4
+ 269              		.loc 1 225 0
+ 270              		.cfi_startproc
+ 271              		@ args = 0, pretend = 0, frame = 0
+ 272              		@ frame_needed = 0, uses_anonymous_args = 0
+ 273 0000 08B5     		push	{r3, lr}
+ 274              	.LCFI4:
+ 275              		.cfi_def_cfa_offset 8
+ 276              		.cfi_offset 3, -8
+ 277              		.cfi_offset 14, -4
  226:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN DMA1_Channel5_IRQn 0 */
  227:Core/Src/stm32f1xx_it.c **** 
  228:Core/Src/stm32f1xx_it.c ****   /* USER CODE END DMA1_Channel5_IRQn 0 */
  229:Core/Src/stm32f1xx_it.c ****   HAL_DMA_IRQHandler(&hdma_usart1_rx);
- 273              		.loc 1 229 0
- 274 0002 0248     		ldr	r0, .L25
- 275 0004 FFF7FEFF 		bl	HAL_DMA_IRQHandler
- 276              	.LVL4:
- 277 0008 08BD     		pop	{r3, pc}
- 278              	.L26:
- 279 000a 00BF     		.align	2
- 280              	.L25:
- 281 000c 00000000 		.word	hdma_usart1_rx
- 282              		.cfi_endproc
- 283              	.LFE79:
- 285              		.section	.text.DMA1_Channel6_IRQHandler,"ax",%progbits
- 286              		.align	1
- 287              		.global	DMA1_Channel6_IRQHandler
- 288              		.syntax unified
- 289              		.thumb
- 290              		.thumb_func
- 291              		.fpu softvfp
- 293              	DMA1_Channel6_IRQHandler:
- 294              	.LFB80:
+ 278              		.loc 1 229 0
+ 279 0002 0248     		ldr	r0, .L25
+ 280 0004 FFF7FEFF 		bl	HAL_DMA_IRQHandler
+ 281              	.LVL4:
  230:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN DMA1_Channel5_IRQn 1 */
  231:Core/Src/stm32f1xx_it.c **** 
  232:Core/Src/stm32f1xx_it.c ****   /* USER CODE END DMA1_Channel5_IRQn 1 */
  233:Core/Src/stm32f1xx_it.c **** }
+ 282              		.loc 1 233 0
+ 283 0008 08BD     		pop	{r3, pc}
+ 284              	.L26:
+ 285 000a 00BF     		.align	2
+ 286              	.L25:
+ 287 000c 00000000 		.word	hdma_usart1_rx
+ 288              		.cfi_endproc
+ 289              	.LFE81:
+ 291              		.section	.text.DMA1_Channel6_IRQHandler,"ax",%progbits
+ 292              		.align	1
+ 293              		.global	DMA1_Channel6_IRQHandler
+ 294              		.syntax unified
+ 295              		.thumb
+ 296              		.thumb_func
+ 297              		.fpu softvfp
+ 299              	DMA1_Channel6_IRQHandler:
+ 300              	.LFB82:
  234:Core/Src/stm32f1xx_it.c **** 
  235:Core/Src/stm32f1xx_it.c **** /**
  236:Core/Src/stm32f1xx_it.c **** * @brief This function handles DMA1 channel6 global interrupt.
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s 			page 10
+
+
  237:Core/Src/stm32f1xx_it.c **** */
  238:Core/Src/stm32f1xx_it.c **** void DMA1_Channel6_IRQHandler(void)
  239:Core/Src/stm32f1xx_it.c **** {
- 295              		.loc 1 239 0
- 296              		.cfi_startproc
- 297              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccSIrBOe.s 			page 10
-
-
- 298              		@ frame_needed = 0, uses_anonymous_args = 0
- 299 0000 08B5     		push	{r3, lr}
- 300              	.LCFI5:
- 301              		.cfi_def_cfa_offset 8
- 302              		.cfi_offset 3, -8
- 303              		.cfi_offset 14, -4
+ 301              		.loc 1 239 0
+ 302              		.cfi_startproc
+ 303              		@ args = 0, pretend = 0, frame = 0
+ 304              		@ frame_needed = 0, uses_anonymous_args = 0
+ 305 0000 08B5     		push	{r3, lr}
+ 306              	.LCFI5:
+ 307              		.cfi_def_cfa_offset 8
+ 308              		.cfi_offset 3, -8
+ 309              		.cfi_offset 14, -4
  240:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN DMA1_Channel6_IRQn 0 */
  241:Core/Src/stm32f1xx_it.c **** 
  242:Core/Src/stm32f1xx_it.c ****   /* USER CODE END DMA1_Channel6_IRQn 0 */
  243:Core/Src/stm32f1xx_it.c ****   HAL_DMA_IRQHandler(&hdma_usart2_rx);
- 304              		.loc 1 243 0
- 305 0002 0248     		ldr	r0, .L29
- 306 0004 FFF7FEFF 		bl	HAL_DMA_IRQHandler
- 307              	.LVL5:
- 308 0008 08BD     		pop	{r3, pc}
- 309              	.L30:
- 310 000a 00BF     		.align	2
- 311              	.L29:
- 312 000c 00000000 		.word	hdma_usart2_rx
- 313              		.cfi_endproc
- 314              	.LFE80:
- 316              		.section	.text.TIM1_UP_IRQHandler,"ax",%progbits
- 317              		.align	1
- 318              		.global	TIM1_UP_IRQHandler
- 319              		.syntax unified
- 320              		.thumb
- 321              		.thumb_func
- 322              		.fpu softvfp
- 324              	TIM1_UP_IRQHandler:
- 325              	.LFB81:
+ 310              		.loc 1 243 0
+ 311 0002 0248     		ldr	r0, .L29
+ 312 0004 FFF7FEFF 		bl	HAL_DMA_IRQHandler
+ 313              	.LVL5:
  244:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN DMA1_Channel6_IRQn 1 */
  245:Core/Src/stm32f1xx_it.c **** 
  246:Core/Src/stm32f1xx_it.c ****   /* USER CODE END DMA1_Channel6_IRQn 1 */
  247:Core/Src/stm32f1xx_it.c **** }
+ 314              		.loc 1 247 0
+ 315 0008 08BD     		pop	{r3, pc}
+ 316              	.L30:
+ 317 000a 00BF     		.align	2
+ 318              	.L29:
+ 319 000c 00000000 		.word	hdma_usart2_rx
+ 320              		.cfi_endproc
+ 321              	.LFE82:
+ 323              		.section	.text.TIM1_UP_IRQHandler,"ax",%progbits
+ 324              		.align	1
+ 325              		.global	TIM1_UP_IRQHandler
+ 326              		.syntax unified
+ 327              		.thumb
+ 328              		.thumb_func
+ 329              		.fpu softvfp
+ 331              	TIM1_UP_IRQHandler:
+ 332              	.LFB83:
  248:Core/Src/stm32f1xx_it.c **** 
  249:Core/Src/stm32f1xx_it.c **** /**
  250:Core/Src/stm32f1xx_it.c **** * @brief This function handles TIM1 update interrupt.
  251:Core/Src/stm32f1xx_it.c **** */
  252:Core/Src/stm32f1xx_it.c **** void TIM1_UP_IRQHandler(void)
  253:Core/Src/stm32f1xx_it.c **** {
- 326              		.loc 1 253 0
- 327              		.cfi_startproc
- 328              		@ args = 0, pretend = 0, frame = 0
- 329              		@ frame_needed = 0, uses_anonymous_args = 0
- 330 0000 08B5     		push	{r3, lr}
- 331              	.LCFI6:
- 332              		.cfi_def_cfa_offset 8
- 333              		.cfi_offset 3, -8
- 334              		.cfi_offset 14, -4
+ 333              		.loc 1 253 0
+ 334              		.cfi_startproc
+ 335              		@ args = 0, pretend = 0, frame = 0
+ 336              		@ frame_needed = 0, uses_anonymous_args = 0
+ 337 0000 08B5     		push	{r3, lr}
+ 338              	.LCFI6:
+ 339              		.cfi_def_cfa_offset 8
+ 340              		.cfi_offset 3, -8
+ 341              		.cfi_offset 14, -4
  254:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN TIM1_UP_IRQn 0 */
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s 			page 11
+
+
  255:Core/Src/stm32f1xx_it.c **** 
  256:Core/Src/stm32f1xx_it.c ****   /* USER CODE END TIM1_UP_IRQn 0 */
  257:Core/Src/stm32f1xx_it.c ****   HAL_TIM_IRQHandler(&htim1);
- 335              		.loc 1 257 0
- 336 0002 0248     		ldr	r0, .L33
- 337 0004 FFF7FEFF 		bl	HAL_TIM_IRQHandler
- 338              	.LVL6:
-ARM GAS  /tmp/ccSIrBOe.s 			page 11
-
-
- 339 0008 08BD     		pop	{r3, pc}
- 340              	.L34:
- 341 000a 00BF     		.align	2
- 342              	.L33:
- 343 000c 00000000 		.word	htim1
- 344              		.cfi_endproc
- 345              	.LFE81:
- 347              		.section	.text.TIM4_IRQHandler,"ax",%progbits
- 348              		.align	1
- 349              		.global	TIM4_IRQHandler
- 350              		.syntax unified
- 351              		.thumb
- 352              		.thumb_func
- 353              		.fpu softvfp
- 355              	TIM4_IRQHandler:
- 356              	.LFB82:
+ 342              		.loc 1 257 0
+ 343 0002 0248     		ldr	r0, .L33
+ 344 0004 FFF7FEFF 		bl	HAL_TIM_IRQHandler
+ 345              	.LVL6:
  258:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN TIM1_UP_IRQn 1 */
  259:Core/Src/stm32f1xx_it.c **** 
  260:Core/Src/stm32f1xx_it.c ****   /* USER CODE END TIM1_UP_IRQn 1 */
  261:Core/Src/stm32f1xx_it.c **** }
+ 346              		.loc 1 261 0
+ 347 0008 08BD     		pop	{r3, pc}
+ 348              	.L34:
+ 349 000a 00BF     		.align	2
+ 350              	.L33:
+ 351 000c 00000000 		.word	htim1
+ 352              		.cfi_endproc
+ 353              	.LFE83:
+ 355              		.section	.text.TIM4_IRQHandler,"ax",%progbits
+ 356              		.align	1
+ 357              		.global	TIM4_IRQHandler
+ 358              		.syntax unified
+ 359              		.thumb
+ 360              		.thumb_func
+ 361              		.fpu softvfp
+ 363              	TIM4_IRQHandler:
+ 364              	.LFB84:
  262:Core/Src/stm32f1xx_it.c **** 
  263:Core/Src/stm32f1xx_it.c **** /**
  264:Core/Src/stm32f1xx_it.c **** * @brief This function handles TIM4 global interrupt.
  265:Core/Src/stm32f1xx_it.c **** */
  266:Core/Src/stm32f1xx_it.c **** void TIM4_IRQHandler(void)
  267:Core/Src/stm32f1xx_it.c **** {
- 357              		.loc 1 267 0
- 358              		.cfi_startproc
- 359              		@ args = 0, pretend = 0, frame = 0
- 360              		@ frame_needed = 0, uses_anonymous_args = 0
- 361 0000 08B5     		push	{r3, lr}
- 362              	.LCFI7:
- 363              		.cfi_def_cfa_offset 8
- 364              		.cfi_offset 3, -8
- 365              		.cfi_offset 14, -4
+ 365              		.loc 1 267 0
+ 366              		.cfi_startproc
+ 367              		@ args = 0, pretend = 0, frame = 0
+ 368              		@ frame_needed = 0, uses_anonymous_args = 0
+ 369 0000 08B5     		push	{r3, lr}
+ 370              	.LCFI7:
+ 371              		.cfi_def_cfa_offset 8
+ 372              		.cfi_offset 3, -8
+ 373              		.cfi_offset 14, -4
  268:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN TIM4_IRQn 0 */
  269:Core/Src/stm32f1xx_it.c **** 
  270:Core/Src/stm32f1xx_it.c ****   /* USER CODE END TIM4_IRQn 0 */
  271:Core/Src/stm32f1xx_it.c ****   HAL_TIM_IRQHandler(&htim4);
- 366              		.loc 1 271 0
- 367 0002 0248     		ldr	r0, .L37
- 368 0004 FFF7FEFF 		bl	HAL_TIM_IRQHandler
- 369              	.LVL7:
- 370 0008 08BD     		pop	{r3, pc}
- 371              	.L38:
- 372 000a 00BF     		.align	2
- 373              	.L37:
- 374 000c 00000000 		.word	htim4
- 375              		.cfi_endproc
- 376              	.LFE82:
- 378              		.section	.text.USART1_IRQHandler,"ax",%progbits
- 379              		.align	1
- 380              		.global	USART1_IRQHandler
- 381              		.syntax unified
- 382              		.thumb
- 383              		.thumb_func
- 384              		.fpu softvfp
-ARM GAS  /tmp/ccSIrBOe.s 			page 12
-
-
- 386              	USART1_IRQHandler:
- 387              	.LFB83:
+ 374              		.loc 1 271 0
+ 375 0002 0248     		ldr	r0, .L37
+ 376 0004 FFF7FEFF 		bl	HAL_TIM_IRQHandler
+ 377              	.LVL7:
  272:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN TIM4_IRQn 1 */
  273:Core/Src/stm32f1xx_it.c **** 
  274:Core/Src/stm32f1xx_it.c ****   /* USER CODE END TIM4_IRQn 1 */
  275:Core/Src/stm32f1xx_it.c **** }
+ 378              		.loc 1 275 0
+ 379 0008 08BD     		pop	{r3, pc}
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s 			page 12
+
+
+ 380              	.L38:
+ 381 000a 00BF     		.align	2
+ 382              	.L37:
+ 383 000c 00000000 		.word	htim4
+ 384              		.cfi_endproc
+ 385              	.LFE84:
+ 387              		.section	.text.USART1_IRQHandler,"ax",%progbits
+ 388              		.align	1
+ 389              		.global	USART1_IRQHandler
+ 390              		.syntax unified
+ 391              		.thumb
+ 392              		.thumb_func
+ 393              		.fpu softvfp
+ 395              	USART1_IRQHandler:
+ 396              	.LFB85:
  276:Core/Src/stm32f1xx_it.c **** 
  277:Core/Src/stm32f1xx_it.c **** /**
  278:Core/Src/stm32f1xx_it.c **** * @brief This function handles USART1 global interrupt.
  279:Core/Src/stm32f1xx_it.c **** */
  280:Core/Src/stm32f1xx_it.c **** void USART1_IRQHandler(void)
  281:Core/Src/stm32f1xx_it.c **** {
- 388              		.loc 1 281 0
- 389              		.cfi_startproc
- 390              		@ args = 0, pretend = 0, frame = 0
- 391              		@ frame_needed = 0, uses_anonymous_args = 0
- 392 0000 08B5     		push	{r3, lr}
- 393              	.LCFI8:
- 394              		.cfi_def_cfa_offset 8
- 395              		.cfi_offset 3, -8
- 396              		.cfi_offset 14, -4
+ 397              		.loc 1 281 0
+ 398              		.cfi_startproc
+ 399              		@ args = 0, pretend = 0, frame = 0
+ 400              		@ frame_needed = 0, uses_anonymous_args = 0
+ 401 0000 08B5     		push	{r3, lr}
+ 402              	.LCFI8:
+ 403              		.cfi_def_cfa_offset 8
+ 404              		.cfi_offset 3, -8
+ 405              		.cfi_offset 14, -4
  282:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN USART1_IRQn 0 */
  283:Core/Src/stm32f1xx_it.c **** 
  284:Core/Src/stm32f1xx_it.c ****   /* USER CODE END USART1_IRQn 0 */
  285:Core/Src/stm32f1xx_it.c ****   HAL_UART_IRQHandler(&huart1);
- 397              		.loc 1 285 0
- 398 0002 0248     		ldr	r0, .L41
- 399 0004 FFF7FEFF 		bl	HAL_UART_IRQHandler
- 400              	.LVL8:
- 401 0008 08BD     		pop	{r3, pc}
- 402              	.L42:
- 403 000a 00BF     		.align	2
- 404              	.L41:
- 405 000c 00000000 		.word	huart1
- 406              		.cfi_endproc
- 407              	.LFE83:
- 409              		.section	.text.USART2_IRQHandler,"ax",%progbits
- 410              		.align	1
- 411              		.global	USART2_IRQHandler
- 412              		.syntax unified
- 413              		.thumb
- 414              		.thumb_func
- 415              		.fpu softvfp
- 417              	USART2_IRQHandler:
- 418              	.LFB84:
+ 406              		.loc 1 285 0
+ 407 0002 0248     		ldr	r0, .L41
+ 408 0004 FFF7FEFF 		bl	HAL_UART_IRQHandler
+ 409              	.LVL8:
  286:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN USART1_IRQn 1 */
  287:Core/Src/stm32f1xx_it.c **** 
  288:Core/Src/stm32f1xx_it.c ****   /* USER CODE END USART1_IRQn 1 */
  289:Core/Src/stm32f1xx_it.c **** }
+ 410              		.loc 1 289 0
+ 411 0008 08BD     		pop	{r3, pc}
+ 412              	.L42:
+ 413 000a 00BF     		.align	2
+ 414              	.L41:
+ 415 000c 00000000 		.word	huart1
+ 416              		.cfi_endproc
+ 417              	.LFE85:
+ 419              		.section	.text.USART2_IRQHandler,"ax",%progbits
+ 420              		.align	1
+ 421              		.global	USART2_IRQHandler
+ 422              		.syntax unified
+ 423              		.thumb
+ 424              		.thumb_func
+ 425              		.fpu softvfp
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s 			page 13
+
+
+ 427              	USART2_IRQHandler:
+ 428              	.LFB86:
  290:Core/Src/stm32f1xx_it.c **** 
  291:Core/Src/stm32f1xx_it.c **** /**
  292:Core/Src/stm32f1xx_it.c **** * @brief This function handles USART2 global interrupt.
  293:Core/Src/stm32f1xx_it.c **** */
  294:Core/Src/stm32f1xx_it.c **** void USART2_IRQHandler(void)
  295:Core/Src/stm32f1xx_it.c **** {
- 419              		.loc 1 295 0
- 420              		.cfi_startproc
-ARM GAS  /tmp/ccSIrBOe.s 			page 13
-
-
- 421              		@ args = 0, pretend = 0, frame = 0
- 422              		@ frame_needed = 0, uses_anonymous_args = 0
- 423 0000 08B5     		push	{r3, lr}
- 424              	.LCFI9:
- 425              		.cfi_def_cfa_offset 8
- 426              		.cfi_offset 3, -8
- 427              		.cfi_offset 14, -4
+ 429              		.loc 1 295 0
+ 430              		.cfi_startproc
+ 431              		@ args = 0, pretend = 0, frame = 0
+ 432              		@ frame_needed = 0, uses_anonymous_args = 0
+ 433 0000 08B5     		push	{r3, lr}
+ 434              	.LCFI9:
+ 435              		.cfi_def_cfa_offset 8
+ 436              		.cfi_offset 3, -8
+ 437              		.cfi_offset 14, -4
  296:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN USART2_IRQn 0 */
  297:Core/Src/stm32f1xx_it.c **** 
  298:Core/Src/stm32f1xx_it.c ****   /* USER CODE END USART2_IRQn 0 */
  299:Core/Src/stm32f1xx_it.c ****   HAL_UART_IRQHandler(&huart2);
- 428              		.loc 1 299 0
- 429 0002 0248     		ldr	r0, .L45
- 430 0004 FFF7FEFF 		bl	HAL_UART_IRQHandler
- 431              	.LVL9:
- 432 0008 08BD     		pop	{r3, pc}
- 433              	.L46:
- 434 000a 00BF     		.align	2
- 435              	.L45:
- 436 000c 00000000 		.word	huart2
- 437              		.cfi_endproc
- 438              	.LFE84:
- 440              		.section	.text.USART3_IRQHandler,"ax",%progbits
- 441              		.align	1
- 442              		.global	USART3_IRQHandler
- 443              		.syntax unified
- 444              		.thumb
- 445              		.thumb_func
- 446              		.fpu softvfp
- 448              	USART3_IRQHandler:
- 449              	.LFB85:
+ 438              		.loc 1 299 0
+ 439 0002 0248     		ldr	r0, .L45
+ 440 0004 FFF7FEFF 		bl	HAL_UART_IRQHandler
+ 441              	.LVL9:
  300:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN USART2_IRQn 1 */
  301:Core/Src/stm32f1xx_it.c **** 
  302:Core/Src/stm32f1xx_it.c ****   /* USER CODE END USART2_IRQn 1 */
  303:Core/Src/stm32f1xx_it.c **** }
+ 442              		.loc 1 303 0
+ 443 0008 08BD     		pop	{r3, pc}
+ 444              	.L46:
+ 445 000a 00BF     		.align	2
+ 446              	.L45:
+ 447 000c 00000000 		.word	huart2
+ 448              		.cfi_endproc
+ 449              	.LFE86:
+ 451              		.section	.text.USART3_IRQHandler,"ax",%progbits
+ 452              		.align	1
+ 453              		.global	USART3_IRQHandler
+ 454              		.syntax unified
+ 455              		.thumb
+ 456              		.thumb_func
+ 457              		.fpu softvfp
+ 459              	USART3_IRQHandler:
+ 460              	.LFB87:
  304:Core/Src/stm32f1xx_it.c **** 
  305:Core/Src/stm32f1xx_it.c **** /**
  306:Core/Src/stm32f1xx_it.c **** * @brief This function handles USART3 global interrupt.
  307:Core/Src/stm32f1xx_it.c **** */
  308:Core/Src/stm32f1xx_it.c **** void USART3_IRQHandler(void)
  309:Core/Src/stm32f1xx_it.c **** {
- 450              		.loc 1 309 0
- 451              		.cfi_startproc
- 452              		@ args = 0, pretend = 0, frame = 0
- 453              		@ frame_needed = 0, uses_anonymous_args = 0
- 454 0000 08B5     		push	{r3, lr}
- 455              	.LCFI10:
- 456              		.cfi_def_cfa_offset 8
- 457              		.cfi_offset 3, -8
- 458              		.cfi_offset 14, -4
+ 461              		.loc 1 309 0
+ 462              		.cfi_startproc
+ 463              		@ args = 0, pretend = 0, frame = 0
+ 464              		@ frame_needed = 0, uses_anonymous_args = 0
+ 465 0000 08B5     		push	{r3, lr}
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s 			page 14
+
+
+ 466              	.LCFI10:
+ 467              		.cfi_def_cfa_offset 8
+ 468              		.cfi_offset 3, -8
+ 469              		.cfi_offset 14, -4
  310:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN USART3_IRQn 0 */
  311:Core/Src/stm32f1xx_it.c **** 
  312:Core/Src/stm32f1xx_it.c ****   /* USER CODE END USART3_IRQn 0 */
  313:Core/Src/stm32f1xx_it.c ****   HAL_UART_IRQHandler(&huart3);
- 459              		.loc 1 313 0
- 460 0002 0248     		ldr	r0, .L49
- 461 0004 FFF7FEFF 		bl	HAL_UART_IRQHandler
-ARM GAS  /tmp/ccSIrBOe.s 			page 14
-
-
- 462              	.LVL10:
- 463 0008 08BD     		pop	{r3, pc}
- 464              	.L50:
- 465 000a 00BF     		.align	2
- 466              	.L49:
- 467 000c 00000000 		.word	huart3
- 468              		.cfi_endproc
- 469              	.LFE85:
- 471              		.section	.text.TIM5_IRQHandler,"ax",%progbits
- 472              		.align	1
- 473              		.global	TIM5_IRQHandler
- 474              		.syntax unified
- 475              		.thumb
- 476              		.thumb_func
- 477              		.fpu softvfp
- 479              	TIM5_IRQHandler:
- 480              	.LFB86:
+ 470              		.loc 1 313 0
+ 471 0002 0248     		ldr	r0, .L49
+ 472 0004 FFF7FEFF 		bl	HAL_UART_IRQHandler
+ 473              	.LVL10:
  314:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN USART3_IRQn 1 */
  315:Core/Src/stm32f1xx_it.c **** 
  316:Core/Src/stm32f1xx_it.c ****   /* USER CODE END USART3_IRQn 1 */
  317:Core/Src/stm32f1xx_it.c **** }
+ 474              		.loc 1 317 0
+ 475 0008 08BD     		pop	{r3, pc}
+ 476              	.L50:
+ 477 000a 00BF     		.align	2
+ 478              	.L49:
+ 479 000c 00000000 		.word	huart3
+ 480              		.cfi_endproc
+ 481              	.LFE87:
+ 483              		.section	.text.TIM5_IRQHandler,"ax",%progbits
+ 484              		.align	1
+ 485              		.global	TIM5_IRQHandler
+ 486              		.syntax unified
+ 487              		.thumb
+ 488              		.thumb_func
+ 489              		.fpu softvfp
+ 491              	TIM5_IRQHandler:
+ 492              	.LFB88:
  318:Core/Src/stm32f1xx_it.c **** 
  319:Core/Src/stm32f1xx_it.c **** /**
  320:Core/Src/stm32f1xx_it.c **** * @brief This function handles TIM5 global interrupt.
  321:Core/Src/stm32f1xx_it.c **** */
  322:Core/Src/stm32f1xx_it.c **** void TIM5_IRQHandler(void)
  323:Core/Src/stm32f1xx_it.c **** {
- 481              		.loc 1 323 0
- 482              		.cfi_startproc
- 483              		@ args = 0, pretend = 0, frame = 0
- 484              		@ frame_needed = 0, uses_anonymous_args = 0
- 485 0000 08B5     		push	{r3, lr}
- 486              	.LCFI11:
- 487              		.cfi_def_cfa_offset 8
- 488              		.cfi_offset 3, -8
- 489              		.cfi_offset 14, -4
+ 493              		.loc 1 323 0
+ 494              		.cfi_startproc
+ 495              		@ args = 0, pretend = 0, frame = 0
+ 496              		@ frame_needed = 0, uses_anonymous_args = 0
+ 497 0000 08B5     		push	{r3, lr}
+ 498              	.LCFI11:
+ 499              		.cfi_def_cfa_offset 8
+ 500              		.cfi_offset 3, -8
+ 501              		.cfi_offset 14, -4
  324:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN TIM5_IRQn 0 */
  325:Core/Src/stm32f1xx_it.c **** 
  326:Core/Src/stm32f1xx_it.c ****   /* USER CODE END TIM5_IRQn 0 */
  327:Core/Src/stm32f1xx_it.c ****   HAL_TIM_IRQHandler(&htim5);
- 490              		.loc 1 327 0
- 491 0002 0248     		ldr	r0, .L53
- 492 0004 FFF7FEFF 		bl	HAL_TIM_IRQHandler
- 493              	.LVL11:
- 494 0008 08BD     		pop	{r3, pc}
- 495              	.L54:
- 496 000a 00BF     		.align	2
- 497              	.L53:
- 498 000c 00000000 		.word	htim5
- 499              		.cfi_endproc
- 500              	.LFE86:
- 502              		.text
- 503              	.Letext0:
- 504              		.file 2 "/usr/include/newlib/machine/_default_types.h"
- 505              		.file 3 "/usr/include/newlib/sys/_stdint.h"
- 506              		.file 4 "Drivers/CMSIS/Include/core_cm3.h"
- 507              		.file 5 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
-ARM GAS  /tmp/ccSIrBOe.s 			page 15
+ 502              		.loc 1 327 0
+ 503 0002 0248     		ldr	r0, .L53
+ 504 0004 FFF7FEFF 		bl	HAL_TIM_IRQHandler
+ 505              	.LVL11:
+ 328:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN TIM5_IRQn 1 */
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s 			page 15
 
 
- 508              		.file 6 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h"
- 509              		.file 7 "/usr/include/newlib/sys/lock.h"
- 510              		.file 8 "/usr/include/newlib/sys/_types.h"
- 511              		.file 9 "/usr/lib/gcc/arm-none-eabi/6.3.1/include/stddef.h"
- 512              		.file 10 "/usr/include/newlib/sys/reent.h"
- 513              		.file 11 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
- 514              		.file 12 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
- 515              		.file 13 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
- 516              		.file 14 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h"
- 517              		.file 15 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
- 518              		.file 16 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h"
-ARM GAS  /tmp/ccSIrBOe.s 			page 16
+ 329:Core/Src/stm32f1xx_it.c **** 
+ 330:Core/Src/stm32f1xx_it.c ****   /* USER CODE END TIM5_IRQn 1 */
+ 331:Core/Src/stm32f1xx_it.c **** }
+ 506              		.loc 1 331 0
+ 507 0008 08BD     		pop	{r3, pc}
+ 508              	.L54:
+ 509 000a 00BF     		.align	2
+ 510              	.L53:
+ 511 000c 00000000 		.word	htim5
+ 512              		.cfi_endproc
+ 513              	.LFE88:
+ 515              		.text
+ 516              	.Letext0:
+ 517              		.file 2 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 518              		.file 3 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 519              		.file 4 "Drivers/CMSIS/Include/core_cm3.h"
+ 520              		.file 5 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 521              		.file 6 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h"
+ 522              		.file 7 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 523              		.file 8 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 524              		.file 9 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\lib\\gcc\\arm-none-eab
+ 525              		.file 10 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\includ
+ 526              		.file 11 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 527              		.file 12 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 528              		.file 13 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 529              		.file 14 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h"
+ 530              		.file 15 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ 531              		.file 16 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h"
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s 			page 16
 
 
 DEFINED SYMBOLS
-                            *ABS*:0000000000000000 stm32f1xx_it.c
-     /tmp/ccSIrBOe.s:16     .text.NMI_Handler:0000000000000000 $t
-     /tmp/ccSIrBOe.s:23     .text.NMI_Handler:0000000000000000 NMI_Handler
-     /tmp/ccSIrBOe.s:36     .text.HardFault_Handler:0000000000000000 $t
-     /tmp/ccSIrBOe.s:43     .text.HardFault_Handler:0000000000000000 HardFault_Handler
-     /tmp/ccSIrBOe.s:57     .text.MemManage_Handler:0000000000000000 $t
-     /tmp/ccSIrBOe.s:64     .text.MemManage_Handler:0000000000000000 MemManage_Handler
-     /tmp/ccSIrBOe.s:78     .text.BusFault_Handler:0000000000000000 $t
-     /tmp/ccSIrBOe.s:85     .text.BusFault_Handler:0000000000000000 BusFault_Handler
-     /tmp/ccSIrBOe.s:99     .text.UsageFault_Handler:0000000000000000 $t
-     /tmp/ccSIrBOe.s:106    .text.UsageFault_Handler:0000000000000000 UsageFault_Handler
-     /tmp/ccSIrBOe.s:120    .text.DebugMon_Handler:0000000000000000 $t
-     /tmp/ccSIrBOe.s:127    .text.DebugMon_Handler:0000000000000000 DebugMon_Handler
-     /tmp/ccSIrBOe.s:139    .text.SysTick_Handler:0000000000000000 $t
-     /tmp/ccSIrBOe.s:146    .text.SysTick_Handler:0000000000000000 SysTick_Handler
-     /tmp/ccSIrBOe.s:166    .text.EXTI4_IRQHandler:0000000000000000 $t
-     /tmp/ccSIrBOe.s:173    .text.EXTI4_IRQHandler:0000000000000000 EXTI4_IRQHandler
-     /tmp/ccSIrBOe.s:193    .text.DMA1_Channel1_IRQHandler:0000000000000000 $t
-     /tmp/ccSIrBOe.s:200    .text.DMA1_Channel1_IRQHandler:0000000000000000 DMA1_Channel1_IRQHandler
-     /tmp/ccSIrBOe.s:219    .text.DMA1_Channel1_IRQHandler:000000000000000c $d
-     /tmp/ccSIrBOe.s:224    .text.DMA1_Channel3_IRQHandler:0000000000000000 $t
-     /tmp/ccSIrBOe.s:231    .text.DMA1_Channel3_IRQHandler:0000000000000000 DMA1_Channel3_IRQHandler
-     /tmp/ccSIrBOe.s:250    .text.DMA1_Channel3_IRQHandler:000000000000000c $d
-     /tmp/ccSIrBOe.s:255    .text.DMA1_Channel5_IRQHandler:0000000000000000 $t
-     /tmp/ccSIrBOe.s:262    .text.DMA1_Channel5_IRQHandler:0000000000000000 DMA1_Channel5_IRQHandler
-     /tmp/ccSIrBOe.s:281    .text.DMA1_Channel5_IRQHandler:000000000000000c $d
-     /tmp/ccSIrBOe.s:286    .text.DMA1_Channel6_IRQHandler:0000000000000000 $t
-     /tmp/ccSIrBOe.s:293    .text.DMA1_Channel6_IRQHandler:0000000000000000 DMA1_Channel6_IRQHandler
-     /tmp/ccSIrBOe.s:312    .text.DMA1_Channel6_IRQHandler:000000000000000c $d
-     /tmp/ccSIrBOe.s:317    .text.TIM1_UP_IRQHandler:0000000000000000 $t
-     /tmp/ccSIrBOe.s:324    .text.TIM1_UP_IRQHandler:0000000000000000 TIM1_UP_IRQHandler
-     /tmp/ccSIrBOe.s:343    .text.TIM1_UP_IRQHandler:000000000000000c $d
-     /tmp/ccSIrBOe.s:348    .text.TIM4_IRQHandler:0000000000000000 $t
-     /tmp/ccSIrBOe.s:355    .text.TIM4_IRQHandler:0000000000000000 TIM4_IRQHandler
-     /tmp/ccSIrBOe.s:374    .text.TIM4_IRQHandler:000000000000000c $d
-     /tmp/ccSIrBOe.s:379    .text.USART1_IRQHandler:0000000000000000 $t
-     /tmp/ccSIrBOe.s:386    .text.USART1_IRQHandler:0000000000000000 USART1_IRQHandler
-     /tmp/ccSIrBOe.s:405    .text.USART1_IRQHandler:000000000000000c $d
-     /tmp/ccSIrBOe.s:410    .text.USART2_IRQHandler:0000000000000000 $t
-     /tmp/ccSIrBOe.s:417    .text.USART2_IRQHandler:0000000000000000 USART2_IRQHandler
-     /tmp/ccSIrBOe.s:436    .text.USART2_IRQHandler:000000000000000c $d
-     /tmp/ccSIrBOe.s:441    .text.USART3_IRQHandler:0000000000000000 $t
-     /tmp/ccSIrBOe.s:448    .text.USART3_IRQHandler:0000000000000000 USART3_IRQHandler
-     /tmp/ccSIrBOe.s:467    .text.USART3_IRQHandler:000000000000000c $d
-     /tmp/ccSIrBOe.s:472    .text.TIM5_IRQHandler:0000000000000000 $t
-     /tmp/ccSIrBOe.s:479    .text.TIM5_IRQHandler:0000000000000000 TIM5_IRQHandler
-     /tmp/ccSIrBOe.s:498    .text.TIM5_IRQHandler:000000000000000c $d
-                     .debug_frame:0000000000000010 $d
+                            *ABS*:00000000 stm32f1xx_it.c
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:16     .text.NMI_Handler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:23     .text.NMI_Handler:00000000 NMI_Handler
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:37     .text.HardFault_Handler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:44     .text.HardFault_Handler:00000000 HardFault_Handler
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:58     .text.MemManage_Handler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:65     .text.MemManage_Handler:00000000 MemManage_Handler
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:79     .text.BusFault_Handler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:86     .text.BusFault_Handler:00000000 BusFault_Handler
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:100    .text.UsageFault_Handler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:107    .text.UsageFault_Handler:00000000 UsageFault_Handler
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:121    .text.DebugMon_Handler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:128    .text.DebugMon_Handler:00000000 DebugMon_Handler
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:141    .text.SysTick_Handler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:148    .text.SysTick_Handler:00000000 SysTick_Handler
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:168    .text.EXTI4_IRQHandler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:175    .text.EXTI4_IRQHandler:00000000 EXTI4_IRQHandler
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:196    .text.DMA1_Channel1_IRQHandler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:203    .text.DMA1_Channel1_IRQHandler:00000000 DMA1_Channel1_IRQHandler
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:223    .text.DMA1_Channel1_IRQHandler:0000000c $d
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:228    .text.DMA1_Channel3_IRQHandler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:235    .text.DMA1_Channel3_IRQHandler:00000000 DMA1_Channel3_IRQHandler
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:255    .text.DMA1_Channel3_IRQHandler:0000000c $d
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:260    .text.DMA1_Channel5_IRQHandler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:267    .text.DMA1_Channel5_IRQHandler:00000000 DMA1_Channel5_IRQHandler
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:287    .text.DMA1_Channel5_IRQHandler:0000000c $d
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:292    .text.DMA1_Channel6_IRQHandler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:299    .text.DMA1_Channel6_IRQHandler:00000000 DMA1_Channel6_IRQHandler
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:319    .text.DMA1_Channel6_IRQHandler:0000000c $d
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:324    .text.TIM1_UP_IRQHandler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:331    .text.TIM1_UP_IRQHandler:00000000 TIM1_UP_IRQHandler
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:351    .text.TIM1_UP_IRQHandler:0000000c $d
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:356    .text.TIM4_IRQHandler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:363    .text.TIM4_IRQHandler:00000000 TIM4_IRQHandler
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:383    .text.TIM4_IRQHandler:0000000c $d
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:388    .text.USART1_IRQHandler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:395    .text.USART1_IRQHandler:00000000 USART1_IRQHandler
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:415    .text.USART1_IRQHandler:0000000c $d
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:420    .text.USART2_IRQHandler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:427    .text.USART2_IRQHandler:00000000 USART2_IRQHandler
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:447    .text.USART2_IRQHandler:0000000c $d
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:452    .text.USART3_IRQHandler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:459    .text.USART3_IRQHandler:00000000 USART3_IRQHandler
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:479    .text.USART3_IRQHandler:0000000c $d
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:484    .text.TIM5_IRQHandler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:491    .text.TIM5_IRQHandler:00000000 TIM5_IRQHandler
+C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s:511    .text.TIM5_IRQHandler:0000000c $d
 
 UNDEFINED SYMBOLS
 osSystickHandler
@@ -912,10 +928,10 @@ HAL_DMA_IRQHandler
 hdma_adc1
 hdma_usart3_rx
 hdma_usart1_rx
-ARM GAS  /tmp/ccSIrBOe.s 			page 17
-
-
 hdma_usart2_rx
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccLgWj2l.s 			page 17
+
+
 HAL_TIM_IRQHandler
 htim1
 htim4

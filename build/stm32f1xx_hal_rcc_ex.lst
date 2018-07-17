@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccYqNaWA.s 			page 1
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -23,7 +23,7 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
   20              		.thumb_func
   21              		.fpu softvfp
   23              	HAL_RCCEx_PeriphCLKConfig:
-  24              	.LFB64:
+  24              	.LFB66:
   25              		.file 1 "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c"
    1:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** /**
    2:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   ******************************************************************************
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
   31:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
   32:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
   33:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-ARM GAS  /tmp/ccYqNaWA.s 			page 2
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 2
 
 
   34:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
   88:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****     frequencies.
   89:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****     [..] 
   90:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****     (@) Important note: Care must be taken when HAL_RCCEx_PeriphCLKConfig() is used to
-ARM GAS  /tmp/ccYqNaWA.s 			page 3
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 3
 
 
   91:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****         select the RTC clock source; in this case the Backup domain will be reset in  
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
   43              		.loc 1 127 0
   44 0006 0368     		ldr	r3, [r0]
   45 0008 13F0010F 		tst	r3, #1
-ARM GAS  /tmp/ccYqNaWA.s 			page 4
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 4
 
 
   46 000c 34D0     		beq	.L2
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  151:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       while(HAL_IS_BIT_CLR(PWR->CR, PWR_CR_DBP))
  152:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       {
  153:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****         if((HAL_GetTick() - tickstart) > RCC_DBP_TIMEOUT_VALUE)
-ARM GAS  /tmp/ccYqNaWA.s 			page 5
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 5
 
 
  154:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****         {
@@ -261,7 +261,7 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
   85              		.loc 1 162 0 is_stmt 0 discriminator 1
   86 0042 6268     		ldr	r2, [r4, #4]
   87 0044 02F44072 		and	r2, r2, #768
-  88 0048 9342     		cmp	r3, r2
+  88 0048 9A42     		cmp	r2, r3
   89 004a 0CD0     		beq	.L8
  163:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****     {
  164:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       /* Store the content of BDCR register before the reset of Backup Domain */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  175:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****         /* Get Start Tick */
  176:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****         tickstart = HAL_GetTick();
  177:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       
-ARM GAS  /tmp/ccYqNaWA.s 			page 6
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 6
 
 
  178:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****         /* Wait till LSE is ready */  
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  207:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** #if defined(STM32F105xC) || defined(STM32F107xC)
  208:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   /*------------------------------ I2S2 Configuration ------------------------*/ 
  209:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   if(((PeriphClkInit->PeriphClockSelection) & RCC_PERIPHCLK_I2S2) == RCC_PERIPHCLK_I2S2)
-ARM GAS  /tmp/ccYqNaWA.s 			page 7
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 7
 
 
  210:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   {
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  264:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       tickstart = HAL_GetTick();
  265:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       
  266:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       /* Wait till PLLI2S is ready */
-ARM GAS  /tmp/ccYqNaWA.s 			page 8
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 8
 
 
  267:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       while(__HAL_RCC_GET_FLAG(RCC_FLAG_PLLI2SRDY)  == RESET)
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  154              		@ sp needed
  155 00a8 70BD     		pop	{r4, r5, r6, pc}
  156              	.LVL12:
-ARM GAS  /tmp/ccYqNaWA.s 			page 9
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 9
 
 
  157              	.L12:
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  203 00e4 BFD1     		bne	.L8
  181:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****           {
  204              		.loc 1 181 0
-ARM GAS  /tmp/ccYqNaWA.s 			page 10
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 10
 
 
  205 00e6 FFF7FEFF 		bl	HAL_GetTick
@@ -573,7 +573,7 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  231 010c 00700040 		.word	1073770496
  232 0110 40044242 		.word	1111622720
  233              		.cfi_endproc
- 234              	.LFE64:
+ 234              	.LFE66:
  236              		.section	.text.HAL_RCCEx_GetPeriphCLKConfig,"ax",%progbits
  237              		.align	1
  238              		.global	HAL_RCCEx_GetPeriphCLKConfig
@@ -582,7 +582,7 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  241              		.thumb_func
  242              		.fpu softvfp
  244              	HAL_RCCEx_GetPeriphCLKConfig:
- 245              	.LFB65:
+ 245              	.LFB67:
  302:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** 
  303:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** /**
  304:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   * @brief  Get the PeriphClkInit according to the internal
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  248              		@ args = 0, pretend = 0, frame = 0
  249              		@ frame_needed = 0, uses_anonymous_args = 0
  250              		@ link register save eliminated.
-ARM GAS  /tmp/ccYqNaWA.s 			page 11
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 11
 
 
  251              	.LVL23:
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  344:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   PeriphClkInit->I2s3ClockSelection = RCC_I2S3CLKSOURCE_SYSCLK;
  273              		.loc 1 344 0
  274 001e 0261     		str	r2, [r0, #16]
-ARM GAS  /tmp/ccYqNaWA.s 			page 12
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 12
 
 
  345:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** 
@@ -677,24 +677,25 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  279 0024 5B68     		ldr	r3, [r3, #4]
  280 0026 03F48003 		and	r3, r3, #4194304
  281 002a 4361     		str	r3, [r0, #20]
- 282 002c 7047     		bx	lr
- 283              	.L24:
- 284 002e 00BF     		.align	2
- 285              	.L23:
- 286 0030 00100240 		.word	1073876992
- 287              		.cfi_endproc
- 288              	.LFE65:
- 290              		.section	.text.HAL_RCCEx_GetPeriphCLKFreq,"ax",%progbits
- 291              		.align	1
- 292              		.global	HAL_RCCEx_GetPeriphCLKFreq
- 293              		.syntax unified
- 294              		.thumb
- 295              		.thumb_func
- 296              		.fpu softvfp
- 298              	HAL_RCCEx_GetPeriphCLKFreq:
- 299              	.LFB66:
  354:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** #endif /* STM32F102x6 || STM32F102xB || STM32F103x6 || STM32F103xB || STM32F103xE || STM32F103xG ||
  355:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** }
+ 282              		.loc 1 355 0
+ 283 002c 7047     		bx	lr
+ 284              	.L24:
+ 285 002e 00BF     		.align	2
+ 286              	.L23:
+ 287 0030 00100240 		.word	1073876992
+ 288              		.cfi_endproc
+ 289              	.LFE67:
+ 291              		.section	.text.HAL_RCCEx_GetPeriphCLKFreq,"ax",%progbits
+ 292              		.align	1
+ 293              		.global	HAL_RCCEx_GetPeriphCLKFreq
+ 294              		.syntax unified
+ 295              		.thumb
+ 296              		.thumb_func
+ 297              		.fpu softvfp
+ 299              	HAL_RCCEx_GetPeriphCLKFreq:
+ 300              	.LFB68:
  356:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** 
  357:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** /**
  358:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   * @brief  Returns the peripheral clock frequency
@@ -717,10 +718,10 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  375:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   @if STM32F105xC
  376:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_I2S2 I2S2 peripheral clock
  377:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_I2S3 I2S3 peripheral clock
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 13
+
+
  378:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_I2S3 I2S3 peripheral clock
-ARM GAS  /tmp/ccYqNaWA.s 			page 13
-
-
  379:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_I2S2 I2S2 peripheral clock
  380:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_I2S3 I2S3 peripheral clock
  381:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_I2S3 I2S3 peripheral clock
@@ -747,21 +748,21 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  402:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   */
  403:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** uint32_t HAL_RCCEx_GetPeriphCLKFreq(uint32_t PeriphClk)
  404:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** {
- 300              		.loc 1 404 0
- 301              		.cfi_startproc
- 302              		@ args = 0, pretend = 0, frame = 24
- 303              		@ frame_needed = 0, uses_anonymous_args = 0
- 304              	.LVL26:
- 305 0000 30B5     		push	{r4, r5, lr}
- 306              	.LCFI4:
- 307              		.cfi_def_cfa_offset 12
- 308              		.cfi_offset 4, -12
- 309              		.cfi_offset 5, -8
- 310              		.cfi_offset 14, -4
- 311 0002 87B0     		sub	sp, sp, #28
- 312              	.LCFI5:
- 313              		.cfi_def_cfa_offset 40
- 314 0004 0546     		mov	r5, r0
+ 301              		.loc 1 404 0
+ 302              		.cfi_startproc
+ 303              		@ args = 0, pretend = 0, frame = 24
+ 304              		@ frame_needed = 0, uses_anonymous_args = 0
+ 305              	.LVL26:
+ 306 0000 30B5     		push	{r4, r5, lr}
+ 307              	.LCFI4:
+ 308              		.cfi_def_cfa_offset 12
+ 309              		.cfi_offset 4, -12
+ 310              		.cfi_offset 5, -8
+ 311              		.cfi_offset 14, -4
+ 312 0002 87B0     		sub	sp, sp, #28
+ 313              	.LCFI5:
+ 314              		.cfi_def_cfa_offset 40
+ 315 0004 0546     		mov	r5, r0
  405:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** #if defined(STM32F105xC) || defined(STM32F107xC)
  406:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   const uint8_t aPLLMULFactorTable[14] = {0, 0, 4, 5, 6, 7, 8, 9, 0, 0, 0, 0, 0, 13};
  407:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   const uint8_t aPredivFactorTable[16] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
@@ -772,20 +773,20 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  412:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** #if defined(STM32F102x6) || defined(STM32F102xB) || defined(STM32F103x6) || \
  413:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****     defined(STM32F103xB) || defined(STM32F103xE) || defined(STM32F103xG)
  414:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   const uint8_t aPLLMULFactorTable[16] = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 16};
- 315              		.loc 1 414 0
- 316 0006 3F4C     		ldr	r4, .L46
- 317 0008 94E80F00 		ldm	r4, {r0, r1, r2, r3}
- 318              	.LVL27:
- 319 000c 0DF1180E 		add	lr, sp, #24
- 320 0010 0EE90F00 		stmdb	lr, {r0, r1, r2, r3}
-ARM GAS  /tmp/ccYqNaWA.s 			page 14
+ 316              		.loc 1 414 0
+ 317 0006 3F4C     		ldr	r4, .L45
+ 318 0008 94E80F00 		ldm	r4, {r0, r1, r2, r3}
+ 319              	.LVL27:
+ 320 000c 0DF1180C 		add	ip, sp, #24
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 14
 
 
+ 321 0010 0CE90F00 		stmdb	ip, {r0, r1, r2, r3}
  415:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   const uint8_t aPredivFactorTable[2] = {1, 2};
- 321              		.loc 1 415 0
- 322 0014 238A     		ldrh	r3, [r4, #16]
- 323 0016 ADF80430 		strh	r3, [sp, #4]	@ movhi
- 324              	.LVL28:
+ 322              		.loc 1 415 0
+ 323 0014 238A     		ldrh	r3, [r4, #16]
+ 324 0016 ADF80430 		strh	r3, [sp, #4]	@ movhi
+ 325              	.LVL28:
  416:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** 
  417:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   uint32_t prediv1 = 0U, pllclk = 0U, pllmul = 0U;
  418:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** #endif /* STM32F102x6 || STM32F102xB || STM32F103x6 || STM32F103xB || STM32F103xE || STM32F103xG */
@@ -795,30 +796,30 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  422:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   assert_param(IS_RCC_PERIPHCLOCK(PeriphClk));
  423:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   
  424:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   switch (PeriphClk)
- 325              		.loc 1 424 0
- 326 001a 681E     		subs	r0, r5, #1
- 327 001c 0F28     		cmp	r0, #15
- 328 001e 69D8     		bhi	.L36
- 329 0020 DFE800F0 		tbb	[pc, r0]
- 330              	.L28:
- 331 0024 39       		.byte	(.L27-.L28)/2
- 332 0025 5D       		.byte	(.L29-.L28)/2
- 333 0026 68       		.byte	(.L36-.L28)/2
- 334 0027 32       		.byte	(.L30-.L28)/2
- 335 0028 68       		.byte	(.L36-.L28)/2
- 336 0029 68       		.byte	(.L36-.L28)/2
- 337 002a 68       		.byte	(.L36-.L28)/2
- 338 002b 36       		.byte	(.L31-.L28)/2
- 339 002c 68       		.byte	(.L36-.L28)/2
- 340 002d 68       		.byte	(.L36-.L28)/2
- 341 002e 68       		.byte	(.L36-.L28)/2
- 342 002f 68       		.byte	(.L36-.L28)/2
- 343 0030 68       		.byte	(.L36-.L28)/2
- 344 0031 68       		.byte	(.L36-.L28)/2
- 345 0032 68       		.byte	(.L36-.L28)/2
- 346 0033 08       		.byte	(.L32-.L28)/2
- 347              		.p2align 1
- 348              	.L32:
+ 326              		.loc 1 424 0
+ 327 001a 681E     		subs	r0, r5, #1
+ 328 001c 0F28     		cmp	r0, #15
+ 329 001e 66D8     		bhi	.L36
+ 330 0020 DFE800F0 		tbb	[pc, r0]
+ 331              	.L28:
+ 332 0024 39       		.byte	(.L27-.L28)/2
+ 333 0025 5A       		.byte	(.L29-.L28)/2
+ 334 0026 65       		.byte	(.L36-.L28)/2
+ 335 0027 32       		.byte	(.L30-.L28)/2
+ 336 0028 65       		.byte	(.L36-.L28)/2
+ 337 0029 65       		.byte	(.L36-.L28)/2
+ 338 002a 65       		.byte	(.L36-.L28)/2
+ 339 002b 36       		.byte	(.L31-.L28)/2
+ 340 002c 65       		.byte	(.L36-.L28)/2
+ 341 002d 65       		.byte	(.L36-.L28)/2
+ 342 002e 65       		.byte	(.L36-.L28)/2
+ 343 002f 65       		.byte	(.L36-.L28)/2
+ 344 0030 65       		.byte	(.L36-.L28)/2
+ 345 0031 65       		.byte	(.L36-.L28)/2
+ 346 0032 65       		.byte	(.L36-.L28)/2
+ 347 0033 08       		.byte	(.L32-.L28)/2
+ 348              		.p2align 1
+ 349              	.L32:
  425:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   {
  426:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** #if defined(STM32F102x6) || defined(STM32F102xB) || defined(STM32F103x6)\
  427:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****  || defined(STM32F103xB) || defined(STM32F103xE) || defined(STM32F103xG)\
@@ -827,45 +828,45 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  430:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****     {
  431:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       /* Get RCC configuration ------------------------------------------------------*/
  432:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       temp_reg = RCC->CFGR;
- 349              		.loc 1 432 0
- 350 0034 344B     		ldr	r3, .L46+4
- 351 0036 5A68     		ldr	r2, [r3, #4]
- 352              	.LVL29:
+ 350              		.loc 1 432 0
+ 351 0034 344B     		ldr	r3, .L45+4
+ 352 0036 5A68     		ldr	r2, [r3, #4]
+ 353              	.LVL29:
  433:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   
  434:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       /* Check if PLL is enabled */
  435:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       if (HAL_IS_BIT_SET(RCC->CR,RCC_CR_PLLON))
- 353              		.loc 1 435 0
- 354 0038 1B68     		ldr	r3, [r3]
- 355 003a 13F0807F 		tst	r3, #16777216
- 356 003e 5BD0     		beq	.L37
-ARM GAS  /tmp/ccYqNaWA.s 			page 15
+ 354              		.loc 1 435 0
+ 355 0038 1B68     		ldr	r3, [r3]
+ 356 003a 13F0807F 		tst	r3, #16777216
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 15
 
 
+ 357 003e 58D0     		beq	.L37
  436:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       {
  437:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****         pllmul = aPLLMULFactorTable[(uint32_t)(temp_reg & RCC_CFGR_PLLMULL) >> RCC_CFGR_PLLMULL_Pos
- 357              		.loc 1 437 0
- 358 0040 C2F38343 		ubfx	r3, r2, #18, #4
- 359 0044 06A9     		add	r1, sp, #24
- 360 0046 0B44     		add	r3, r3, r1
- 361 0048 13F8100C 		ldrb	r0, [r3, #-16]	@ zero_extendqisi2
- 362              	.LVL30:
+ 358              		.loc 1 437 0
+ 359 0040 C2F38343 		ubfx	r3, r2, #18, #4
+ 360 0044 06A9     		add	r1, sp, #24
+ 361 0046 0B44     		add	r3, r3, r1
+ 362 0048 13F8100C 		ldrb	r0, [r3, #-16]	@ zero_extendqisi2
+ 363              	.LVL30:
  438:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****         if ((temp_reg & RCC_CFGR_PLLSRC) != RCC_PLLSOURCE_HSI_DIV2)
- 363              		.loc 1 438 0
- 364 004c 12F4803F 		tst	r2, #65536
- 365 0050 16D0     		beq	.L33
+ 364              		.loc 1 438 0
+ 365 004c 12F4803F 		tst	r2, #65536
+ 366 0050 16D0     		beq	.L33
  439:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****         {
  440:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** #if defined(STM32F105xC) || defined(STM32F107xC) || defined(STM32F100xB)\
  441:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****  || defined(STM32F100xE)
  442:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****           prediv1 = aPredivFactorTable[(uint32_t)(RCC->CFGR2 & RCC_CFGR2_PREDIV1) >> RCC_CFGR2_PRED
  443:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** #else
  444:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****           prediv1 = aPredivFactorTable[(uint32_t)(RCC->CFGR & RCC_CFGR_PLLXTPRE) >> RCC_CFGR_PLLXTP
- 366              		.loc 1 444 0
- 367 0052 2D4B     		ldr	r3, .L46+4
- 368 0054 5B68     		ldr	r3, [r3, #4]
- 369 0056 C3F34043 		ubfx	r3, r3, #17, #1
- 370 005a 0B44     		add	r3, r3, r1
- 371 005c 13F8142C 		ldrb	r2, [r3, #-20]	@ zero_extendqisi2
- 372              	.LVL31:
+ 367              		.loc 1 444 0
+ 368 0052 2D4B     		ldr	r3, .L45+4
+ 369 0054 5B68     		ldr	r3, [r3, #4]
+ 370 0056 C3F34043 		ubfx	r3, r3, #17, #1
+ 371 005a 0B44     		add	r3, r3, r1
+ 372 005c 13F8142C 		ldrb	r2, [r3, #-20]	@ zero_extendqisi2
+ 373              	.LVL31:
  445:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** #endif /* STM32F105xC || STM32F107xC || STM32F100xB || STM32F100xE */
  446:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** 
  447:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** #if defined(STM32F105xC) || defined(STM32F107xC)
@@ -894,15 +895,15 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  470:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****           {
  471:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****             /* HSE used as PLL clock source : PLLCLK = HSE/PREDIV1 * PLLMUL */
  472:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****             pllclk = (uint32_t)((HSE_VALUE / prediv1) * pllmul);
- 373              		.loc 1 472 0
- 374 0060 2A4B     		ldr	r3, .L46+8
- 375 0062 B3FBF2F3 		udiv	r3, r3, r2
- 376 0066 03FB00F0 		mul	r0, r3, r0
-ARM GAS  /tmp/ccYqNaWA.s 			page 16
+ 374              		.loc 1 472 0
+ 375 0060 2A4B     		ldr	r3, .L45+8
+ 376 0062 B3FBF2F3 		udiv	r3, r3, r2
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 16
 
 
- 377              	.LVL32:
- 378              	.L34:
+ 377 0066 00FB03F0 		mul	r0, r0, r3
+ 378              	.LVL32:
+ 379              	.L34:
  473:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****           }
  474:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** #endif /* STM32F105xC || STM32F107xC */
  475:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****         }
@@ -928,11 +929,11 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  495:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** #else
  496:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****         /* USBCLK = PLLCLK / USB prescaler */
  497:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****         if (__HAL_RCC_GET_USB_SOURCE() == RCC_USBCLKSOURCE_PLL)
- 379              		.loc 1 497 0
- 380 006a 274B     		ldr	r3, .L46+4
- 381 006c 5B68     		ldr	r3, [r3, #4]
- 382 006e 13F4800F 		tst	r3, #4194304
- 383 0072 0BD1     		bne	.L25
+ 380              		.loc 1 497 0
+ 381 006a 274B     		ldr	r3, .L45+4
+ 382 006c 5B68     		ldr	r3, [r3, #4]
+ 383 006e 13F4800F 		tst	r3, #4194304
+ 384 0072 0BD1     		bne	.L25
  498:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****         {
  499:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****           /* No prescaler selected for USB */
  500:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****           frequency = pllclk;
@@ -941,27 +942,27 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  503:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****         {
  504:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****           /* Prescaler of 1.5 selected for USB */ 
  505:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****           frequency = (pllclk * 2) / 3;
- 384              		.loc 1 505 0
- 385 0074 4000     		lsls	r0, r0, #1
- 386              	.LVL33:
- 387 0076 264B     		ldr	r3, .L46+12
- 388 0078 A3FB0030 		umull	r3, r0, r3, r0
- 389 007c 4008     		lsrs	r0, r0, #1
- 390              	.LVL34:
- 391 007e 05E0     		b	.L25
- 392              	.LVL35:
- 393              	.L33:
+ 385              		.loc 1 505 0
+ 386 0074 4000     		lsls	r0, r0, #1
+ 387              	.LVL33:
+ 388 0076 264B     		ldr	r3, .L45+12
+ 389 0078 A3FB0030 		umull	r3, r0, r3, r0
+ 390 007c 4008     		lsrs	r0, r0, #1
+ 391              	.LVL34:
+ 392 007e 05E0     		b	.L25
+ 393              	.LVL35:
+ 394              	.L33:
  479:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****         }
- 394              		.loc 1 479 0
- 395 0080 244B     		ldr	r3, .L46+16
- 396 0082 03FB00F0 		mul	r0, r3, r0
- 397              	.LVL36:
- 398 0086 F0E7     		b	.L34
- 399              	.LVL37:
-ARM GAS  /tmp/ccYqNaWA.s 			page 17
+ 395              		.loc 1 479 0
+ 396 0080 244B     		ldr	r3, .L45+16
+ 397 0082 03FB00F0 		mul	r0, r3, r0
+ 398              	.LVL36:
+ 399 0086 F0E7     		b	.L34
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 17
 
 
- 400              	.L30:
+ 400              	.LVL37:
+ 401              	.L30:
  506:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****         }
  507:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** #endif
  508:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       }
@@ -974,10 +975,10 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  515:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** #if defined(STM32F103xE) || defined(STM32F103xG)
  516:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       /* SYSCLK used as source clock for I2S2 */
  517:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       frequency = HAL_RCC_GetSysClockFreq();
- 401              		.loc 1 517 0
- 402 0088 FFF7FEFF 		bl	HAL_RCC_GetSysClockFreq
- 403              	.LVL38:
- 404              	.L25:
+ 402              		.loc 1 517 0
+ 403 0088 FFF7FEFF 		bl	HAL_RCC_GetSysClockFreq
+ 404              	.LVL38:
+ 405              	.L25:
  518:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** #else
  519:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       if (__HAL_RCC_GET_I2S2_SOURCE() == RCC_I2S2CLKSOURCE_SYSCLK)
  520:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       {
@@ -1017,10 +1018,10 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  554:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****           /* PLLI2SVCO = 2 * PLLI2SCLK = 2 * (HSE/PREDIV2 * PLL3MUL) */
  555:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****           prediv2 = ((RCC->CFGR2 & RCC_CFGR2_PREDIV2) >> RCC_CFGR2_PREDIV2_Pos) + 1;
  556:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****           pll3mul = ((RCC->CFGR2 & RCC_CFGR2_PLL3MUL) >> RCC_CFGR2_PLL3MUL_Pos) + 2;
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 18
+
+
  557:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****           frequency = (uint32_t)(2 * ((HSE_VALUE / prediv2) * pll3mul));
-ARM GAS  /tmp/ccYqNaWA.s 			page 18
-
-
  558:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****         }
  559:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       }
  560:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** #endif /* STM32F103xE || STM32F103xG */
@@ -1065,191 +1066,190 @@ ARM GAS  /tmp/ccYqNaWA.s 			page 1
  599:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   }
  600:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****   return(frequency);
  601:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** }
- 405              		.loc 1 601 0
- 406 008c 07B0     		add	sp, sp, #28
- 407              	.LCFI6:
- 408              		.cfi_remember_state
- 409              		.cfi_def_cfa_offset 12
- 410              		@ sp needed
- 411 008e 30BD     		pop	{r4, r5, pc}
- 412              	.LVL39:
- 413              	.L31:
- 414              	.LCFI7:
- 415              		.cfi_restore_state
+ 406              		.loc 1 601 0
+ 407 008c 07B0     		add	sp, sp, #28
+ 408              	.LCFI6:
+ 409              		.cfi_remember_state
+ 410              		.cfi_def_cfa_offset 12
+ 411              		@ sp needed
+ 412 008e 30BD     		pop	{r4, r5, pc}
+ 413              	.LVL39:
+ 414              	.L31:
+ 415              	.LCFI7:
+ 416              		.cfi_restore_state
  542:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** #else
- 416              		.loc 1 542 0
-ARM GAS  /tmp/ccYqNaWA.s 			page 19
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 19
 
 
- 417 0090 FFF7FEFF 		bl	HAL_RCC_GetSysClockFreq
- 418              	.LVL40:
+ 417              		.loc 1 542 0
+ 418 0090 FFF7FEFF 		bl	HAL_RCC_GetSysClockFreq
+ 419              	.LVL40:
  561:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****     }
- 419              		.loc 1 561 0
- 420 0094 FAE7     		b	.L25
- 421              	.LVL41:
- 422              	.L27:
+ 420              		.loc 1 561 0
+ 421 0094 FAE7     		b	.L25
+ 422              	.LVL41:
+ 423              	.L27:
  567:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** 
- 423              		.loc 1 567 0
- 424 0096 1C4B     		ldr	r3, .L46+4
- 425 0098 1B6A     		ldr	r3, [r3, #32]
- 426              	.LVL42:
+ 424              		.loc 1 567 0
+ 425 0096 1C4B     		ldr	r3, .L45+4
+ 426 0098 1B6A     		ldr	r3, [r3, #32]
+ 427              	.LVL42:
  570:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       {
- 427              		.loc 1 570 0
- 428 009a 40F20232 		movw	r2, #770
- 429 009e 1A40     		ands	r2, r2, r3
- 430 00a0 B2F5817F 		cmp	r2, #258
- 431 00a4 2AD0     		beq	.L38
+ 428              		.loc 1 570 0
+ 429 009a 40F20232 		movw	r2, #770
+ 430 009e 1A40     		ands	r2, r2, r3
+ 431 00a0 B2F5817F 		cmp	r2, #258
+ 432 00a4 27D0     		beq	.L38
  575:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       {
- 432              		.loc 1 575 0
- 433 00a6 03F44073 		and	r3, r3, #768
- 434              	.LVL43:
- 435 00aa B3F5007F 		cmp	r3, #512
- 436 00ae 04D0     		beq	.L43
- 437              	.L35:
+ 433              		.loc 1 575 0
+ 434 00a6 03F44073 		and	r3, r3, #768
+ 435              	.LVL43:
+ 436 00aa B3F5007F 		cmp	r3, #512
+ 437 00ae 04D0     		beq	.L43
+ 438              	.L35:
  579:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       {
- 438              		.loc 1 579 0
- 439 00b0 B3F5407F 		cmp	r3, #768
- 440 00b4 09D0     		beq	.L44
+ 439              		.loc 1 579 0
+ 440 00b0 B3F5407F 		cmp	r3, #768
+ 441 00b4 09D0     		beq	.L44
  586:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       }
- 441              		.loc 1 586 0
- 442 00b6 0020     		movs	r0, #0
- 443 00b8 E8E7     		b	.L25
- 444              	.L43:
+ 442              		.loc 1 586 0
+ 443 00b6 0020     		movs	r0, #0
+ 444 00b8 E8E7     		b	.L25
+ 445              	.L43:
  575:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       {
- 445              		.loc 1 575 0 discriminator 1
- 446 00ba 134A     		ldr	r2, .L46+4
- 447 00bc 526A     		ldr	r2, [r2, #36]
- 448 00be 12F0020F 		tst	r2, #2
- 449 00c2 F5D0     		beq	.L35
+ 446              		.loc 1 575 0 discriminator 1
+ 447 00ba 134A     		ldr	r2, .L45+4
+ 448 00bc 526A     		ldr	r2, [r2, #36]
+ 449 00be 12F0020F 		tst	r2, #2
+ 450 00c2 F5D0     		beq	.L35
  577:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       }
- 450              		.loc 1 577 0
- 451 00c4 49F64040 		movw	r0, #40000
- 452 00c8 E0E7     		b	.L25
- 453              	.L44:
+ 451              		.loc 1 577 0
+ 452 00c4 49F64040 		movw	r0, #40000
+ 453 00c8 E0E7     		b	.L25
+ 454              	.L44:
  579:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       {
- 454              		.loc 1 579 0 discriminator 1
- 455 00ca 0F4B     		ldr	r3, .L46+4
- 456 00cc 1B68     		ldr	r3, [r3]
- 457 00ce 13F4003F 		tst	r3, #131072
- 458 00d2 02D0     		beq	.L45
- 581:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       }
- 459              		.loc 1 581 0
- 460 00d4 4FF22440 		movw	r0, #62500
- 461              	.LVL44:
- 600:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** }
- 462              		.loc 1 600 0
-ARM GAS  /tmp/ccYqNaWA.s 			page 20
-
-
- 463 00d8 D8E7     		b	.L25
- 464              	.LVL45:
- 465              	.L45:
+ 455              		.loc 1 579 0 discriminator 1
+ 456 00ca 0F4B     		ldr	r3, .L45+4
+ 457 00cc 1B68     		ldr	r3, [r3]
+ 458 00ce 13F4003F 		tst	r3, #131072
+ 459 00d2 13D1     		bne	.L41
  586:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       }
- 466              		.loc 1 586 0
- 467 00da 0020     		movs	r0, #0
- 468 00dc D6E7     		b	.L25
- 469              	.LVL46:
- 470              	.L29:
+ 460              		.loc 1 586 0
+ 461 00d4 0020     		movs	r0, #0
+ 462 00d6 D9E7     		b	.L25
+ 463              	.LVL44:
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 20
+
+
+ 464              	.L29:
  592:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       break;
- 471              		.loc 1 592 0
- 472 00de FFF7FEFF 		bl	HAL_RCC_GetPCLK2Freq
- 473              	.LVL47:
- 474 00e2 094B     		ldr	r3, .L46+4
- 475 00e4 5B68     		ldr	r3, [r3, #4]
- 476 00e6 C3F38133 		ubfx	r3, r3, #14, #2
- 477 00ea 0133     		adds	r3, r3, #1
- 478 00ec 5B00     		lsls	r3, r3, #1
- 479 00ee B0FBF3F0 		udiv	r0, r0, r3
- 480              	.LVL48:
+ 465              		.loc 1 592 0
+ 466 00d8 FFF7FEFF 		bl	HAL_RCC_GetPCLK2Freq
+ 467              	.LVL45:
+ 468 00dc 0A4B     		ldr	r3, .L45+4
+ 469 00de 5B68     		ldr	r3, [r3, #4]
+ 470 00e0 C3F38133 		ubfx	r3, r3, #14, #2
+ 471 00e4 0133     		adds	r3, r3, #1
+ 472 00e6 5B00     		lsls	r3, r3, #1
+ 473 00e8 B0FBF3F0 		udiv	r0, r0, r3
+ 474              	.LVL46:
  593:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****     }
- 481              		.loc 1 593 0
- 482 00f2 CBE7     		b	.L25
- 483              	.LVL49:
- 484              	.L36:
+ 475              		.loc 1 593 0
+ 476 00ec CEE7     		b	.L25
+ 477              	.LVL47:
+ 478              	.L36:
  419:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** 
- 485              		.loc 1 419 0
- 486 00f4 0020     		movs	r0, #0
- 487 00f6 C9E7     		b	.L25
- 488              	.LVL50:
- 489              	.L37:
- 490 00f8 0020     		movs	r0, #0
- 491 00fa C7E7     		b	.L25
- 492              	.LVL51:
- 493              	.L38:
+ 479              		.loc 1 419 0
+ 480 00ee 0020     		movs	r0, #0
+ 481 00f0 CCE7     		b	.L25
+ 482              	.LVL48:
+ 483              	.L37:
+ 484 00f2 0020     		movs	r0, #0
+ 485 00f4 CAE7     		b	.L25
+ 486              	.LVL49:
+ 487              	.L38:
  572:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       }
- 494              		.loc 1 572 0
- 495 00fc 4FF40040 		mov	r0, #32768
- 496 0100 C4E7     		b	.L25
- 497              	.L47:
- 498 0102 00BF     		.align	2
- 499              	.L46:
- 500 0104 00000000 		.word	.LANCHOR0
- 501 0108 00100240 		.word	1073876992
- 502 010c 00127A00 		.word	8000000
- 503 0110 ABAAAAAA 		.word	-1431655765
- 504 0114 00093D00 		.word	4000000
- 505              		.cfi_endproc
- 506              	.LFE66:
- 508              		.section	.rodata
- 509              		.align	2
- 510              		.set	.LANCHOR0,. + 0
- 511              	.LC0:
- 512 0000 02       		.byte	2
- 513 0001 03       		.byte	3
- 514 0002 04       		.byte	4
- 515 0003 05       		.byte	5
-ARM GAS  /tmp/ccYqNaWA.s 			page 21
+ 488              		.loc 1 572 0
+ 489 00f6 4FF40040 		mov	r0, #32768
+ 490 00fa C7E7     		b	.L25
+ 491              	.LVL50:
+ 492              	.L41:
+ 581:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c ****       }
+ 493              		.loc 1 581 0
+ 494 00fc 4FF22440 		movw	r0, #62500
+ 495              	.LVL51:
+ 600:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c **** }
+ 496              		.loc 1 600 0
+ 497 0100 C4E7     		b	.L25
+ 498              	.L46:
+ 499 0102 00BF     		.align	2
+ 500              	.L45:
+ 501 0104 00000000 		.word	.LANCHOR0
+ 502 0108 00100240 		.word	1073876992
+ 503 010c 00127A00 		.word	8000000
+ 504 0110 ABAAAAAA 		.word	-1431655765
+ 505 0114 00093D00 		.word	4000000
+ 506              		.cfi_endproc
+ 507              	.LFE68:
+ 509              		.section	.rodata
+ 510              		.align	2
+ 511              		.set	.LANCHOR0,. + 0
+ 512              	.LC0:
+ 513 0000 02       		.byte	2
+ 514 0001 03       		.byte	3
+ 515 0002 04       		.byte	4
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 21
 
 
- 516 0004 06       		.byte	6
- 517 0005 07       		.byte	7
- 518 0006 08       		.byte	8
- 519 0007 09       		.byte	9
- 520 0008 0A       		.byte	10
- 521 0009 0B       		.byte	11
- 522 000a 0C       		.byte	12
- 523 000b 0D       		.byte	13
- 524 000c 0E       		.byte	14
- 525 000d 0F       		.byte	15
- 526 000e 10       		.byte	16
- 527 000f 10       		.byte	16
- 528              	.LC1:
- 529 0010 01       		.byte	1
- 530 0011 02       		.byte	2
- 531              		.text
- 532              	.Letext0:
- 533              		.file 2 "/usr/include/newlib/machine/_default_types.h"
- 534              		.file 3 "/usr/include/newlib/sys/_stdint.h"
- 535              		.file 4 "Drivers/CMSIS/Include/core_cm3.h"
- 536              		.file 5 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
- 537              		.file 6 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h"
- 538              		.file 7 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h"
- 539              		.file 8 "/usr/include/newlib/sys/lock.h"
- 540              		.file 9 "/usr/include/newlib/sys/_types.h"
- 541              		.file 10 "/usr/lib/gcc/arm-none-eabi/6.3.1/include/stddef.h"
- 542              		.file 11 "/usr/include/newlib/sys/reent.h"
- 543              		.file 12 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
- 544              		.file 13 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h"
- 545              		.file 14 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h"
- 546              		.file 15 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
-ARM GAS  /tmp/ccYqNaWA.s 			page 22
+ 516 0003 05       		.byte	5
+ 517 0004 06       		.byte	6
+ 518 0005 07       		.byte	7
+ 519 0006 08       		.byte	8
+ 520 0007 09       		.byte	9
+ 521 0008 0A       		.byte	10
+ 522 0009 0B       		.byte	11
+ 523 000a 0C       		.byte	12
+ 524 000b 0D       		.byte	13
+ 525 000c 0E       		.byte	14
+ 526 000d 0F       		.byte	15
+ 527 000e 10       		.byte	16
+ 528 000f 10       		.byte	16
+ 529              	.LC1:
+ 530 0010 01       		.byte	1
+ 531 0011 02       		.byte	2
+ 532              		.text
+ 533              	.Letext0:
+ 534              		.file 2 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 535              		.file 3 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 536              		.file 4 "Drivers/CMSIS/Include/core_cm3.h"
+ 537              		.file 5 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 538              		.file 6 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h"
+ 539              		.file 7 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h"
+ 540              		.file 8 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 541              		.file 9 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 542              		.file 10 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\lib\\gcc\\arm-none-ea
+ 543              		.file 11 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\includ
+ 544              		.file 12 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 545              		.file 13 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h"
+ 546              		.file 14 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h"
+ 547              		.file 15 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s 			page 22
 
 
 DEFINED SYMBOLS
-                            *ABS*:0000000000000000 stm32f1xx_hal_rcc_ex.c
-     /tmp/ccYqNaWA.s:16     .text.HAL_RCCEx_PeriphCLKConfig:0000000000000000 $t
-     /tmp/ccYqNaWA.s:23     .text.HAL_RCCEx_PeriphCLKConfig:0000000000000000 HAL_RCCEx_PeriphCLKConfig
-     /tmp/ccYqNaWA.s:230    .text.HAL_RCCEx_PeriphCLKConfig:0000000000000108 $d
-     /tmp/ccYqNaWA.s:237    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000000 $t
-     /tmp/ccYqNaWA.s:244    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000000 HAL_RCCEx_GetPeriphCLKConfig
-     /tmp/ccYqNaWA.s:286    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000030 $d
-     /tmp/ccYqNaWA.s:291    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000000 $t
-     /tmp/ccYqNaWA.s:298    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000000 HAL_RCCEx_GetPeriphCLKFreq
-     /tmp/ccYqNaWA.s:331    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000024 $d
-     /tmp/ccYqNaWA.s:347    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000034 $t
-     /tmp/ccYqNaWA.s:500    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000104 $d
-     /tmp/ccYqNaWA.s:509    .rodata:0000000000000000 $d
-                     .debug_frame:0000000000000010 $d
+                            *ABS*:00000000 stm32f1xx_hal_rcc_ex.c
+C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s:16     .text.HAL_RCCEx_PeriphCLKConfig:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s:23     .text.HAL_RCCEx_PeriphCLKConfig:00000000 HAL_RCCEx_PeriphCLKConfig
+C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s:230    .text.HAL_RCCEx_PeriphCLKConfig:00000108 $d
+C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s:237    .text.HAL_RCCEx_GetPeriphCLKConfig:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s:244    .text.HAL_RCCEx_GetPeriphCLKConfig:00000000 HAL_RCCEx_GetPeriphCLKConfig
+C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s:287    .text.HAL_RCCEx_GetPeriphCLKConfig:00000030 $d
+C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s:292    .text.HAL_RCCEx_GetPeriphCLKFreq:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s:299    .text.HAL_RCCEx_GetPeriphCLKFreq:00000000 HAL_RCCEx_GetPeriphCLKFreq
+C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s:332    .text.HAL_RCCEx_GetPeriphCLKFreq:00000024 $d
+C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s:348    .text.HAL_RCCEx_GetPeriphCLKFreq:00000034 $t
+C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s:501    .text.HAL_RCCEx_GetPeriphCLKFreq:00000104 $d
+C:\Users\bertz\AppData\Local\Temp\ccCE3yTO.s:510    .rodata:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_GetTick

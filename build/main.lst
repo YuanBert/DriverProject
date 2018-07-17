@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccMOsfz2.s 			page 1
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -22,7 +22,7 @@ ARM GAS  /tmp/ccMOsfz2.s 			page 1
   19              		.thumb_func
   20              		.fpu softvfp
   22              	MX_NVIC_Init:
-  23              	.LFB71:
+  23              	.LFB73:
   24              		.file 1 "Core/Src/main.c"
    1:Core/Src/main.c **** 
    2:Core/Src/main.c **** /**
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccMOsfz2.s 			page 1
   32:Core/Src/main.c ****   *    this license. 
   33:Core/Src/main.c ****   *
   34:Core/Src/main.c ****   * THIS SOFTWARE IS PROVIDED BY STMICROELECTRONICS AND CONTRIBUTORS "AS IS" 
-ARM GAS  /tmp/ccMOsfz2.s 			page 2
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s 			page 2
 
 
   35:Core/Src/main.c ****   * AND ANY EXPRESS, IMPLIED OR STATUTORY WARRANTIES, INCLUDING, BUT NOT 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccMOsfz2.s 			page 1
   89:Core/Src/main.c ****   */
   90:Core/Src/main.c **** int main(void)
   91:Core/Src/main.c **** {
-ARM GAS  /tmp/ccMOsfz2.s 			page 3
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s 			page 3
 
 
   92:Core/Src/main.c ****   /* USER CODE BEGIN 1 */
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccMOsfz2.s 			page 1
  146:Core/Src/main.c **** 
  147:Core/Src/main.c ****   }
  148:Core/Src/main.c ****   /* USER CODE END 3 */
-ARM GAS  /tmp/ccMOsfz2.s 			page 4
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s 			page 4
 
 
  149:Core/Src/main.c **** 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccMOsfz2.s 			page 1
  203:Core/Src/main.c ****     */
  204:Core/Src/main.c ****   HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK);
  205:Core/Src/main.c **** 
-ARM GAS  /tmp/ccMOsfz2.s 			page 5
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s 			page 5
 
 
  206:Core/Src/main.c ****   /* SysTick_IRQn interrupt configuration */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccMOsfz2.s 			page 1
   60              		.loc 1 224 0
   61 002c 3220     		movs	r0, #50
   62 002e FFF7FEFF 		bl	HAL_NVIC_EnableIRQ
-ARM GAS  /tmp/ccMOsfz2.s 			page 6
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s 			page 6
 
 
   63              	.LVL5:
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccMOsfz2.s 			page 1
  238:Core/Src/main.c ****   HAL_NVIC_SetPriority(DMA1_Channel5_IRQn, 5, 0);
  104              		.loc 1 238 0
  105 0072 0022     		movs	r2, #0
-ARM GAS  /tmp/ccMOsfz2.s 			page 7
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s 			page 7
 
 
  106 0074 0521     		movs	r1, #5
@@ -396,19 +396,20 @@ ARM GAS  /tmp/ccMOsfz2.s 			page 1
  131 009c 0B20     		movs	r0, #11
  132 009e FFF7FEFF 		bl	HAL_NVIC_EnableIRQ
  133              	.LVL19:
- 134 00a2 08BD     		pop	{r3, pc}
- 135              		.cfi_endproc
- 136              	.LFE71:
- 138              		.section	.text.HAL_TIM_PeriodElapsedCallback,"ax",%progbits
- 139              		.align	1
- 140              		.global	HAL_TIM_PeriodElapsedCallback
- 141              		.syntax unified
- 142              		.thumb
- 143              		.thumb_func
- 144              		.fpu softvfp
- 146              	HAL_TIM_PeriodElapsedCallback:
- 147              	.LFB72:
  246:Core/Src/main.c **** }
+ 134              		.loc 1 246 0
+ 135 00a2 08BD     		pop	{r3, pc}
+ 136              		.cfi_endproc
+ 137              	.LFE73:
+ 139              		.section	.text.HAL_TIM_PeriodElapsedCallback,"ax",%progbits
+ 140              		.align	1
+ 141              		.global	HAL_TIM_PeriodElapsedCallback
+ 142              		.syntax unified
+ 143              		.thumb
+ 144              		.thumb_func
+ 145              		.fpu softvfp
+ 147              	HAL_TIM_PeriodElapsedCallback:
+ 148              	.LFB74:
  247:Core/Src/main.c **** 
  248:Core/Src/main.c **** /* USER CODE BEGIN 4 */
  249:Core/Src/main.c **** 
@@ -417,70 +418,72 @@ ARM GAS  /tmp/ccMOsfz2.s 			page 1
  252:Core/Src/main.c **** /**
  253:Core/Src/main.c ****   * @brief  Period elapsed callback in non blocking mode
  254:Core/Src/main.c ****   * @note   This function is called  when TIM1 interrupt took place, inside
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s 			page 8
+
+
  255:Core/Src/main.c ****   * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
-ARM GAS  /tmp/ccMOsfz2.s 			page 8
-
-
  256:Core/Src/main.c ****   * a global variable "uwTick" used as application time base.
  257:Core/Src/main.c ****   * @param  htim : TIM handle
  258:Core/Src/main.c ****   * @retval None
  259:Core/Src/main.c ****   */
  260:Core/Src/main.c **** void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
  261:Core/Src/main.c **** {
- 148              		.loc 1 261 0
- 149              		.cfi_startproc
- 150              		@ args = 0, pretend = 0, frame = 0
- 151              		@ frame_needed = 0, uses_anonymous_args = 0
- 152              	.LVL20:
- 153 0000 08B5     		push	{r3, lr}
- 154              	.LCFI1:
- 155              		.cfi_def_cfa_offset 8
- 156              		.cfi_offset 3, -8
- 157              		.cfi_offset 14, -4
+ 149              		.loc 1 261 0
+ 150              		.cfi_startproc
+ 151              		@ args = 0, pretend = 0, frame = 0
+ 152              		@ frame_needed = 0, uses_anonymous_args = 0
+ 153              	.LVL20:
+ 154 0000 08B5     		push	{r3, lr}
+ 155              	.LCFI1:
+ 156              		.cfi_def_cfa_offset 8
+ 157              		.cfi_offset 3, -8
+ 158              		.cfi_offset 14, -4
  262:Core/Src/main.c ****   /* USER CODE BEGIN Callback 0 */
  263:Core/Src/main.c **** 
  264:Core/Src/main.c ****   /* USER CODE END Callback 0 */
  265:Core/Src/main.c ****   if (htim->Instance == TIM1) {
- 158              		.loc 1 265 0
- 159 0002 0268     		ldr	r2, [r0]
- 160 0004 034B     		ldr	r3, .L7
- 161 0006 9A42     		cmp	r2, r3
- 162 0008 00D0     		beq	.L6
- 163              	.LVL21:
- 164              	.L3:
- 165 000a 08BD     		pop	{r3, pc}
- 166              	.LVL22:
- 167              	.L6:
+ 159              		.loc 1 265 0
+ 160 0002 0268     		ldr	r2, [r0]
+ 161 0004 034B     		ldr	r3, .L7
+ 162 0006 9A42     		cmp	r2, r3
+ 163 0008 00D0     		beq	.L6
+ 164              	.LVL21:
+ 165              	.L3:
  266:Core/Src/main.c ****     HAL_IncTick();
- 168              		.loc 1 266 0
- 169 000c FFF7FEFF 		bl	HAL_IncTick
- 170              	.LVL23:
  267:Core/Src/main.c ****   }
  268:Core/Src/main.c ****   /* USER CODE BEGIN Callback 1 */
  269:Core/Src/main.c **** 
  270:Core/Src/main.c ****   /* USER CODE END Callback 1 */
  271:Core/Src/main.c **** }
- 171              		.loc 1 271 0
- 172 0010 FBE7     		b	.L3
- 173              	.L8:
- 174 0012 00BF     		.align	2
- 175              	.L7:
- 176 0014 002C0140 		.word	1073818624
- 177              		.cfi_endproc
- 178              	.LFE72:
- 180              		.section	.text._Error_Handler,"ax",%progbits
- 181              		.align	1
- 182              		.global	_Error_Handler
- 183              		.syntax unified
- 184              		.thumb
- 185              		.thumb_func
- 186              		.fpu softvfp
- 188              	_Error_Handler:
- 189              	.LFB73:
+ 166              		.loc 1 271 0
+ 167 000a 08BD     		pop	{r3, pc}
+ 168              	.LVL22:
+ 169              	.L6:
+ 266:Core/Src/main.c ****     HAL_IncTick();
+ 170              		.loc 1 266 0
+ 171 000c FFF7FEFF 		bl	HAL_IncTick
+ 172              	.LVL23:
+ 173              		.loc 1 271 0
+ 174 0010 FBE7     		b	.L3
+ 175              	.L8:
+ 176 0012 00BF     		.align	2
+ 177              	.L7:
+ 178 0014 002C0140 		.word	1073818624
+ 179              		.cfi_endproc
+ 180              	.LFE74:
+ 182              		.section	.text._Error_Handler,"ax",%progbits
+ 183              		.align	1
+ 184              		.global	_Error_Handler
+ 185              		.syntax unified
+ 186              		.thumb
+ 187              		.thumb_func
+ 188              		.fpu softvfp
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s 			page 9
+
+
+ 190              	_Error_Handler:
+ 191              	.LFB75:
  272:Core/Src/main.c **** 
-ARM GAS  /tmp/ccMOsfz2.s 			page 9
-
-
  273:Core/Src/main.c **** /**
  274:Core/Src/main.c ****   * @brief  This function is executed in case of error occurrence.
  275:Core/Src/main.c ****   * @param  file: The file name as string.
@@ -489,323 +492,322 @@ ARM GAS  /tmp/ccMOsfz2.s 			page 1
  278:Core/Src/main.c ****   */
  279:Core/Src/main.c **** void _Error_Handler(char *file, int line)
  280:Core/Src/main.c **** {
- 190              		.loc 1 280 0
- 191              		.cfi_startproc
- 192              		@ Volatile: function does not return.
- 193              		@ args = 0, pretend = 0, frame = 0
- 194              		@ frame_needed = 0, uses_anonymous_args = 0
- 195              		@ link register save eliminated.
- 196              	.LVL24:
- 197              	.L10:
- 198 0000 FEE7     		b	.L10
- 199              		.cfi_endproc
- 200              	.LFE73:
- 202              		.section	.text.SystemClock_Config,"ax",%progbits
- 203              		.align	1
- 204              		.global	SystemClock_Config
- 205              		.syntax unified
- 206              		.thumb
- 207              		.thumb_func
- 208              		.fpu softvfp
- 210              	SystemClock_Config:
- 211              	.LFB70:
+ 192              		.loc 1 280 0
+ 193              		.cfi_startproc
+ 194              		@ Volatile: function does not return.
+ 195              		@ args = 0, pretend = 0, frame = 0
+ 196              		@ frame_needed = 0, uses_anonymous_args = 0
+ 197              		@ link register save eliminated.
+ 198              	.LVL24:
+ 199              	.L10:
+ 200 0000 FEE7     		b	.L10
+ 201              		.cfi_endproc
+ 202              	.LFE75:
+ 204              		.section	.text.SystemClock_Config,"ax",%progbits
+ 205              		.align	1
+ 206              		.global	SystemClock_Config
+ 207              		.syntax unified
+ 208              		.thumb
+ 209              		.thumb_func
+ 210              		.fpu softvfp
+ 212              	SystemClock_Config:
+ 213              	.LFB72:
  157:Core/Src/main.c **** 
- 212              		.loc 1 157 0
- 213              		.cfi_startproc
- 214              		@ args = 0, pretend = 0, frame = 88
- 215              		@ frame_needed = 0, uses_anonymous_args = 0
+ 214              		.loc 1 157 0
+ 215              		.cfi_startproc
+ 216              		@ args = 0, pretend = 0, frame = 88
+ 217              		@ frame_needed = 0, uses_anonymous_args = 0
  157:Core/Src/main.c **** 
- 216              		.loc 1 157 0
- 217 0000 00B5     		push	{lr}
- 218              	.LCFI2:
- 219              		.cfi_def_cfa_offset 4
- 220              		.cfi_offset 14, -4
- 221 0002 97B0     		sub	sp, sp, #92
- 222              	.LCFI3:
- 223              		.cfi_def_cfa_offset 96
+ 218              		.loc 1 157 0
+ 219 0000 00B5     		push	{lr}
+ 220              	.LCFI2:
+ 221              		.cfi_def_cfa_offset 4
+ 222              		.cfi_offset 14, -4
+ 223 0002 97B0     		sub	sp, sp, #92
+ 224              	.LCFI3:
+ 225              		.cfi_def_cfa_offset 96
  165:Core/Src/main.c ****   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
- 224              		.loc 1 165 0
- 225 0004 0122     		movs	r2, #1
- 226 0006 0C92     		str	r2, [sp, #48]
+ 226              		.loc 1 165 0
+ 227 0004 0122     		movs	r2, #1
+ 228 0006 0C92     		str	r2, [sp, #48]
  166:Core/Src/main.c ****   RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
- 227              		.loc 1 166 0
- 228 0008 4FF48033 		mov	r3, #65536
- 229 000c 0D93     		str	r3, [sp, #52]
+ 229              		.loc 1 166 0
+ 230 0008 4FF48033 		mov	r3, #65536
+ 231 000c 0D93     		str	r3, [sp, #52]
  167:Core/Src/main.c ****   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
- 230              		.loc 1 167 0
- 231 000e 0021     		movs	r1, #0
- 232 0010 0E91     		str	r1, [sp, #56]
+ 232              		.loc 1 167 0
+ 233 000e 0021     		movs	r1, #0
+ 234 0010 0E91     		str	r1, [sp, #56]
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s 			page 10
+
+
  168:Core/Src/main.c ****   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
- 233              		.loc 1 168 0
- 234 0012 1092     		str	r2, [sp, #64]
-ARM GAS  /tmp/ccMOsfz2.s 			page 10
-
-
+ 235              		.loc 1 168 0
+ 236 0012 1092     		str	r2, [sp, #64]
  169:Core/Src/main.c ****   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
- 235              		.loc 1 169 0
- 236 0014 0222     		movs	r2, #2
- 237 0016 1392     		str	r2, [sp, #76]
+ 237              		.loc 1 169 0
+ 238 0014 0222     		movs	r2, #2
+ 239 0016 1392     		str	r2, [sp, #76]
  170:Core/Src/main.c ****   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
- 238              		.loc 1 170 0
- 239 0018 1493     		str	r3, [sp, #80]
+ 240              		.loc 1 170 0
+ 241 0018 1493     		str	r3, [sp, #80]
  171:Core/Src/main.c ****   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
- 240              		.loc 1 171 0
- 241 001a 4FF4E013 		mov	r3, #1835008
- 242 001e 1593     		str	r3, [sp, #84]
+ 242              		.loc 1 171 0
+ 243 001a 4FF4E013 		mov	r3, #1835008
+ 244 001e 1593     		str	r3, [sp, #84]
  172:Core/Src/main.c ****   {
- 243              		.loc 1 172 0
- 244 0020 0CA8     		add	r0, sp, #48
- 245 0022 FFF7FEFF 		bl	HAL_RCC_OscConfig
- 246              	.LVL25:
- 247 0026 50BB     		cbnz	r0, .L16
+ 245              		.loc 1 172 0
+ 246 0020 0CA8     		add	r0, sp, #48
+ 247 0022 FFF7FEFF 		bl	HAL_RCC_OscConfig
+ 248              	.LVL25:
+ 249 0026 50BB     		cbnz	r0, .L16
  179:Core/Src/main.c ****                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
- 248              		.loc 1 179 0
- 249 0028 0F23     		movs	r3, #15
- 250 002a 0793     		str	r3, [sp, #28]
+ 250              		.loc 1 179 0
+ 251 0028 0F23     		movs	r3, #15
+ 252 002a 0793     		str	r3, [sp, #28]
  181:Core/Src/main.c ****   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
- 251              		.loc 1 181 0
- 252 002c 0221     		movs	r1, #2
- 253 002e 0891     		str	r1, [sp, #32]
+ 253              		.loc 1 181 0
+ 254 002c 0221     		movs	r1, #2
+ 255 002e 0891     		str	r1, [sp, #32]
  182:Core/Src/main.c ****   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
- 254              		.loc 1 182 0
- 255 0030 0023     		movs	r3, #0
- 256 0032 0993     		str	r3, [sp, #36]
+ 256              		.loc 1 182 0
+ 257 0030 0023     		movs	r3, #0
+ 258 0032 0993     		str	r3, [sp, #36]
  183:Core/Src/main.c ****   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
- 257              		.loc 1 183 0
- 258 0034 4FF48062 		mov	r2, #1024
- 259 0038 0A92     		str	r2, [sp, #40]
+ 259              		.loc 1 183 0
+ 260 0034 4FF48062 		mov	r2, #1024
+ 261 0038 0A92     		str	r2, [sp, #40]
  184:Core/Src/main.c **** 
- 260              		.loc 1 184 0
- 261 003a 0B93     		str	r3, [sp, #44]
+ 262              		.loc 1 184 0
+ 263 003a 0B93     		str	r3, [sp, #44]
  186:Core/Src/main.c ****   {
- 262              		.loc 1 186 0
- 263 003c 07A8     		add	r0, sp, #28
- 264 003e FFF7FEFF 		bl	HAL_RCC_ClockConfig
- 265              	.LVL26:
- 266 0042 00BB     		cbnz	r0, .L17
+ 264              		.loc 1 186 0
+ 265 003c 07A8     		add	r0, sp, #28
+ 266 003e FFF7FEFF 		bl	HAL_RCC_ClockConfig
+ 267              	.LVL26:
+ 268 0042 00BB     		cbnz	r0, .L17
  191:Core/Src/main.c ****   PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV6;
- 267              		.loc 1 191 0
- 268 0044 0223     		movs	r3, #2
- 269 0046 0193     		str	r3, [sp, #4]
+ 269              		.loc 1 191 0
+ 270 0044 0223     		movs	r3, #2
+ 271 0046 0193     		str	r3, [sp, #4]
  192:Core/Src/main.c ****   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
- 270              		.loc 1 192 0
- 271 0048 4FF40043 		mov	r3, #32768
- 272 004c 0393     		str	r3, [sp, #12]
+ 272              		.loc 1 192 0
+ 273 0048 4FF40043 		mov	r3, #32768
+ 274 004c 0393     		str	r3, [sp, #12]
  193:Core/Src/main.c ****   {
- 273              		.loc 1 193 0
- 274 004e 01A8     		add	r0, sp, #4
- 275 0050 FFF7FEFF 		bl	HAL_RCCEx_PeriphCLKConfig
- 276              	.LVL27:
- 277 0054 D8B9     		cbnz	r0, .L18
+ 275              		.loc 1 193 0
+ 276 004e 01A8     		add	r0, sp, #4
+ 277 0050 FFF7FEFF 		bl	HAL_RCCEx_PeriphCLKConfig
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s 			page 11
+
+
+ 278              	.LVL27:
+ 279 0054 D8B9     		cbnz	r0, .L18
  200:Core/Src/main.c **** 
-ARM GAS  /tmp/ccMOsfz2.s 			page 11
-
-
- 278              		.loc 1 200 0
- 279 0056 FFF7FEFF 		bl	HAL_RCC_GetHCLKFreq
- 280              	.LVL28:
- 281 005a 0F4B     		ldr	r3, .L19
- 282 005c A3FB0030 		umull	r3, r0, r3, r0
- 283 0060 8009     		lsrs	r0, r0, #6
- 284 0062 FFF7FEFF 		bl	HAL_SYSTICK_Config
- 285              	.LVL29:
+ 280              		.loc 1 200 0
+ 281 0056 FFF7FEFF 		bl	HAL_RCC_GetHCLKFreq
+ 282              	.LVL28:
+ 283 005a 0F4B     		ldr	r3, .L19
+ 284 005c A3FB0030 		umull	r3, r0, r3, r0
+ 285 0060 8009     		lsrs	r0, r0, #6
+ 286 0062 FFF7FEFF 		bl	HAL_SYSTICK_Config
+ 287              	.LVL29:
  204:Core/Src/main.c **** 
- 286              		.loc 1 204 0
- 287 0066 0420     		movs	r0, #4
- 288 0068 FFF7FEFF 		bl	HAL_SYSTICK_CLKSourceConfig
- 289              	.LVL30:
+ 288              		.loc 1 204 0
+ 289 0066 0420     		movs	r0, #4
+ 290 0068 FFF7FEFF 		bl	HAL_SYSTICK_CLKSourceConfig
+ 291              	.LVL30:
  207:Core/Src/main.c **** }
- 290              		.loc 1 207 0
- 291 006c 0022     		movs	r2, #0
- 292 006e 0F21     		movs	r1, #15
- 293 0070 4FF0FF30 		mov	r0, #-1
- 294 0074 FFF7FEFF 		bl	HAL_NVIC_SetPriority
- 295              	.LVL31:
+ 292              		.loc 1 207 0
+ 293 006c 0022     		movs	r2, #0
+ 294 006e 0F21     		movs	r1, #15
+ 295 0070 4FF0FF30 		mov	r0, #-1
+ 296 0074 FFF7FEFF 		bl	HAL_NVIC_SetPriority
+ 297              	.LVL31:
  208:Core/Src/main.c **** 
- 296              		.loc 1 208 0
- 297 0078 17B0     		add	sp, sp, #92
- 298              	.LCFI4:
- 299              		.cfi_remember_state
- 300              		.cfi_def_cfa_offset 4
- 301              		@ sp needed
- 302 007a 5DF804FB 		ldr	pc, [sp], #4
- 303              	.L16:
- 304              	.LCFI5:
- 305              		.cfi_restore_state
+ 298              		.loc 1 208 0
+ 299 0078 17B0     		add	sp, sp, #92
+ 300              	.LCFI4:
+ 301              		.cfi_remember_state
+ 302              		.cfi_def_cfa_offset 4
+ 303              		@ sp needed
+ 304 007a 5DF804FB 		ldr	pc, [sp], #4
+ 305              	.L16:
+ 306              	.LCFI5:
+ 307              		.cfi_restore_state
  174:Core/Src/main.c ****   }
- 306              		.loc 1 174 0
- 307 007e AE21     		movs	r1, #174
- 308 0080 0648     		ldr	r0, .L19+4
- 309 0082 FFF7FEFF 		bl	_Error_Handler
- 310              	.LVL32:
- 311              	.L17:
+ 308              		.loc 1 174 0
+ 309 007e AE21     		movs	r1, #174
+ 310 0080 0648     		ldr	r0, .L19+4
+ 311 0082 FFF7FEFF 		bl	_Error_Handler
+ 312              	.LVL32:
+ 313              	.L17:
  188:Core/Src/main.c ****   }
- 312              		.loc 1 188 0
- 313 0086 BC21     		movs	r1, #188
- 314 0088 0448     		ldr	r0, .L19+4
- 315 008a FFF7FEFF 		bl	_Error_Handler
- 316              	.LVL33:
- 317              	.L18:
+ 314              		.loc 1 188 0
+ 315 0086 BC21     		movs	r1, #188
+ 316 0088 0448     		ldr	r0, .L19+4
+ 317 008a FFF7FEFF 		bl	_Error_Handler
+ 318              	.LVL33:
+ 319              	.L18:
  195:Core/Src/main.c ****   }
- 318              		.loc 1 195 0
- 319 008e C321     		movs	r1, #195
- 320 0090 0248     		ldr	r0, .L19+4
- 321 0092 FFF7FEFF 		bl	_Error_Handler
- 322              	.LVL34:
- 323              	.L20:
- 324 0096 00BF     		.align	2
- 325              	.L19:
- 326 0098 D34D6210 		.word	274877907
- 327 009c 00000000 		.word	.LC0
- 328              		.cfi_endproc
-ARM GAS  /tmp/ccMOsfz2.s 			page 12
+ 320              		.loc 1 195 0
+ 321 008e C321     		movs	r1, #195
+ 322 0090 0248     		ldr	r0, .L19+4
+ 323 0092 FFF7FEFF 		bl	_Error_Handler
+ 324              	.LVL34:
+ 325              	.L20:
+ 326 0096 00BF     		.align	2
+ 327              	.L19:
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s 			page 12
 
 
- 329              	.LFE70:
- 331              		.section	.text.main,"ax",%progbits
- 332              		.align	1
- 333              		.global	main
- 334              		.syntax unified
- 335              		.thumb
- 336              		.thumb_func
- 337              		.fpu softvfp
- 339              	main:
- 340              	.LFB69:
+ 328 0098 D34D6210 		.word	274877907
+ 329 009c 00000000 		.word	.LC0
+ 330              		.cfi_endproc
+ 331              	.LFE72:
+ 333              		.section	.text.main,"ax",%progbits
+ 334              		.align	1
+ 335              		.global	main
+ 336              		.syntax unified
+ 337              		.thumb
+ 338              		.thumb_func
+ 339              		.fpu softvfp
+ 341              	main:
+ 342              	.LFB71:
   91:Core/Src/main.c ****   /* USER CODE BEGIN 1 */
- 341              		.loc 1 91 0
- 342              		.cfi_startproc
- 343              		@ Volatile: function does not return.
- 344              		@ args = 0, pretend = 0, frame = 0
- 345              		@ frame_needed = 0, uses_anonymous_args = 0
- 346 0000 08B5     		push	{r3, lr}
- 347              	.LCFI6:
- 348              		.cfi_def_cfa_offset 8
- 349              		.cfi_offset 3, -8
- 350              		.cfi_offset 14, -4
+ 343              		.loc 1 91 0
+ 344              		.cfi_startproc
+ 345              		@ Volatile: function does not return.
+ 346              		@ args = 0, pretend = 0, frame = 0
+ 347              		@ frame_needed = 0, uses_anonymous_args = 0
+ 348 0000 08B5     		push	{r3, lr}
+ 349              	.LCFI6:
+ 350              		.cfi_def_cfa_offset 8
+ 351              		.cfi_offset 3, -8
+ 352              		.cfi_offset 14, -4
   99:Core/Src/main.c **** 
- 351              		.loc 1 99 0
- 352 0002 FFF7FEFF 		bl	HAL_Init
- 353              	.LVL35:
+ 353              		.loc 1 99 0
+ 354 0002 FFF7FEFF 		bl	HAL_Init
+ 355              	.LVL35:
  106:Core/Src/main.c **** 
- 354              		.loc 1 106 0
- 355 0006 FFF7FEFF 		bl	SystemClock_Config
- 356              	.LVL36:
+ 356              		.loc 1 106 0
+ 357 0006 FFF7FEFF 		bl	SystemClock_Config
+ 358              	.LVL36:
  113:Core/Src/main.c ****   MX_DMA_Init();
- 357              		.loc 1 113 0
- 358 000a FFF7FEFF 		bl	MX_GPIO_Init
- 359              	.LVL37:
+ 359              		.loc 1 113 0
+ 360 000a FFF7FEFF 		bl	MX_GPIO_Init
+ 361              	.LVL37:
  114:Core/Src/main.c ****   MX_USART1_UART_Init();
- 360              		.loc 1 114 0
- 361 000e FFF7FEFF 		bl	MX_DMA_Init
- 362              	.LVL38:
+ 362              		.loc 1 114 0
+ 363 000e FFF7FEFF 		bl	MX_DMA_Init
+ 364              	.LVL38:
  115:Core/Src/main.c ****   MX_USART2_UART_Init();
- 363              		.loc 1 115 0
- 364 0012 FFF7FEFF 		bl	MX_USART1_UART_Init
- 365              	.LVL39:
+ 365              		.loc 1 115 0
+ 366 0012 FFF7FEFF 		bl	MX_USART1_UART_Init
+ 367              	.LVL39:
  116:Core/Src/main.c ****   MX_USART3_UART_Init();
- 366              		.loc 1 116 0
- 367 0016 FFF7FEFF 		bl	MX_USART2_UART_Init
- 368              	.LVL40:
+ 368              		.loc 1 116 0
+ 369 0016 FFF7FEFF 		bl	MX_USART2_UART_Init
+ 370              	.LVL40:
  117:Core/Src/main.c ****   MX_SPI1_Init();
- 369              		.loc 1 117 0
- 370 001a FFF7FEFF 		bl	MX_USART3_UART_Init
- 371              	.LVL41:
+ 371              		.loc 1 117 0
+ 372 001a FFF7FEFF 		bl	MX_USART3_UART_Init
+ 373              	.LVL41:
  118:Core/Src/main.c ****   MX_ADC1_Init();
- 372              		.loc 1 118 0
- 373 001e FFF7FEFF 		bl	MX_SPI1_Init
- 374              	.LVL42:
+ 374              		.loc 1 118 0
+ 375 001e FFF7FEFF 		bl	MX_SPI1_Init
+ 376              	.LVL42:
  119:Core/Src/main.c ****   MX_TIM3_Init();
- 375              		.loc 1 119 0
- 376 0022 FFF7FEFF 		bl	MX_ADC1_Init
- 377              	.LVL43:
-ARM GAS  /tmp/ccMOsfz2.s 			page 13
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s 			page 13
 
 
+ 377              		.loc 1 119 0
+ 378 0022 FFF7FEFF 		bl	MX_ADC1_Init
+ 379              	.LVL43:
  120:Core/Src/main.c ****   MX_TIM4_Init();
- 378              		.loc 1 120 0
- 379 0026 FFF7FEFF 		bl	MX_TIM3_Init
- 380              	.LVL44:
+ 380              		.loc 1 120 0
+ 381 0026 FFF7FEFF 		bl	MX_TIM3_Init
+ 382              	.LVL44:
  121:Core/Src/main.c ****   MX_TIM5_Init();
- 381              		.loc 1 121 0
- 382 002a FFF7FEFF 		bl	MX_TIM4_Init
- 383              	.LVL45:
+ 383              		.loc 1 121 0
+ 384 002a FFF7FEFF 		bl	MX_TIM4_Init
+ 385              	.LVL45:
  122:Core/Src/main.c **** 
- 384              		.loc 1 122 0
- 385 002e FFF7FEFF 		bl	MX_TIM5_Init
- 386              	.LVL46:
+ 386              		.loc 1 122 0
+ 387 002e FFF7FEFF 		bl	MX_TIM5_Init
+ 388              	.LVL46:
  125:Core/Src/main.c ****   /* USER CODE BEGIN 2 */
- 387              		.loc 1 125 0
- 388 0032 FFF7FEFF 		bl	MX_NVIC_Init
- 389              	.LVL47:
+ 389              		.loc 1 125 0
+ 390 0032 FFF7FEFF 		bl	MX_NVIC_Init
+ 391              	.LVL47:
  131:Core/Src/main.c **** 
- 390              		.loc 1 131 0
- 391 0036 FFF7FEFF 		bl	MX_FREERTOS_Init
- 392              	.LVL48:
+ 392              		.loc 1 131 0
+ 393 0036 FFF7FEFF 		bl	MX_FREERTOS_Init
+ 394              	.LVL48:
  134:Core/Src/main.c ****   
- 393              		.loc 1 134 0
- 394 003a FFF7FEFF 		bl	osKernelStart
- 395              	.LVL49:
- 396              	.L22:
- 397 003e FEE7     		b	.L22
- 398              		.cfi_endproc
- 399              	.LFE69:
- 401              		.section	.rodata.SystemClock_Config.str1.4,"aMS",%progbits,1
- 402              		.align	2
- 403              	.LC0:
- 404 0000 436F7265 		.ascii	"Core/Src/main.c\000"
- 404      2F537263 
- 404      2F6D6169 
- 404      6E2E6300 
- 405              		.text
- 406              	.Letext0:
- 407              		.file 2 "/usr/include/newlib/machine/_default_types.h"
- 408              		.file 3 "/usr/include/newlib/sys/_stdint.h"
- 409              		.file 4 "Drivers/CMSIS/Include/core_cm3.h"
- 410              		.file 5 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
- 411              		.file 6 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h"
- 412              		.file 7 "/usr/include/newlib/sys/lock.h"
- 413              		.file 8 "/usr/include/newlib/sys/_types.h"
- 414              		.file 9 "/usr/lib/gcc/arm-none-eabi/6.3.1/include/stddef.h"
- 415              		.file 10 "/usr/include/newlib/sys/reent.h"
- 416              		.file 11 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
- 417              		.file 12 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h"
- 418              		.file 13 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h"
- 419              		.file 14 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
- 420              		.file 15 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h"
- 421              		.file 16 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"
- 422              		.file 17 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
- 423              		.file 18 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h"
- 424              		.file 19 "Core/Inc/adc.h"
- 425              		.file 20 "Core/Inc/spi.h"
- 426              		.file 21 "Core/Inc/tim.h"
-ARM GAS  /tmp/ccMOsfz2.s 			page 14
+ 395              		.loc 1 134 0
+ 396 003a FFF7FEFF 		bl	osKernelStart
+ 397              	.LVL49:
+ 398              	.L22:
+ 399 003e FEE7     		b	.L22
+ 400              		.cfi_endproc
+ 401              	.LFE71:
+ 403              		.section	.rodata.SystemClock_Config.str1.4,"aMS",%progbits,1
+ 404              		.align	2
+ 405              	.LC0:
+ 406 0000 436F7265 		.ascii	"Core/Src/main.c\000"
+ 406      2F537263 
+ 406      2F6D6169 
+ 406      6E2E6300 
+ 407              		.text
+ 408              	.Letext0:
+ 409              		.file 2 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 410              		.file 3 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 411              		.file 4 "Drivers/CMSIS/Include/core_cm3.h"
+ 412              		.file 5 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 413              		.file 6 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h"
+ 414              		.file 7 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 415              		.file 8 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 416              		.file 9 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\lib\\gcc\\arm-none-eab
+ 417              		.file 10 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\includ
+ 418              		.file 11 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 419              		.file 12 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h"
+ 420              		.file 13 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h"
+ 421              		.file 14 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 422              		.file 15 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h"
+ 423              		.file 16 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"
+ 424              		.file 17 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 425              		.file 18 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h"
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s 			page 14
 
 
- 427              		.file 22 "Core/Inc/usart.h"
- 428              		.file 23 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
- 429              		.file 24 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h"
- 430              		.file 25 "Core/Inc/gpio.h"
- 431              		.file 26 "Core/Inc/dma.h"
- 432              		.file 27 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h"
-ARM GAS  /tmp/ccMOsfz2.s 			page 15
+ 426              		.file 19 "Core/Inc/adc.h"
+ 427              		.file 20 "Core/Inc/spi.h"
+ 428              		.file 21 "Core/Inc/tim.h"
+ 429              		.file 22 "Core/Inc/usart.h"
+ 430              		.file 23 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 431              		.file 24 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h"
+ 432              		.file 25 "Core/Inc/gpio.h"
+ 433              		.file 26 "Core/Inc/dma.h"
+ 434              		.file 27 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h"
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s 			page 15
 
 
 DEFINED SYMBOLS
-                            *ABS*:0000000000000000 main.c
-     /tmp/ccMOsfz2.s:16     .text.MX_NVIC_Init:0000000000000000 $t
-     /tmp/ccMOsfz2.s:22     .text.MX_NVIC_Init:0000000000000000 MX_NVIC_Init
-     /tmp/ccMOsfz2.s:139    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 $t
-     /tmp/ccMOsfz2.s:146    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 HAL_TIM_PeriodElapsedCallback
-     /tmp/ccMOsfz2.s:176    .text.HAL_TIM_PeriodElapsedCallback:0000000000000014 $d
-     /tmp/ccMOsfz2.s:181    .text._Error_Handler:0000000000000000 $t
-     /tmp/ccMOsfz2.s:188    .text._Error_Handler:0000000000000000 _Error_Handler
-     /tmp/ccMOsfz2.s:203    .text.SystemClock_Config:0000000000000000 $t
-     /tmp/ccMOsfz2.s:210    .text.SystemClock_Config:0000000000000000 SystemClock_Config
-     /tmp/ccMOsfz2.s:326    .text.SystemClock_Config:0000000000000098 $d
-     /tmp/ccMOsfz2.s:332    .text.main:0000000000000000 $t
-     /tmp/ccMOsfz2.s:339    .text.main:0000000000000000 main
-     /tmp/ccMOsfz2.s:402    .rodata.SystemClock_Config.str1.4:0000000000000000 $d
-                     .debug_frame:0000000000000010 $d
+                            *ABS*:00000000 main.c
+C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s:16     .text.MX_NVIC_Init:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s:22     .text.MX_NVIC_Init:00000000 MX_NVIC_Init
+C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s:140    .text.HAL_TIM_PeriodElapsedCallback:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s:147    .text.HAL_TIM_PeriodElapsedCallback:00000000 HAL_TIM_PeriodElapsedCallback
+C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s:178    .text.HAL_TIM_PeriodElapsedCallback:00000014 $d
+C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s:183    .text._Error_Handler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s:190    .text._Error_Handler:00000000 _Error_Handler
+C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s:205    .text.SystemClock_Config:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s:212    .text.SystemClock_Config:00000000 SystemClock_Config
+C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s:328    .text.SystemClock_Config:00000098 $d
+C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s:334    .text.main:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s:341    .text.main:00000000 main
+C:\Users\bertz\AppData\Local\Temp\ccUPDr6a.s:404    .rodata.SystemClock_Config.str1.4:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_NVIC_SetPriority

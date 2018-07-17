@@ -52,14 +52,17 @@
 #include "cmsis_os.h"
 
 /* USER CODE BEGIN Includes */     
-
+#include "stdio.h"
 /* USER CODE END Includes */
 
 /* Variables -----------------------------------------------------------------*/
 osThreadId defaultTaskHandle;
 
 /* USER CODE BEGIN Variables */
-
+osThreadId scanBSPATaskHandle;
+osThreadId scanBSPBTaskHandle;
+osThreadId scanBSPCTaskHandle;
+osThreadId scanCoreBoardTaskHandle;
 /* USER CODE END Variables */
 
 /* Function prototypes -------------------------------------------------------*/
@@ -68,6 +71,11 @@ void StartDefaultTask(void const * argument);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
 /* USER CODE BEGIN FunctionPrototypes */
+void StartScanBSPATask(void const * argument);
+void StartScanBSPBTask(void const * argument);
+void StartScanBSPCTask(void const * argument);
+void StartScanCoreBoardTask(void const * argument);
+
 
 /* USER CODE END FunctionPrototypes */
 
@@ -94,11 +102,49 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* definition and creation of defaultTask */
-  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
-  defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+  //osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
+  //defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
+  
+  xTaskCreate((TaskFunction_t)StartScanBSPATask,
+  				(const char *)"scanBSPATask",
+  				(uint16_t    )128,
+  				(void *		 )NULL,
+  				(UBaseType_t )0,
+  				(TaskHandle_t*)&scanBSPATaskHandle);
+  
+  xTaskCreate((TaskFunction_t)StartScanBSPBTask,
+  				(const char *)"scanBSPBTask",
+  				(uint16_t    )128,
+  				(void *		 )NULL,
+  				(UBaseType_t )1,
+  				(TaskHandle_t*)&scanBSPBTaskHandle);
+  /*
+  xTaskCreate((TaskFunction_t)StartScanBSPCTask,
+  				(const char *)"scanBSPCTask",
+  				(uint16_t    )128,
+  				(void *		 )NULL,
+  				(UBaseType_t )1,
+  				(TaskHandle_t*)&scanBSPCTaskHandle);
+  */
+  xTaskCreate((TaskFunction_t)StartScanCoreBoardTask,
+  				(const char *)"scanCoreBoardTask",
+  				(uint16_t    )128,
+  				(void *		 )NULL,
+  				(UBaseType_t )2,
+  				(TaskHandle_t*)&scanCoreBoardTaskHandle);
+  /*
+  osThreadDef(scanBSPATask,StartScanBSPATask,osPriorityAboveNormal,0,128);
+  scanBSPATaskHandle = osThreadCreate(osThread(scanBSPATask), NULL);
+  
+  osThreadDef(scanBSPBTask,StartScanBSPBTask,osPriorityAboveNormal,0,128);
+  scanBSPBTaskHandle = osThreadCreate(osThread(scanBSPBTask), NULL);
+  
+  osThreadDef(scanCoreBoardTask, StartScanCoreBoardTask, osPriorityHigh,0,128);
+  scanCoreBoardTaskHandle = osThreadCreate(osThread(scanCoreBoardTask), NULL);
+  */
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_QUEUES */
@@ -114,13 +160,45 @@ void StartDefaultTask(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+    osDelay(500);
+	printf("Welcome to USE FreeRTOS \r\n");
   }
   /* USER CODE END StartDefaultTask */
 }
 
 /* USER CODE BEGIN Application */
-     
+void StartScanBSPATask(void const * argument)
+{
+	for(;;)
+	{
+		vTaskDelay(500);
+		printf("ScanBSPA \r\n");
+	}
+}
+void StartScanBSPBTask(void const * argument)
+{
+	for(;;)
+	{
+		vTaskDelay(500);
+		printf("ScanBSPB \r\n");
+	}
+}
+void StartScanBSPCTask(void const * argument)
+{
+	for(;;)
+	{
+		vTaskDelay(500);
+		printf("ScanBSPC \r\n");
+	}
+}
+void StartScanCoreBoardTask(void const * argument)
+{
+	for(;;)
+	{
+		vTaskDelay(500);
+		printf("ScanCoreBoard \r\n");
+	}
+}
 /* USER CODE END Application */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc9Kr940.s 			page 1
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -23,7 +23,7 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
   20              		.thumb_func
   21              		.fpu softvfp
   23              	MX_TIM4_Init:
-  24              	.LFB65:
+  24              	.LFB67:
   25              		.file 1 "Core/Src/tim.c"
    1:Core/Src/tim.c **** /**
    2:Core/Src/tim.c ****   ******************************************************************************
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
   31:Core/Src/tim.c ****   *    this license is void and will automatically terminate your rights under 
   32:Core/Src/tim.c ****   *    this license. 
   33:Core/Src/tim.c ****   *
-ARM GAS  /tmp/cc9Kr940.s 			page 2
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s 			page 2
 
 
   34:Core/Src/tim.c ****   * THIS SOFTWARE IS PROVIDED BY STMICROELECTRONICS AND CONTRIBUTORS "AS IS" 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
   88:Core/Src/tim.c ****   }
   89:Core/Src/tim.c **** 
   90:Core/Src/tim.c ****   sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
-ARM GAS  /tmp/cc9Kr940.s 			page 3
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s 			page 3
 
 
   91:Core/Src/tim.c ****   sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
   50              		.loc 1 120 0
   51 0014 8361     		str	r3, [r0, #24]
  121:Core/Src/tim.c ****   if (HAL_TIM_Base_Init(&htim4) != HAL_OK)
-ARM GAS  /tmp/cc9Kr940.s 			page 4
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s 			page 4
 
 
   52              		.loc 1 121 0
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
   88              		.cfi_restore_state
  123:Core/Src/tim.c ****   }
   89              		.loc 1 123 0
-ARM GAS  /tmp/cc9Kr940.s 			page 5
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s 			page 5
 
 
   90 0044 7B21     		movs	r1, #123
@@ -270,7 +270,7 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
  114 0068 00080040 		.word	1073743872
  115 006c 00000000 		.word	.LC0
  116              		.cfi_endproc
- 117              	.LFE65:
+ 117              	.LFE67:
  119              		.section	.text.MX_TIM5_Init,"ax",%progbits
  120              		.align	1
  121              		.global	MX_TIM5_Init
@@ -279,7 +279,7 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
  124              		.thumb_func
  125              		.fpu softvfp
  127              	MX_TIM5_Init:
- 128              	.LFB66:
+ 128              	.LFB68:
  140:Core/Src/tim.c **** /* TIM5 init function */
  141:Core/Src/tim.c **** void MX_TIM5_Init(void)
  142:Core/Src/tim.c **** {
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
  144:Core/Src/tim.c ****   TIM_MasterConfigTypeDef sMasterConfig;
  145:Core/Src/tim.c **** 
  146:Core/Src/tim.c ****   htim5.Instance = TIM5;
-ARM GAS  /tmp/cc9Kr940.s 			page 6
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s 			page 6
 
 
  140              		.loc 1 146 0
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
  175              		.loc 1 165 0
  176 0034 6946     		mov	r1, sp
  177 0036 0B48     		ldr	r0, .L19
-ARM GAS  /tmp/cc9Kr940.s 			page 7
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s 			page 7
 
 
  178 0038 FFF7FEFF 		bl	HAL_TIMEx_MasterConfigSynchronization
@@ -411,19 +411,19 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
  217 0068 000C0040 		.word	1073744896
  218 006c 00000000 		.word	.LC0
  219              		.cfi_endproc
- 220              	.LFE66:
+ 220              	.LFE68:
  222              		.section	.text.HAL_TIM_Base_MspInit,"ax",%progbits
  223              		.align	1
  224              		.global	HAL_TIM_Base_MspInit
  225              		.syntax unified
  226              		.thumb
  227              		.thumb_func
-ARM GAS  /tmp/cc9Kr940.s 			page 8
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s 			page 8
 
 
  228              		.fpu softvfp
  230              	HAL_TIM_Base_MspInit:
- 231              	.LFB67:
+ 231              	.LFB69:
  171:Core/Src/tim.c **** 
  172:Core/Src/tim.c **** void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* tim_baseHandle)
  173:Core/Src/tim.c **** {
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
  199:Core/Src/tim.c ****   /* USER CODE BEGIN TIM5_MspInit 0 */
  200:Core/Src/tim.c **** 
  201:Core/Src/tim.c ****   /* USER CODE END TIM5_MspInit 0 */
-ARM GAS  /tmp/cc9Kr940.s 			page 9
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s 			page 9
 
 
  202:Core/Src/tim.c ****     /* TIM5 clock enable */
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
  299 0056 0393     		str	r3, [sp, #12]
  300 0058 039B     		ldr	r3, [sp, #12]
  301              	.LBE4:
-ARM GAS  /tmp/cc9Kr940.s 			page 10
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s 			page 10
 
 
  302              		.loc 1 208 0
@@ -551,7 +551,7 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
  309 0064 000C0040 		.word	1073744896
  310 0068 00100240 		.word	1073876992
  311              		.cfi_endproc
- 312              	.LFE67:
+ 312              	.LFE69:
  314              		.section	.text.HAL_TIM_MspPostInit,"ax",%progbits
  315              		.align	1
  316              		.global	HAL_TIM_MspPostInit
@@ -560,7 +560,7 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
  319              		.thumb_func
  320              		.fpu softvfp
  322              	HAL_TIM_MspPostInit:
- 323              	.LFB68:
+ 323              	.LFB70:
  209:Core/Src/tim.c **** void HAL_TIM_MspPostInit(TIM_HandleTypeDef* timHandle)
  210:Core/Src/tim.c **** {
  324              		.loc 1 210 0
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
  222:Core/Src/tim.c ****     GPIO_InitStruct.Pin = GPIO_PIN_4;
  344              		.loc 1 222 0
  345 000e 1023     		movs	r3, #16
-ARM GAS  /tmp/cc9Kr940.s 			page 11
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s 			page 11
 
 
  346 0010 0093     		str	r3, [sp]
@@ -651,19 +651,19 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
  381 003c 000C0140 		.word	1073810432
  382 0040 00000140 		.word	1073807360
  383              		.cfi_endproc
- 384              	.LFE68:
+ 384              	.LFE70:
  386              		.section	.text.MX_TIM3_Init,"ax",%progbits
  387              		.align	1
  388              		.global	MX_TIM3_Init
  389              		.syntax unified
  390              		.thumb
  391              		.thumb_func
-ARM GAS  /tmp/cc9Kr940.s 			page 12
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s 			page 12
 
 
  392              		.fpu softvfp
  394              	MX_TIM3_Init:
- 395              	.LFB64:
+ 395              	.LFB66:
   63:Core/Src/tim.c ****   TIM_ClockConfigTypeDef sClockSourceConfig;
  396              		.loc 1 63 0
  397              		.cfi_startproc
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
   85:Core/Src/tim.c ****   {
  437              		.loc 1 85 0
  438 002e 1B48     		ldr	r0, .L52
-ARM GAS  /tmp/cc9Kr940.s 			page 13
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s 			page 13
 
 
  439 0030 FFF7FEFF 		bl	HAL_TIM_PWM_Init
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
  483              	.L47:
  484              	.LCFI17:
  485              		.cfi_restore_state
-ARM GAS  /tmp/cc9Kr940.s 			page 14
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s 			page 14
 
 
   76:Core/Src/tim.c ****   }
@@ -827,7 +827,7 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
  524 00a0 00040040 		.word	1073742848
  525 00a4 00000000 		.word	.LC0
  526              		.cfi_endproc
- 527              	.LFE64:
+ 527              	.LFE66:
  529              		.section	.text.HAL_TIM_Base_MspDeInit,"ax",%progbits
  530              		.align	1
  531              		.global	HAL_TIM_Base_MspDeInit
@@ -836,9 +836,9 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
  534              		.thumb_func
  535              		.fpu softvfp
  537              	HAL_TIM_Base_MspDeInit:
- 538              	.LFB69:
+ 538              	.LFB71:
  235:Core/Src/tim.c **** 
-ARM GAS  /tmp/cc9Kr940.s 			page 15
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s 			page 15
 
 
  236:Core/Src/tim.c **** void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
@@ -895,128 +895,130 @@ ARM GAS  /tmp/cc9Kr940.s 			page 1
  561 0014 11D0     		beq	.L61
  562              	.LVL32:
  563              	.L54:
- 564 0016 08BD     		pop	{r3, pc}
- 565              	.LVL33:
- 566              	.L59:
-ARM GAS  /tmp/cc9Kr940.s 			page 16
-
-
- 245:Core/Src/tim.c ****   /* USER CODE BEGIN TIM3_MspDeInit 1 */
- 567              		.loc 1 245 0
- 568 0018 02F50332 		add	r2, r2, #134144
- 569 001c D369     		ldr	r3, [r2, #28]
- 570 001e 23F00203 		bic	r3, r3, #2
- 571 0022 D361     		str	r3, [r2, #28]
- 572 0024 08BD     		pop	{r3, pc}
- 573              	.L60:
- 256:Core/Src/tim.c **** 
- 574              		.loc 1 256 0
- 575 0026 02F50232 		add	r2, r2, #133120
- 576 002a D369     		ldr	r3, [r2, #28]
- 577 002c 23F00403 		bic	r3, r3, #4
- 578 0030 D361     		str	r3, [r2, #28]
- 259:Core/Src/tim.c ****   /* USER CODE BEGIN TIM4_MspDeInit 1 */
- 579              		.loc 1 259 0
- 580 0032 1E20     		movs	r0, #30
- 581              	.LVL34:
- 582 0034 FFF7FEFF 		bl	HAL_NVIC_DisableIRQ
- 583              	.LVL35:
- 584 0038 08BD     		pop	{r3, pc}
- 585              	.LVL36:
- 586              	.L61:
  265:Core/Src/tim.c ****   {
  266:Core/Src/tim.c ****   /* USER CODE BEGIN TIM5_MspDeInit 0 */
  267:Core/Src/tim.c **** 
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s 			page 16
+
+
  268:Core/Src/tim.c ****   /* USER CODE END TIM5_MspDeInit 0 */
  269:Core/Src/tim.c ****     /* Peripheral clock disable */
  270:Core/Src/tim.c ****     __HAL_RCC_TIM5_CLK_DISABLE();
- 587              		.loc 1 270 0
- 588 003a 02F50132 		add	r2, r2, #132096
- 589 003e D369     		ldr	r3, [r2, #28]
- 590 0040 23F00803 		bic	r3, r3, #8
- 591 0044 D361     		str	r3, [r2, #28]
  271:Core/Src/tim.c **** 
  272:Core/Src/tim.c ****     /* TIM5 interrupt Deinit */
  273:Core/Src/tim.c ****     HAL_NVIC_DisableIRQ(TIM5_IRQn);
- 592              		.loc 1 273 0
- 593 0046 3220     		movs	r0, #50
- 594              	.LVL37:
- 595 0048 FFF7FEFF 		bl	HAL_NVIC_DisableIRQ
- 596              	.LVL38:
  274:Core/Src/tim.c ****   /* USER CODE BEGIN TIM5_MspDeInit 1 */
  275:Core/Src/tim.c **** 
  276:Core/Src/tim.c ****   /* USER CODE END TIM5_MspDeInit 1 */
  277:Core/Src/tim.c ****   }
  278:Core/Src/tim.c **** } 
- 597              		.loc 1 278 0
- 598 004c E3E7     		b	.L54
- 599              	.L63:
- 600 004e 00BF     		.align	2
- 601              	.L62:
- 602 0050 00040040 		.word	1073742848
- 603 0054 00080040 		.word	1073743872
- 604 0058 000C0040 		.word	1073744896
- 605              		.cfi_endproc
- 606              	.LFE69:
-ARM GAS  /tmp/cc9Kr940.s 			page 17
+ 564              		.loc 1 278 0
+ 565 0016 08BD     		pop	{r3, pc}
+ 566              	.LVL33:
+ 567              	.L59:
+ 245:Core/Src/tim.c ****   /* USER CODE BEGIN TIM3_MspDeInit 1 */
+ 568              		.loc 1 245 0
+ 569 0018 02F50332 		add	r2, r2, #134144
+ 570 001c D369     		ldr	r3, [r2, #28]
+ 571 001e 23F00203 		bic	r3, r3, #2
+ 572 0022 D361     		str	r3, [r2, #28]
+ 573 0024 F7E7     		b	.L54
+ 574              	.L60:
+ 256:Core/Src/tim.c **** 
+ 575              		.loc 1 256 0
+ 576 0026 02F50232 		add	r2, r2, #133120
+ 577 002a D369     		ldr	r3, [r2, #28]
+ 578 002c 23F00403 		bic	r3, r3, #4
+ 579 0030 D361     		str	r3, [r2, #28]
+ 259:Core/Src/tim.c ****   /* USER CODE BEGIN TIM4_MspDeInit 1 */
+ 580              		.loc 1 259 0
+ 581 0032 1E20     		movs	r0, #30
+ 582              	.LVL34:
+ 583 0034 FFF7FEFF 		bl	HAL_NVIC_DisableIRQ
+ 584              	.LVL35:
+ 585 0038 EDE7     		b	.L54
+ 586              	.LVL36:
+ 587              	.L61:
+ 270:Core/Src/tim.c **** 
+ 588              		.loc 1 270 0
+ 589 003a 02F50132 		add	r2, r2, #132096
+ 590 003e D369     		ldr	r3, [r2, #28]
+ 591 0040 23F00803 		bic	r3, r3, #8
+ 592 0044 D361     		str	r3, [r2, #28]
+ 273:Core/Src/tim.c ****   /* USER CODE BEGIN TIM5_MspDeInit 1 */
+ 593              		.loc 1 273 0
+ 594 0046 3220     		movs	r0, #50
+ 595              	.LVL37:
+ 596 0048 FFF7FEFF 		bl	HAL_NVIC_DisableIRQ
+ 597              	.LVL38:
+ 598              		.loc 1 278 0
+ 599 004c E3E7     		b	.L54
+ 600              	.L63:
+ 601 004e 00BF     		.align	2
+ 602              	.L62:
+ 603 0050 00040040 		.word	1073742848
+ 604 0054 00080040 		.word	1073743872
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s 			page 17
 
 
- 608              		.comm	htim5,64,4
- 609              		.comm	htim4,64,4
- 610              		.comm	htim3,64,4
- 611              		.section	.rodata.MX_TIM4_Init.str1.4,"aMS",%progbits,1
- 612              		.align	2
- 613              	.LC0:
- 614 0000 436F7265 		.ascii	"Core/Src/tim.c\000"
- 614      2F537263 
- 614      2F74696D 
- 614      2E6300
- 615              		.text
- 616              	.Letext0:
- 617              		.file 2 "/usr/include/newlib/machine/_default_types.h"
- 618              		.file 3 "/usr/include/newlib/sys/_stdint.h"
- 619              		.file 4 "Drivers/CMSIS/Include/core_cm3.h"
- 620              		.file 5 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
- 621              		.file 6 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h"
- 622              		.file 7 "/usr/include/newlib/sys/lock.h"
- 623              		.file 8 "/usr/include/newlib/sys/_types.h"
- 624              		.file 9 "/usr/lib/gcc/arm-none-eabi/6.3.1/include/stddef.h"
- 625              		.file 10 "/usr/include/newlib/sys/reent.h"
- 626              		.file 11 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
- 627              		.file 12 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
- 628              		.file 13 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
- 629              		.file 14 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
- 630              		.file 15 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h"
- 631              		.file 16 "Core/Inc/tim.h"
- 632              		.file 17 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h"
-ARM GAS  /tmp/cc9Kr940.s 			page 18
+ 605 0058 000C0040 		.word	1073744896
+ 606              		.cfi_endproc
+ 607              	.LFE71:
+ 609              		.comm	htim5,64,4
+ 610              		.comm	htim4,64,4
+ 611              		.comm	htim3,64,4
+ 612              		.section	.rodata.MX_TIM4_Init.str1.4,"aMS",%progbits,1
+ 613              		.align	2
+ 614              	.LC0:
+ 615 0000 436F7265 		.ascii	"Core/Src/tim.c\000"
+ 615      2F537263 
+ 615      2F74696D 
+ 615      2E6300
+ 616              		.text
+ 617              	.Letext0:
+ 618              		.file 2 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 619              		.file 3 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 620              		.file 4 "Drivers/CMSIS/Include/core_cm3.h"
+ 621              		.file 5 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 622              		.file 6 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h"
+ 623              		.file 7 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 624              		.file 8 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 625              		.file 9 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\lib\\gcc\\arm-none-eab
+ 626              		.file 10 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\includ
+ 627              		.file 11 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 628              		.file 12 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ 629              		.file 13 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 630              		.file 14 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 631              		.file 15 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h"
+ 632              		.file 16 "Core/Inc/tim.h"
+ 633              		.file 17 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h"
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s 			page 18
 
 
 DEFINED SYMBOLS
-                            *ABS*:0000000000000000 tim.c
-     /tmp/cc9Kr940.s:16     .text.MX_TIM4_Init:0000000000000000 $t
-     /tmp/cc9Kr940.s:23     .text.MX_TIM4_Init:0000000000000000 MX_TIM4_Init
-     /tmp/cc9Kr940.s:113    .text.MX_TIM4_Init:0000000000000064 $d
-                            *COM*:0000000000000040 htim4
-     /tmp/cc9Kr940.s:120    .text.MX_TIM5_Init:0000000000000000 $t
-     /tmp/cc9Kr940.s:127    .text.MX_TIM5_Init:0000000000000000 MX_TIM5_Init
-     /tmp/cc9Kr940.s:216    .text.MX_TIM5_Init:0000000000000064 $d
-                            *COM*:0000000000000040 htim5
-     /tmp/cc9Kr940.s:223    .text.HAL_TIM_Base_MspInit:0000000000000000 $t
-     /tmp/cc9Kr940.s:230    .text.HAL_TIM_Base_MspInit:0000000000000000 HAL_TIM_Base_MspInit
-     /tmp/cc9Kr940.s:307    .text.HAL_TIM_Base_MspInit:000000000000005c $d
-     /tmp/cc9Kr940.s:315    .text.HAL_TIM_MspPostInit:0000000000000000 $t
-     /tmp/cc9Kr940.s:322    .text.HAL_TIM_MspPostInit:0000000000000000 HAL_TIM_MspPostInit
-     /tmp/cc9Kr940.s:380    .text.HAL_TIM_MspPostInit:0000000000000038 $d
-     /tmp/cc9Kr940.s:387    .text.MX_TIM3_Init:0000000000000000 $t
-     /tmp/cc9Kr940.s:394    .text.MX_TIM3_Init:0000000000000000 MX_TIM3_Init
-     /tmp/cc9Kr940.s:523    .text.MX_TIM3_Init:000000000000009c $d
-                            *COM*:0000000000000040 htim3
-     /tmp/cc9Kr940.s:530    .text.HAL_TIM_Base_MspDeInit:0000000000000000 $t
-     /tmp/cc9Kr940.s:537    .text.HAL_TIM_Base_MspDeInit:0000000000000000 HAL_TIM_Base_MspDeInit
-     /tmp/cc9Kr940.s:602    .text.HAL_TIM_Base_MspDeInit:0000000000000050 $d
-     /tmp/cc9Kr940.s:612    .rodata.MX_TIM4_Init.str1.4:0000000000000000 $d
-                     .debug_frame:0000000000000010 $d
+                            *ABS*:00000000 tim.c
+C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s:16     .text.MX_TIM4_Init:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s:23     .text.MX_TIM4_Init:00000000 MX_TIM4_Init
+C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s:113    .text.MX_TIM4_Init:00000064 $d
+                            *COM*:00000040 htim4
+C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s:120    .text.MX_TIM5_Init:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s:127    .text.MX_TIM5_Init:00000000 MX_TIM5_Init
+C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s:216    .text.MX_TIM5_Init:00000064 $d
+                            *COM*:00000040 htim5
+C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s:223    .text.HAL_TIM_Base_MspInit:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s:230    .text.HAL_TIM_Base_MspInit:00000000 HAL_TIM_Base_MspInit
+C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s:307    .text.HAL_TIM_Base_MspInit:0000005c $d
+C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s:315    .text.HAL_TIM_MspPostInit:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s:322    .text.HAL_TIM_MspPostInit:00000000 HAL_TIM_MspPostInit
+C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s:380    .text.HAL_TIM_MspPostInit:00000038 $d
+C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s:387    .text.MX_TIM3_Init:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s:394    .text.MX_TIM3_Init:00000000 MX_TIM3_Init
+C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s:523    .text.MX_TIM3_Init:0000009c $d
+                            *COM*:00000040 htim3
+C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s:530    .text.HAL_TIM_Base_MspDeInit:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s:537    .text.HAL_TIM_Base_MspDeInit:00000000 HAL_TIM_Base_MspDeInit
+C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s:603    .text.HAL_TIM_Base_MspDeInit:00000050 $d
+C:\Users\bertz\AppData\Local\Temp\ccAzUhlF.s:613    .rodata.MX_TIM4_Init.str1.4:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_TIM_Base_Init

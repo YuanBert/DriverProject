@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccOmQGda.s 			page 1
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc7ujeV7.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -23,7 +23,7 @@ ARM GAS  /tmp/ccOmQGda.s 			page 1
   20              		.thumb_func
   21              		.fpu softvfp
   23              	HAL_SPI_Init:
-  24              	.LFB64:
+  24              	.LFB66:
   25              		.file 1 "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c"
    1:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c **** /**
    2:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c ****   ******************************************************************************
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccOmQGda.s 			page 1
   31:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c ****   * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
   32:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c ****   * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
   33:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c ****   * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-ARM GAS  /tmp/ccOmQGda.s 			page 2
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc7ujeV7.s 			page 2
 
 
   34:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c ****   * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccOmQGda.s 			page 1
   88:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c ****   * @{
   89:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c ****   */
   90:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c **** 
-ARM GAS  /tmp/ccOmQGda.s 			page 3
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc7ujeV7.s 			page 3
 
 
   91:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c **** /**
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccOmQGda.s 			page 1
  126:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c **** 
  127:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c ****   if(hspi->State == HAL_SPI_STATE_RESET)
   44              		.loc 1 127 0
-ARM GAS  /tmp/ccOmQGda.s 			page 4
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc7ujeV7.s 			page 4
 
 
   45 000c 90F85130 		ldrb	r3, [r0, #81]	@ zero_extendqisi2
@@ -209,24 +209,24 @@ ARM GAS  /tmp/ccOmQGda.s 			page 1
  140:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c ****   Communication speed, First bit and CRC calculation state */
  141:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c ****   WRITE_REG(hspi->Instance->CR1, (hspi->Init.Mode | hspi->Init.Direction | hspi->Init.DataSize |
   58              		.loc 1 141 0
-  59 0024 2268     		ldr	r2, [r4]
-  60 0026 6368     		ldr	r3, [r4, #4]
-  61 0028 A168     		ldr	r1, [r4, #8]
-  62 002a 0B43     		orrs	r3, r3, r1
-  63 002c E168     		ldr	r1, [r4, #12]
-  64 002e 0B43     		orrs	r3, r3, r1
-  65 0030 2169     		ldr	r1, [r4, #16]
-  66 0032 0B43     		orrs	r3, r3, r1
-  67 0034 6169     		ldr	r1, [r4, #20]
-  68 0036 0B43     		orrs	r3, r3, r1
-  69 0038 A169     		ldr	r1, [r4, #24]
-  70 003a 01F40071 		and	r1, r1, #512
-  71 003e 0B43     		orrs	r3, r3, r1
-  72 0040 E169     		ldr	r1, [r4, #28]
-  73 0042 0B43     		orrs	r3, r3, r1
-  74 0044 216A     		ldr	r1, [r4, #32]
-  75 0046 0B43     		orrs	r3, r3, r1
-  76 0048 A16A     		ldr	r1, [r4, #40]
+  59 0024 6368     		ldr	r3, [r4, #4]
+  60 0026 A268     		ldr	r2, [r4, #8]
+  61 0028 1343     		orrs	r3, r3, r2
+  62 002a E268     		ldr	r2, [r4, #12]
+  63 002c 1343     		orrs	r3, r3, r2
+  64 002e 2269     		ldr	r2, [r4, #16]
+  65 0030 1343     		orrs	r3, r3, r2
+  66 0032 6269     		ldr	r2, [r4, #20]
+  67 0034 1343     		orrs	r3, r3, r2
+  68 0036 A269     		ldr	r2, [r4, #24]
+  69 0038 02F40072 		and	r2, r2, #512
+  70 003c 1343     		orrs	r3, r3, r2
+  71 003e E269     		ldr	r2, [r4, #28]
+  72 0040 1343     		orrs	r3, r3, r2
+  73 0042 226A     		ldr	r2, [r4, #32]
+  74 0044 1343     		orrs	r3, r3, r2
+  75 0046 A16A     		ldr	r1, [r4, #40]
+  76 0048 2268     		ldr	r2, [r4]
   77 004a 0B43     		orrs	r3, r3, r1
   78 004c 1360     		str	r3, [r2]
  142:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c ****                                   hspi->Init.CLKPolarity | hspi->Init.CLKPhase | (hspi->Init.NSS & 
@@ -235,13 +235,13 @@ ARM GAS  /tmp/ccOmQGda.s 			page 1
  145:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c ****   /* Configure : NSS management */
  146:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c ****   WRITE_REG(hspi->Instance->CR2, (((hspi->Init.NSS >> 16U) & SPI_CR2_SSOE) | hspi->Init.TIMode));
   79              		.loc 1 146 0
-  80 004e 2268     		ldr	r2, [r4]
-  81 0050 638B     		ldrh	r3, [r4, #26]
-  82 0052 03F00403 		and	r3, r3, #4
-ARM GAS  /tmp/ccOmQGda.s 			page 5
+  80 004e 638B     		ldrh	r3, [r4, #26]
+  81 0050 03F00403 		and	r3, r3, #4
+  82 0054 616A     		ldr	r1, [r4, #36]
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc7ujeV7.s 			page 5
 
 
-  83 0056 616A     		ldr	r1, [r4, #36]
+  83 0056 2268     		ldr	r2, [r4]
   84 0058 0B43     		orrs	r3, r3, r1
   85 005a 5360     		str	r3, [r2, #4]
  147:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c **** 
@@ -287,7 +287,8 @@ ARM GAS  /tmp/ccOmQGda.s 			page 1
  100 0072 84F85130 		strb	r3, [r4, #81]
  173:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c ****   
  174:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c ****   return HAL_OK;
- 101              		.loc 1 174 0
+ 175:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c **** }
+ 101              		.loc 1 175 0
  102 0076 10BD     		pop	{r4, pc}
  103              	.LVL2:
  104              	.L9:
@@ -297,10 +298,10 @@ ARM GAS  /tmp/ccOmQGda.s 			page 1
  107              	.LVL3:
  108 007c CAE7     		b	.L3
  109              	.LVL4:
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc7ujeV7.s 			page 6
+
+
  110              	.L4:
-ARM GAS  /tmp/ccOmQGda.s 			page 6
-
-
  111              	.LCFI1:
  112              		.cfi_def_cfa_offset 0
  113              		.cfi_restore 4
@@ -309,31 +310,31 @@ ARM GAS  /tmp/ccOmQGda.s 			page 1
  115              		.loc 1 103 0
  116 007e 0120     		movs	r0, #1
  117              	.LVL5:
- 118 0080 7047     		bx	lr
- 119              		.cfi_endproc
- 120              	.LFE64:
- 122              		.text
- 123              	.Letext0:
- 124              		.file 2 "/usr/include/newlib/machine/_default_types.h"
- 125              		.file 3 "/usr/include/newlib/sys/_stdint.h"
- 126              		.file 4 "Drivers/CMSIS/Include/core_cm3.h"
- 127              		.file 5 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
- 128              		.file 6 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h"
- 129              		.file 7 "/usr/include/newlib/sys/lock.h"
- 130              		.file 8 "/usr/include/newlib/sys/_types.h"
- 131              		.file 9 "/usr/lib/gcc/arm-none-eabi/6.3.1/include/stddef.h"
- 132              		.file 10 "/usr/include/newlib/sys/reent.h"
- 133              		.file 11 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
- 134              		.file 12 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
- 135              		.file 13 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"
-ARM GAS  /tmp/ccOmQGda.s 			page 7
+ 118              		.loc 1 175 0
+ 119 0080 7047     		bx	lr
+ 120              		.cfi_endproc
+ 121              	.LFE66:
+ 123              		.text
+ 124              	.Letext0:
+ 125              		.file 2 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 126              		.file 3 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 127              		.file 4 "Drivers/CMSIS/Include/core_cm3.h"
+ 128              		.file 5 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 129              		.file 6 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h"
+ 130              		.file 7 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 131              		.file 8 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 132              		.file 9 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\lib\\gcc\\arm-none-eab
+ 133              		.file 10 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\includ
+ 134              		.file 11 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 135              		.file 12 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 136              		.file 13 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc7ujeV7.s 			page 7
 
 
 DEFINED SYMBOLS
-                            *ABS*:0000000000000000 stm32f1xx_hal_spi_ex.c
-     /tmp/ccOmQGda.s:16     .text.HAL_SPI_Init:0000000000000000 $t
-     /tmp/ccOmQGda.s:23     .text.HAL_SPI_Init:0000000000000000 HAL_SPI_Init
-                     .debug_frame:0000000000000010 $d
+                            *ABS*:00000000 stm32f1xx_hal_spi_ex.c
+C:\Users\bertz\AppData\Local\Temp\cc7ujeV7.s:16     .text.HAL_SPI_Init:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\cc7ujeV7.s:23     .text.HAL_SPI_Init:00000000 HAL_SPI_Init
 
 UNDEFINED SYMBOLS
 HAL_SPI_MspInit
