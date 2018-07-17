@@ -1,6 +1,7 @@
 #include "stdio.h"
 #include "string.h"
 #include "stm32f1xx_hal.h"
+#include "usart.h"
 
 int __io_putchar(int ch)
 {
