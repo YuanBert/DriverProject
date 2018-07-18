@@ -58,7 +58,8 @@
 #include "gpio.h"
 
 /* USER CODE BEGIN Includes */
-
+#include "string.h"
+#include "stdio.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -124,7 +125,8 @@ int main(void)
   /* Initialize interrupts */
   MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
-
+  DS_CoreBoardProtocolInit();
+  DS_BSPABoardProtocolInit();
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in freertos.c) */

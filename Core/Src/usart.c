@@ -54,6 +54,18 @@
 #include "dma.h"
 
 /* USER CODE BEGIN 0 */
+uint8_t CoreBoardReceiveBuff[RXBUFFERSIZE];
+uint8_t CoreBoardReceiveInfo[RXBUFFERSIZE];
+uint8_t	CoreBoardRx_BufferLen;
+uint8_t CoreBoardRx_InfoLen;
+uint8_t BSPABoardReceiveBuff[RXBUFFERSIZE];
+uint8_t BSPABoardReceiveInfo[RXBUFFERSIZE];
+uint8_t	BSPABoardRx_BufferLen;
+uint8_t BSPABoardRx_InfoLen;
+uint8_t BSPBBoardReceiveBuff[RXBUFFERSIZE];
+uint8_t BSPBBoardReceiveInfo[RXBUFFERSIZE];
+uint8_t	BSPBBoardRx_BufferLen;
+uint8_t BSPBBoardRx_InfoLen;
 
 /* USER CODE END 0 */
 
@@ -332,6 +344,58 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 } 
 
 /* USER CODE BEGIN 1 */
+DS_StatusTypeDef DS_CoreBoardProtocolInit(void)
+{
+  DS_StatusTypeDef state = DS_OK;
+  __HAL_UART_ENABLE_IT(&huart1,UART_IT_IDLE);
+  HAL_UART_Receive_DMA(&huart1,CoreBoardReceiveBuff,RXBUFFERSIZE);
+  return state;  
+}
+DS_StatusTypeDef DS_BSPABoardProtocolInit(void)
+{
+  DS_StatusTypeDef state = DS_OK;
+  __HAL_UART_ENABLE_IT(&huart2,UART_IT_IDLE);
+  HAL_UART_Receive_DMA(&huart2,BSPABoardReceiveBuff,RXBUFFERSIZE);
+  HAL_GPIO_WritePin(CTR485A_EN_GPIO_Port,CTR485A_EN_Pin,GPIO_PIN_RESET);
+  
+  return state; 	
+}
+DS_StatusTypeDef DS_BSPBBoardProtocolInit(void)
+{
+  DS_StatusTypeDef state = DS_OK;
+  __HAL_UART_ENABLE_IT(&huart3,UART_IT_IDLE);
+  HAL_UART_Receive_DMA(&huart3,BSPBBoardReceiveBuff,RXBUFFERSIZE);
+  HAL_GPIO_WritePin(CTR485B_EN_GPIO_Port,CTR485B_EN_Pin,GPIO_PIN_RESET);
+  
+  return state; 	
+}
+
+DS_StatusTypeDef DS_SendDataToCoreBoard(uint8_t* pData, uint16_t size, uint32_t Timeout)
+{
+  DS_StatusTypeDef state = DS_OK;
+  state = (DS_StatusTypeDef)HAL_UART_Transmit(&huart1, pData,size,0xFFFF);
+  if(DS_OK != state)
+  {
+    state = DS_ERROR;
+  }
+  return state; 	
+}
+DS_StatusTypeDef DS_SendDataToBSPABoard(uint8_t* pData, uint16_t size, uint32_t Timeout)
+{
+  DS_StatusTypeDef state = DS_OK;
+  HAL_GPIO_WritePin(CTR485A_EN_GPIO_Port,CTR485A_EN_Pin,GPIO_PIN_SET);
+  state = (DS_StatusTypeDef)HAL_UART_Transmit(&huart2, pData, size, Timeout);
+  HAL_GPIO_WritePin(CTR485A_EN_GPIO_Port,CTR485A_EN_Pin,GPIO_PIN_RESET);
+  return state;	
+}
+DS_StatusTypeDef DS_SendDataToBSPBBoard(uint8_t* pData, uint16_t size, uint32_t Timeout)
+{
+  DS_StatusTypeDef state = DS_OK;
+  HAL_GPIO_WritePin(CTR485B_EN_GPIO_Port,CTR485B_EN_Pin,GPIO_PIN_SET);
+  state = (DS_StatusTypeDef)HAL_UART_Transmit(&huart3, pData, size, Timeout);
+  HAL_GPIO_WritePin(CTR485B_EN_GPIO_Port,CTR485B_EN_Pin,GPIO_PIN_RESET);
+  return state; 	
+}
 
 /* USER CODE END 1 */
 

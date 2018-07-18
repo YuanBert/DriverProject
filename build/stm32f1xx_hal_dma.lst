@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
   32:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****      *** Polling mode IO operation ***
   33:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****      =================================
   34:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     [..]
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 2
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 2
 
 
   35:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****           (+) Use HAL_DMA_Start() to start DMA transfer after the configuration of Source
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
   89:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
   90:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
   91:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 3
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 3
 
 
   92:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  146:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     reference manual.  
  147:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  148:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** @endverbatim
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 4
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 4
 
 
  149:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * @{
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  203:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   tmp = hdma->Instance->CCR;
  204:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  205:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   /* Clear PL, MSIZE, PSIZE, MINC, PINC, CIRC and DIR bits */
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 5
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 5
 
 
  206:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   tmp &= ((uint32_t)~(DMA_CCR_PL    | DMA_CCR_MSIZE  | DMA_CCR_PSIZE  | \
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  260:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   /* Reset DMA Channel Number of Data to Transfer register */
  261:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   hdma->Instance->CNDTR = 0U;
  262:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 6
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 6
 
 
  263:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   /* Reset DMA Channel peripheral address register */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  317:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       (+) Configure the source, destination address and data length and
  318:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****           Start DMA transfer with interrupt
  319:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       (+) Abort DMA transfer
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 7
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 7
 
 
  320:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       (+) Poll for transfer complete
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  374:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * @param  SrcAddress: The source memory Buffer address
  375:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * @param  DstAddress: The destination memory Buffer address
  376:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * @param  DataLength: The length of data to be transferred from source to destination
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 8
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 8
 
 
  377:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * @retval HAL status
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  431:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * @retval HAL status
  432:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   */
  433:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** HAL_StatusTypeDef HAL_DMA_Abort(DMA_HandleTypeDef *hdma)
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 9
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 9
 
 
  434:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** {
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  488:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  489:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     /* Call User Abort callback */
  490:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     if(hdma->XferAbortCallback != NULL)
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 10
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 10
 
 
  491:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     {
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  545:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       /* When a DMA transfer error occurs */
  546:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       /* A hardware clear of its EN bits is performed */
  547:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       /* Clear all flags */
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 11
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 11
 
 
  548:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       hdma->DmaBaseAddress->IFCR = (DMA_ISR_GIF1 << hdma->ChannelIndex);
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  602:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * @brief  Handles DMA interrupt request.
  603:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * @param  hdma: pointer to a DMA_HandleTypeDef structure that contains
  604:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   *               the configuration information for the specified DMA Channel.  
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 12
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 12
 
 
  605:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * @retval None
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  659:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   else if (( RESET != (flag_it & (DMA_FLAG_TE1 << hdma->ChannelIndex))) && (RESET != (source_it & D
  660:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   {
  661:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     /* When a DMA transfer error occurs */
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 13
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 13
 
 
  662:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     /* A hardware clear of its EN bits is performed */
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  716:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     case  HAL_DMA_XFER_ERROR_CB_ID:
  717:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       hdma->XferErrorCallback = pCallback;
  718:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       break;         
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 14
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 14
 
 
  719:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  773:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       break; 
  774:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  775:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     case   HAL_DMA_XFER_ALL_CB_ID:
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 15
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 15
 
 
  776:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       hdma->XferCpltCallback = NULL;
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  830:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** /**
  831:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * @brief  Return the DMA error code.
  832:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * @param  hdma : pointer to a DMA_HandleTypeDef structure that contains
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 16
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 16
 
 
  833:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   *              the configuration information for the specified DMA Channel.
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
   43              		.loc 1 868 0
   44 000c 0468     		ldr	r4, [r0]
   45 000e 6360     		str	r3, [r4, #4]
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 17
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 17
 
 
  869:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
   78 0028 D960     		str	r1, [r3, #12]
   79 002a F8E7     		b	.L1
   80              		.cfi_endproc
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 18
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 18
 
 
   81              	.LFE78:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  129 002a 1868     		ldr	r0, [r3]
  130              	.LVL6:
  131 002c 0168     		ldr	r1, [r0]
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 19
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 19
 
 
  132              	.LVL7:
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  223:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   hdma->XferAbortCallback = NULL;
  171              		.loc 1 223 0
  172 005a 1863     		str	r0, [r3, #48]
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 20
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 20
 
 
  224:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  218 0088 07040240 		.word	1073873927
  219 008c F8FFFDBF 		.word	-1073872904
  220 0090 CDCCCCCC 		.word	-858993459
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 21
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 21
 
 
  221 0094 00000240 		.word	1073872896
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  269 0028 15D8     		bhi	.L19
  274:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     hdma->DmaBaseAddress = DMA1;
  270              		.loc 1 274 0
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 22
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 22
 
 
  271 002a 124A     		ldr	r2, .L22+4
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  302:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  316              		.loc 1 302 0
  317 006e 7047     		bx	lr
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 23
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 23
 
 
  318              	.L23:
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  365:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   }  
  369              		.loc 1 365 0
  370 001e 0220     		movs	r0, #2
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 24
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 24
 
 
  371              	.LVL22:
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  419              	HAL_DMA_Start_IT:
  420              	.LFB69:
  380:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   HAL_StatusTypeDef status = HAL_OK;
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 25
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 25
 
 
  421              		.loc 1 380 0
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  466              		.loc 1 396 0
  467 002e 2568     		ldr	r5, [r4]
  468 0030 2868     		ldr	r0, [r5]
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 26
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 26
 
 
  469 0032 20F00100 		bic	r0, r0, #1
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  516              		.syntax unified
  517              		.thumb
  518              		.thumb_func
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 27
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 27
 
 
  519              		.fpu softvfp
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  568              		.loc 1 462 0
  569              		.cfi_startproc
  570              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 28
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 28
 
 
  571              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  616 0036 9342     		cmp	r3, r2
  617 0038 30D0     		beq	.L47
  481:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 29
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 29
 
 
  618              		.loc 1 481 0 discriminator 5
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  481:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  663              		.loc 1 481 0 discriminator 46
  664 0080 364B     		ldr	r3, .L72+4
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 30
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 30
 
 
  665 0082 5A60     		str	r2, [r3, #4]
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  481:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  713              		.loc 1 481 0 is_stmt 0 discriminator 2
  714 00cc 244A     		ldr	r2, .L72+8
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 31
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 31
 
 
  715 00ce 9342     		cmp	r3, r2
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  758 0110 4FF48032 		mov	r2, #65536
  759 0114 03E0     		b	.L45
  760              	.L71:
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 32
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 32
 
 
  761 0116 4FF48052 		mov	r2, #4096
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  813              		.section	.text.HAL_DMA_PollForTransfer,"ax",%progbits
  814              		.align	1
  815              		.global	HAL_DMA_PollForTransfer
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 33
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 33
 
 
  816              		.syntax unified
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  863              		.loc 1 527 0
  864 0026 61BB     		cbnz	r1, .L78
  530:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   }
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 34
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 34
 
 
  865              		.loc 1 530 0
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  530:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   }
  909              		.loc 1 530 0
  910 006c 4FF40037 		mov	r7, #131072
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 35
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 35
 
 
  911 0070 30E0     		b	.L79
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  954              		.loc 1 535 0 discriminator 13
  955 00ac 04F56274 		add	r4, r4, #904
  956 00b0 A342     		cmp	r3, r4
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 36
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 36
 
 
  957 00b2 41D0     		beq	.L118
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  1003 00f2 4FF40037 		mov	r7, #131072
  1004 00f6 EDE7     		b	.L79
  1005              	.L105:
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 37
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 37
 
 
  1006 00f8 4FF40017 		mov	r7, #2097152
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  1058              	.L82:
  543:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     {
  1059              		.loc 1 543 0 is_stmt 0 discriminator 46
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 38
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 38
 
 
  1060 014e 1A42     		tst	r2, r3
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  1105 019c 8B42     		cmp	r3, r1
  1106 019e 1DD0     		beq	.L124
  543:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     {
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 39
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 39
 
 
  1107              		.loc 1 543 0 discriminator 7
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  1153 01ec AFE7     		b	.L82
  1154              	.L127:
  1155 01ee 4FF40003 		mov	r3, #8388608
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 40
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 40
 
 
  1156 01f2 ACE7     		b	.L82
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  1202 023a 8B42     		cmp	r3, r1
  1203 023c 25D0     		beq	.L140
  543:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     {
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 41
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 41
 
 
  1204              		.loc 1 543 0 discriminator 62
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  1253              	.L141:
  1254 028e 8023     		movs	r3, #128
  1255 0290 E5E7     		b	.L84
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 42
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 42
 
 
  1256              	.L142:
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  1299              	.L88:
  541:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   {
  1300              		.loc 1 541 0 discriminator 2
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 43
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 43
 
 
  1301 02dc 0649     		ldr	r1, .L201+12
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  583:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  1347              		.loc 1 583 0 discriminator 13
  1348 032e 8B42     		cmp	r3, r1
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 44
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 44
 
 
  1349 0330 2AD0     		beq	.L150
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  1393 0370 4FF40073 		mov	r3, #512
  1394 0374 F1E7     		b	.L93
  1395              	.L147:
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 45
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 45
 
 
  1396 0376 4FF40053 		mov	r3, #8192
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  1443 03c2 9342     		cmp	r3, r2
  1444 03c4 24D0     		beq	.L161
  583:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 46
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 46
 
 
  1445              		.loc 1 583 0 discriminator 59
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  1493              	.L162:
  1494 0416 0223     		movs	r3, #2
  1495 0418 E9E7     		b	.L95
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 47
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 47
 
 
  1496              	.L163:
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  1540 045c 9342     		cmp	r3, r2
  1541 045e 22D0     		beq	.L174
  592:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   }
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 48
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 48
 
 
  1542              		.loc 1 592 0 discriminator 19
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  592:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   }
  1592              		.loc 1 592 0 discriminator 2
  1593 04b0 224A     		ldr	r2, .L203+4
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 49
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 49
 
 
  1594 04b2 9342     		cmp	r3, r2
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  1637 04f4 4FF48023 		mov	r3, #262144
  1638 04f8 03E0     		b	.L99
  1639              	.L200:
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 50
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 50
 
 
  1640 04fa 4FF48043 		mov	r3, #16384
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  1693              		.fpu softvfp
  1695              	HAL_DMA_IRQHandler:
  1696              	.LFB73:
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 51
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 51
 
 
  608:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   uint32_t flag_it = hdma->DmaBaseAddress->ISR;
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  1742 0036 783A     		subs	r2, r2, #120
  1743 0038 9342     		cmp	r3, r2
  1744 003a 24D0     		beq	.L219
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 52
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 52
 
 
  622:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  1788              	.L264:
  1789 0080 4FF48042 		mov	r2, #16384
  1790 0084 00E0     		b	.L209
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 53
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 53
 
 
  1791              	.L219:
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  1839 00c6 9342     		cmp	r3, r2
  1840 00c8 24D0     		beq	.L230
  622:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 54
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 54
 
 
  1841              		.loc 1 622 0 discriminator 47
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  1885 010e 4FF48042 		mov	r2, #16384
  1886 0112 00E0     		b	.L211
  1887              	.L230:
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 55
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 55
 
 
  1888 0114 0422     		movs	r2, #4
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  1936              		.loc 1 640 0
  1937 0166 2368     		ldr	r3, [r4]
  1938 0168 23F00A03 		bic	r3, r3, #10
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 56
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 56
 
 
  1939 016c 2360     		str	r3, [r4]
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  1982              		.loc 1 646 0 discriminator 17
  1983 01ae 1432     		adds	r2, r2, #20
  1984 01b0 9342     		cmp	r3, r2
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 57
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 57
 
 
  1985 01b2 2AD0     		beq	.L249
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  2031 01f8 E9E7     		b	.L216
  2032              	.L246:
  2033 01fa 4FF40012 		mov	r2, #2097152
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 58
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 58
 
 
  2034 01fe E6E7     		b	.L216
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  646:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  2080              		.loc 1 646 0 discriminator 61
  2081 0246 1432     		adds	r2, r2, #20
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 59
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 59
 
 
  2082 0248 9342     		cmp	r3, r2
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  2131 0296 4FF40072 		mov	r2, #512
  2132 029a E4E7     		b	.L218
  2133              	.LVL71:
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 60
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 60
 
 
  2134              	.L213:
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  2178              	.LFE73:
  2180              		.section	.text.HAL_DMA_RegisterCallback,"ax",%progbits
  2181              		.align	1
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 61
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 61
 
 
  2182              		.global	HAL_DMA_RegisterCallback
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  2229 002c 08       		.byte	(.L276-.L274)/2
  2230 002d 0B       		.byte	(.L277-.L274)/2
  2231              		.p2align 1
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 62
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 62
 
 
  2232              	.L273:
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  2272              		.section	.text.HAL_DMA_UnRegisterCallback,"ax",%progbits
  2273              		.align	1
  2274              		.global	HAL_DMA_UnRegisterCallback
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 63
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 63
 
 
  2275              		.syntax unified
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  2322 002f 00       		.p2align 1
  2323              	.L285:
  760:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       break;
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 64
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 64
 
 
  2324              		.loc 1 760 0
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  2366              		.loc 1 780 0
  2367 0052 E2E7     		b	.L284
  2368              	.LVL93:
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 65
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 65
 
 
  2369              	.L293:
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  2421              		@ link register save eliminated.
  2422              	.LVL99:
  838:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** }
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 66
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 66
 
 
  2423              		.loc 1 838 0
@@ -3924,49 +3924,49 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 1
  2443              		.file 12 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
  2444              		.file 13 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
  2445              		.file 14 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s 			page 67
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s 			page 67
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f1xx_hal_dma.c
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:16     .text.DMA_SetConfig:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:22     .text.DMA_SetConfig:00000000 DMA_SetConfig
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:84     .text.HAL_DMA_Init:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:91     .text.HAL_DMA_Init:00000000 HAL_DMA_Init
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:218    .text.HAL_DMA_Init:00000088 $d
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:228    .text.HAL_DMA_DeInit:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:235    .text.HAL_DMA_DeInit:00000000 HAL_DMA_DeInit
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:321    .text.HAL_DMA_DeInit:00000070 $d
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:331    .text.HAL_DMA_Start:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:338    .text.HAL_DMA_Start:00000000 HAL_DMA_Start
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:412    .text.HAL_DMA_Start_IT:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:419    .text.HAL_DMA_Start_IT:00000000 HAL_DMA_Start_IT
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:514    .text.HAL_DMA_Abort:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:521    .text.HAL_DMA_Abort:00000000 HAL_DMA_Abort
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:559    .text.HAL_DMA_Abort_IT:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:566    .text.HAL_DMA_Abort_IT:00000000 HAL_DMA_Abort_IT
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:806    .text.HAL_DMA_Abort_IT:00000158 $d
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:814    .text.HAL_DMA_PollForTransfer:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:821    .text.HAL_DMA_PollForTransfer:00000000 HAL_DMA_PollForTransfer
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:1311   .text.HAL_DMA_PollForTransfer:000002ec $d
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:1317   .text.HAL_DMA_PollForTransfer:000002fc $t
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:1680   .text.HAL_DMA_PollForTransfer:00000538 $d
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:1688   .text.HAL_DMA_IRQHandler:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:1695   .text.HAL_DMA_IRQHandler:00000000 HAL_DMA_IRQHandler
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:2173   .text.HAL_DMA_IRQHandler:000002dc $d
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:2181   .text.HAL_DMA_RegisterCallback:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:2188   .text.HAL_DMA_RegisterCallback:00000000 HAL_DMA_RegisterCallback
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:2227   .text.HAL_DMA_RegisterCallback:0000002a $d
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:2231   .text.HAL_DMA_RegisterCallback:0000002e $t
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:2273   .text.HAL_DMA_UnRegisterCallback:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:2280   .text.HAL_DMA_UnRegisterCallback:00000000 HAL_DMA_UnRegisterCallback
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:2317   .text.HAL_DMA_UnRegisterCallback:0000002a $d
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:2385   .text.HAL_DMA_GetState:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:2392   .text.HAL_DMA_GetState:00000000 HAL_DMA_GetState
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:2408   .text.HAL_DMA_GetError:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:2415   .text.HAL_DMA_GetError:00000000 HAL_DMA_GetError
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:2322   .text.HAL_DMA_UnRegisterCallback:0000002f $d
-C:\Users\bertz\AppData\Local\Temp\cc4Mefth.s:2322   .text.HAL_DMA_UnRegisterCallback:00000030 $t
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:16     .text.DMA_SetConfig:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:22     .text.DMA_SetConfig:00000000 DMA_SetConfig
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:84     .text.HAL_DMA_Init:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:91     .text.HAL_DMA_Init:00000000 HAL_DMA_Init
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:218    .text.HAL_DMA_Init:00000088 $d
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:228    .text.HAL_DMA_DeInit:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:235    .text.HAL_DMA_DeInit:00000000 HAL_DMA_DeInit
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:321    .text.HAL_DMA_DeInit:00000070 $d
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:331    .text.HAL_DMA_Start:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:338    .text.HAL_DMA_Start:00000000 HAL_DMA_Start
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:412    .text.HAL_DMA_Start_IT:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:419    .text.HAL_DMA_Start_IT:00000000 HAL_DMA_Start_IT
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:514    .text.HAL_DMA_Abort:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:521    .text.HAL_DMA_Abort:00000000 HAL_DMA_Abort
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:559    .text.HAL_DMA_Abort_IT:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:566    .text.HAL_DMA_Abort_IT:00000000 HAL_DMA_Abort_IT
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:806    .text.HAL_DMA_Abort_IT:00000158 $d
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:814    .text.HAL_DMA_PollForTransfer:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:821    .text.HAL_DMA_PollForTransfer:00000000 HAL_DMA_PollForTransfer
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:1311   .text.HAL_DMA_PollForTransfer:000002ec $d
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:1317   .text.HAL_DMA_PollForTransfer:000002fc $t
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:1680   .text.HAL_DMA_PollForTransfer:00000538 $d
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:1688   .text.HAL_DMA_IRQHandler:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:1695   .text.HAL_DMA_IRQHandler:00000000 HAL_DMA_IRQHandler
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:2173   .text.HAL_DMA_IRQHandler:000002dc $d
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:2181   .text.HAL_DMA_RegisterCallback:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:2188   .text.HAL_DMA_RegisterCallback:00000000 HAL_DMA_RegisterCallback
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:2227   .text.HAL_DMA_RegisterCallback:0000002a $d
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:2231   .text.HAL_DMA_RegisterCallback:0000002e $t
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:2273   .text.HAL_DMA_UnRegisterCallback:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:2280   .text.HAL_DMA_UnRegisterCallback:00000000 HAL_DMA_UnRegisterCallback
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:2317   .text.HAL_DMA_UnRegisterCallback:0000002a $d
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:2385   .text.HAL_DMA_GetState:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:2392   .text.HAL_DMA_GetState:00000000 HAL_DMA_GetState
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:2408   .text.HAL_DMA_GetError:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:2415   .text.HAL_DMA_GetError:00000000 HAL_DMA_GetError
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:2322   .text.HAL_DMA_UnRegisterCallback:0000002f $d
+C:\Users\bertz\AppData\Local\Temp\ccPiwVp6.s:2322   .text.HAL_DMA_UnRegisterCallback:00000030 $t
 
 UNDEFINED SYMBOLS
 HAL_GetTick

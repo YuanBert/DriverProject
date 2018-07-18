@@ -1,0 +1,7 @@
+---- vApplicationIdleHook Matches (6 in 3 files) ----
+Croutine.h (f:\users\bertz\documents\github\driverproject\middlewares\third_party\freertos\source\include): void vApplicationIdleHook( void )
+Croutine.h (f:\users\bertz\documents\github\driverproject\middlewares\third_party\freertos\source\include): void vApplicationIdleHook( void )
+Freertos.c (f:\users\bertz\documents\github\driverproject\core\src):void vApplicationIdleHook(void)
+Tasks.c (f:\users\bertz\documents\github\driverproject\middlewares\third_party\freertos\source):			extern void vApplicationIdleHook( void );
+Tasks.c (f:\users\bertz\documents\github\driverproject\middlewares\third_party\freertos\source):			NOTE: vApplicationIdleHook() MUST NOT, UNDER ANY CIRCUMSTANCES,
+Tasks.c (f:\users\bertz\documents\github\driverproject\middlewares\third_party\freertos\source):			vApplicationIdleHook();
