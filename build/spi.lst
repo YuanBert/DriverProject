@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s 			page 1
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccMNs1Gw.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s 			page 1
   31:Core/Src/spi.c ****   *    this license is void and will automatically terminate your rights under 
   32:Core/Src/spi.c ****   *    this license. 
   33:Core/Src/spi.c ****   *
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s 			page 2
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccMNs1Gw.s 			page 2
 
 
   34:Core/Src/spi.c ****   * THIS SOFTWARE IS PROVIDED BY STMICROELECTRONICS AND CONTRIBUTORS "AS IS" 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s 			page 1
   45              		.loc 1 68 0
   46 0012 C360     		str	r3, [r0, #12]
   69:Core/Src/spi.c ****   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s 			page 3
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccMNs1Gw.s 			page 3
 
 
   47              		.loc 1 69 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s 			page 1
   87              	.LFE66:
   89              		.section	.text.HAL_SPI_MspInit,"ax",%progbits
   90              		.align	1
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s 			page 4
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccMNs1Gw.s 			page 4
 
 
   91              		.global	HAL_SPI_MspInit
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s 			page 1
   97:Core/Src/spi.c ****     PA4     ------> SPI1_NSS
   98:Core/Src/spi.c ****     PA5     ------> SPI1_SCK
   99:Core/Src/spi.c ****     PA6     ------> SPI1_MISO
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s 			page 5
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccMNs1Gw.s 			page 5
 
 
  100:Core/Src/spi.c ****     PA7     ------> SPI1_MOSI 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s 			page 1
  168              	.L14:
  169 0050 00300140 		.word	1073819648
  170 0054 00080140 		.word	1073809408
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s 			page 6
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccMNs1Gw.s 			page 6
 
 
  171              		.cfi_endproc
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s 			page 1
  202 000a 08BD     		pop	{r3, pc}
  203              	.LVL8:
  204              	.L19:
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s 			page 7
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccMNs1Gw.s 			page 7
 
 
  127:Core/Src/spi.c ****   
@@ -408,22 +408,22 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s 			page 1
  245              		.file 13 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
  246              		.file 14 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"
  247              		.file 15 "Core/Inc/spi.h"
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s 			page 8
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccMNs1Gw.s 			page 8
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 spi.c
-C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s:16     .text.MX_SPI1_Init:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s:23     .text.MX_SPI1_Init:00000000 MX_SPI1_Init
-C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s:83     .text.MX_SPI1_Init:0000003c $d
+C:\Users\bertz\AppData\Local\Temp\ccMNs1Gw.s:16     .text.MX_SPI1_Init:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccMNs1Gw.s:23     .text.MX_SPI1_Init:00000000 MX_SPI1_Init
+C:\Users\bertz\AppData\Local\Temp\ccMNs1Gw.s:83     .text.MX_SPI1_Init:0000003c $d
                             *COM*:00000058 hspi1
-C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s:90     .text.HAL_SPI_MspInit:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s:97     .text.HAL_SPI_MspInit:00000000 HAL_SPI_MspInit
-C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s:169    .text.HAL_SPI_MspInit:00000050 $d
-C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s:175    .text.HAL_SPI_MspDeInit:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s:182    .text.HAL_SPI_MspDeInit:00000000 HAL_SPI_MspDeInit
-C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s:221    .text.HAL_SPI_MspDeInit:00000020 $d
-C:\Users\bertz\AppData\Local\Temp\ccDDHLeG.s:229    .rodata.MX_SPI1_Init.str1.4:00000000 $d
+C:\Users\bertz\AppData\Local\Temp\ccMNs1Gw.s:90     .text.HAL_SPI_MspInit:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccMNs1Gw.s:97     .text.HAL_SPI_MspInit:00000000 HAL_SPI_MspInit
+C:\Users\bertz\AppData\Local\Temp\ccMNs1Gw.s:169    .text.HAL_SPI_MspInit:00000050 $d
+C:\Users\bertz\AppData\Local\Temp\ccMNs1Gw.s:175    .text.HAL_SPI_MspDeInit:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccMNs1Gw.s:182    .text.HAL_SPI_MspDeInit:00000000 HAL_SPI_MspDeInit
+C:\Users\bertz\AppData\Local\Temp\ccMNs1Gw.s:221    .text.HAL_SPI_MspDeInit:00000020 $d
+C:\Users\bertz\AppData\Local\Temp\ccMNs1Gw.s:229    .rodata.MX_SPI1_Init.str1.4:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_SPI_Init

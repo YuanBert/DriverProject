@@ -53,7 +53,6 @@
 
 /* USER CODE BEGIN Includes */     
 #include "stdio.h"
-#include "string.h"
 /* USER CODE END Includes */
 
 /* Variables -----------------------------------------------------------------*/
@@ -62,26 +61,8 @@ osThreadId defaultTaskHandle;
 /* USER CODE BEGIN Variables */
 osThreadId scanBSPATaskHandle;
 osThreadId scanBSPBTaskHandle;
-osThreadId scanUartsTaskHandle;
-
-xSemaphoreHandle xScanBSPABoardSemaphore;
-xSemaphoreHandle xScanBSPBBoardSemaphore;
-xSemaphoreHandle xScanCoreBoardSemaphore;
-
-extern uint8_t 	CoreBoardReceiveBuff[RXBUFFERSIZE];
-extern uint8_t 	CoreBoardReceiveInfo[RXBUFFERSIZE];
-extern uint8_t	CoreBoardRx_BufferLen;
-extern uint8_t 	CoreBoardRx_InfoLen;
-extern uint8_t 	BSPABoardReceiveBuff[RXBUFFERSIZE];
-extern uint8_t 	BSPABoardReceiveInfo[RXBUFFERSIZE];
-extern uint8_t	BSPABoardRx_BufferLen;
-extern uint8_t 	BSPABoardRx_InfoLen;
-extern uint8_t 	BSPBBoardReceiveBuff[RXBUFFERSIZE];
-extern uint8_t 	BSPBBoardReceiveInfo[RXBUFFERSIZE];
-extern uint8_t	BSPBBoardRx_BufferLen;
-extern uint8_t 	BSPBBoardRx_InfoLen;
-
-portBASE_TYPE tReturn;
+osThreadId scanBSPCTaskHandle;
+osThreadId scanCoreBoardTaskHandle;
 /* USER CODE END Variables */
 
 /* Function prototypes -------------------------------------------------------*/
@@ -90,11 +71,10 @@ void StartDefaultTask(void const * argument);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
 /* USER CODE BEGIN FunctionPrototypes */
-void vApplicationIdleHook(void);
 void StartScanBSPATask(void const * argument);
 void StartScanBSPBTask(void const * argument);
 void StartScanBSPCTask(void const * argument);
-void StartScanUsartsTask(void const * argument);
+void StartScanCoreBoardTask(void const * argument);
 
 
 /* USER CODE END FunctionPrototypes */
@@ -114,9 +94,6 @@ void MX_FREERTOS_Init(void) {
 
   /* USER CODE BEGIN RTOS_SEMAPHORES */
   /* add semaphores, ... */
-  xScanCoreBoardSemaphore = xSemaphoreCreateBinary();
-  xScanBSPABoardSemaphore = xSemaphoreCreateBinary();
-  xScanBSPBBoardSemaphore = xSemaphoreCreateBinary();
   /* USER CODE END RTOS_SEMAPHORES */
 
   /* USER CODE BEGIN RTOS_TIMERS */
@@ -125,29 +102,31 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* definition and creation of defaultTask */
+<<<<<<< HEAD
   osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 64);
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+=======
+  //osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
+  //defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+>>>>>>> parent of 556606d... add usart handle
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
-  /*
-  tReturn = xTaskCreate((TaskFunction_t)StartScanBSPATask,
+  
+  xTaskCreate((TaskFunction_t)StartScanBSPATask,
   				(const char *)"scanBSPATask",
   				(uint16_t    )128,
   				(void *		 )NULL,
   				(UBaseType_t )0,
   				(TaskHandle_t*)&scanBSPATaskHandle);
-  if(pdPASS == tReturn)
-  {
-	printf(" Scan BSPA Task Create OK!\r\n");
-  }
   
-  tReturn = xTaskCreate((TaskFunction_t)StartScanBSPBTask,
+  xTaskCreate((TaskFunction_t)StartScanBSPBTask,
   				(const char *)"scanBSPBTask",
-  				(uint16_t    )64,
+  				(uint16_t    )128,
   				(void *		 )NULL,
   				(UBaseType_t )1,
   				(TaskHandle_t*)&scanBSPBTaskHandle);
+<<<<<<< HEAD
    if(pdPASS == tReturn)
   {
 	printf(" Scan BSPB Task Create OK! \r\n");
@@ -165,6 +144,22 @@ void MX_FREERTOS_Init(void) {
 //	printf(" Scan Core Board Task Create OK! \r\n");
 //}
   
+=======
+  /*
+  xTaskCreate((TaskFunction_t)StartScanBSPCTask,
+  				(const char *)"scanBSPCTask",
+  				(uint16_t    )128,
+  				(void *		 )NULL,
+  				(UBaseType_t )1,
+  				(TaskHandle_t*)&scanBSPCTaskHandle);
+  */
+  xTaskCreate((TaskFunction_t)StartScanCoreBoardTask,
+  				(const char *)"scanCoreBoardTask",
+  				(uint16_t    )128,
+  				(void *		 )NULL,
+  				(UBaseType_t )2,
+  				(TaskHandle_t*)&scanCoreBoardTaskHandle);
+>>>>>>> parent of 556606d... add usart handle
   /*
   osThreadDef(scanBSPATask,StartScanBSPATask,osPriorityAboveNormal,0,128);
   scanBSPATaskHandle = osThreadCreate(osThread(scanBSPATask), NULL);
@@ -197,21 +192,21 @@ void StartDefaultTask(void const * argument)
 }
 
 /* USER CODE BEGIN Application */
-void vApplicationIdleHook(void)
+void StartScanBSPATask(void const * argument)
 {
+<<<<<<< HEAD
 	//for(;;)
 	//{
 		printf("Idle Hook Function\r\n");
 		//
 	//}
-}
-void StartScanBSPATask(void const * argument)
-{
+=======
 	for(;;)
 	{
 		vTaskDelay(500);
 		printf("ScanBSPA \r\n");
 	}
+>>>>>>> parent of 556606d... add usart handle
 }
 void StartScanBSPBTask(void const * argument)
 {
@@ -221,14 +216,19 @@ void StartScanBSPBTask(void const * argument)
 		printf("ScanBSPB \r\n");
 	}
 }
-void StartScanUsartsTask(void const * argument)
+void StartScanBSPCTask(void const * argument)
 {
-	BaseType_t err = pdFALSE;
-	xSemaphoreTake(xScanBSPABoardSemaphore, 0);
-	xSemaphoreTake(xScanBSPBBoardSemaphore, 0);
-	xSemaphoreTake(xScanCoreBoardSemaphore, 0);
 	for(;;)
 	{
+		vTaskDelay(500);
+		printf("ScanBSPC \r\n");
+	}
+}
+void StartScanCoreBoardTask(void const * argument)
+{
+	for(;;)
+	{
+<<<<<<< HEAD
 		err = xSemaphoreTake(xScanBSPABoardSemaphore, 5);
 		if(err == pdTRUE)
 		{
@@ -260,6 +260,10 @@ void StartScanUsartsTask(void const * argument)
 			vTaskDelay(500);
 			printf("Scan Uarts Task\r\n");
 		}
+=======
+		vTaskDelay(500);
+		printf("ScanCoreBoard \r\n");
+>>>>>>> parent of 556606d... add usart handle
 	}
 }
 /* USER CODE END Application */

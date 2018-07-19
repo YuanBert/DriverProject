@@ -37,25 +37,7 @@
 #include "cmsis_os.h"
 
 /* USER CODE BEGIN 0 */
-#include "usart.h"
-#include "string.h"
 
-extern xSemaphoreHandle xScanBSPABoardSemaphore;
-extern xSemaphoreHandle xScanBSPBBoardSemaphore;
-extern xSemaphoreHandle xScanCoreBoardSemaphore;
-
-extern uint8_t 	CoreBoardReceiveBuff[RXBUFFERSIZE];
-extern uint8_t 	CoreBoardReceiveInfo[RXBUFFERSIZE];
-extern uint8_t	CoreBoardRx_BufferLen;
-extern uint8_t 	CoreBoardRx_InfoLen;
-extern uint8_t 	BSPABoardReceiveBuff[RXBUFFERSIZE];
-extern uint8_t 	BSPABoardReceiveInfo[RXBUFFERSIZE];
-extern uint8_t	BSPABoardRx_BufferLen;
-extern uint8_t 	BSPABoardRx_InfoLen;
-extern uint8_t 	BSPBBoardReceiveBuff[RXBUFFERSIZE];
-extern uint8_t 	BSPBBoardReceiveInfo[RXBUFFERSIZE];
-extern uint8_t	BSPBBoardRx_BufferLen;
-extern uint8_t 	BSPBBoardRx_InfoLen;
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
@@ -298,25 +280,11 @@ void TIM4_IRQHandler(void)
 void USART1_IRQHandler(void)
 {
   /* USER CODE BEGIN USART1_IRQn 0 */
-  uint32_t temp;
-  static BaseType_t xHigherPriorityTaskWoken;
-  if(RESET != __HAL_UART_GET_FLAG(&huart1, UART_FLAG_IDLE))
-  {
-	HAL_UART_DMAStop(&huart1);
-	temp = __HAL_DMA_GET_COUNTER(&hdma_usart1_rx);
-    __HAL_UART_CLEAR_IDLEFLAG(&huart1);
-	CoreBoardRx_BufferLen = RXBUFFERSIZE - temp;
-	CoreBoardRx_InfoLen = CoreBoardRx_BufferLen;
-	memcpy(CoreBoardReceiveInfo,CoreBoardReceiveBuff,CoreBoardRx_BufferLen);
-	memset(CoreBoardReceiveBuff, 0x00, CoreBoardRx_BufferLen);
-	CoreBoardRx_BufferLen = 0;
-	HAL_UART_Receive_DMA(&huart1,CoreBoardReceiveBuff,RXBUFFERSIZE);
-  }
+
   /* USER CODE END USART1_IRQn 0 */
   HAL_UART_IRQHandler(&huart1);
   /* USER CODE BEGIN USART1_IRQn 1 */
-  xSemaphoreGiveFromISR(xScanCoreBoardSemaphore, &xHigherPriorityTaskWoken);
-  portEND_SWITCHING_ISR(xHigherPriorityTaskWoken);
+
   /* USER CODE END USART1_IRQn 1 */
 }
 
@@ -326,25 +294,11 @@ void USART1_IRQHandler(void)
 void USART2_IRQHandler(void)
 {
   /* USER CODE BEGIN USART2_IRQn 0 */
-  uint32_t temp;
-  static BaseType_t xHigherPriorityTaskWoken;
-  if(RESET != __HAL_UART_GET_FLAG(&huart2, UART_FLAG_IDLE))
-  {
-	HAL_UART_DMAStop(&huart2);
-	temp = __HAL_DMA_GET_COUNTER(&hdma_usart2_rx);
-    __HAL_UART_CLEAR_IDLEFLAG(&huart2);
-	BSPABoardRx_BufferLen = RXBUFFERSIZE - temp;
-	BSPABoardRx_InfoLen = BSPABoardRx_BufferLen;
-	memcpy(BSPABoardReceiveInfo,BSPABoardReceiveBuff,BSPABoardRx_BufferLen);
-	memset(BSPABoardReceiveBuff, 0x00, BSPABoardRx_BufferLen);
-	BSPABoardRx_BufferLen = 0;
-	HAL_UART_Receive_DMA(&huart2,BSPABoardReceiveBuff,RXBUFFERSIZE);
-  }
+
   /* USER CODE END USART2_IRQn 0 */
   HAL_UART_IRQHandler(&huart2);
   /* USER CODE BEGIN USART2_IRQn 1 */
-  xSemaphoreGiveFromISR(xScanBSPABoardSemaphore, &xHigherPriorityTaskWoken);
-  portEND_SWITCHING_ISR(xHigherPriorityTaskWoken);
+
   /* USER CODE END USART2_IRQn 1 */
 }
 
@@ -354,25 +308,11 @@ void USART2_IRQHandler(void)
 void USART3_IRQHandler(void)
 {
   /* USER CODE BEGIN USART3_IRQn 0 */
-  uint32_t temp;
-  static BaseType_t xHigherPriorityTaskWoken;
-  if(RESET != __HAL_UART_GET_FLAG(&huart3, UART_FLAG_IDLE))
-  {
-	HAL_UART_DMAStop(&huart3);
-	temp = __HAL_DMA_GET_COUNTER(&hdma_usart3_rx);
-    __HAL_UART_CLEAR_IDLEFLAG(&huart3);
-	BSPBBoardRx_BufferLen = RXBUFFERSIZE - temp;
-	BSPBBoardRx_InfoLen = BSPBBoardRx_BufferLen;
-	memcpy(BSPBBoardReceiveInfo,BSPBBoardReceiveBuff,BSPBBoardRx_BufferLen);
-	memset(BSPBBoardReceiveBuff, 0x00, BSPBBoardRx_BufferLen);
-	BSPBBoardRx_BufferLen = 0;
-	HAL_UART_Receive_DMA(&huart3,BSPBBoardReceiveBuff,RXBUFFERSIZE);
-  }
+
   /* USER CODE END USART3_IRQn 0 */
   HAL_UART_IRQHandler(&huart3);
   /* USER CODE BEGIN USART3_IRQn 1 */
-  xSemaphoreGiveFromISR(xScanBSPBBoardSemaphore, &xHigherPriorityTaskWoken);
-  portEND_SWITCHING_ISR(xHigherPriorityTaskWoken);
+
   /* USER CODE END USART3_IRQn 1 */
 }
 

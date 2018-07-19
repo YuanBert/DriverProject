@@ -105,28 +105,7 @@
 /* #define USE_FULL_ASSERT    1U */
 
 /* USER CODE BEGIN Private defines */
-  /** enum: DS_StatusTypeDef
-  **
-  ** DESCRIPTION:
-  **  --«˝∂Ø∞Â¿‡–Õ
-  **
-  ** CREATED: 2017/12/7, by bert
-  **
-  ** FILE: DS_Protocol.h
-  **
-  ** AUTHOR: Bert.Zhang
-  ********************************************************************************
-  */
-  typedef enum
-  {
-    DS_OK       = 0x00U,
-    DS_ERROR    = 0x01U,
-    DS_BUSY     = 0x02U,
-    DS_TIMEOUT  = 0x03U,
-    DS_NOCMD    = 0x04U
-  }DS_StatusTypeDef;
 
-#define RXBUFFERSIZE		128
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

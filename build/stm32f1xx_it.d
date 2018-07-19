@@ -40,8 +40,7 @@ build/stm32f1xx_it.o: Core/Src/stm32f1xx_it.c \
  Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
  Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
  Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
- Core/Inc/usart.h
+ Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
 
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 
@@ -132,5 +131,3 @@ Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
 Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h:
 
 Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
-
-Core/Inc/usart.h:

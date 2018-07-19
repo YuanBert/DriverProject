@@ -76,13 +76,6 @@ void MX_USART2_UART_Init(void);
 void MX_USART3_UART_Init(void);
 
 /* USER CODE BEGIN Prototypes */
-DS_StatusTypeDef DS_CoreBoardProtocolInit(void);
-DS_StatusTypeDef DS_BSPABoardProtocolInit(void);
-DS_StatusTypeDef DS_BSPBBoardProtocolInit(void);
-
-DS_StatusTypeDef DS_SendDataToCoreBoard(uint8_t* pData, uint16_t size, uint32_t Timeout);
-DS_StatusTypeDef DS_SendDataToBSPABoard(uint8_t* pData, uint16_t size, uint32_t Timeout);
-DS_StatusTypeDef DS_SendDataToBSPBBoard(uint8_t* pData, uint16_t size, uint32_t Timeout);
 
 /* USER CODE END Prototypes */
 
