@@ -125,7 +125,7 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* definition and creation of defaultTask */
-  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 1, 64);
+  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 64);
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
@@ -154,16 +154,16 @@ void MX_FREERTOS_Init(void) {
   }
   */
   
-  tReturn = xTaskCreate((TaskFunction_t)StartScanUsartsTask,
-  				(const char *)"scanUartsTask",
-  				(uint16_t    )256,
-  				(void *		 )NULL,
-  				(UBaseType_t )1,
-  				(TaskHandle_t*)&scanUartsTaskHandle);
-  if(pdPASS == tReturn)
-  {
-	printf(" Scan Core Board Task Create OK! \r\n");
-  }
+// tReturn = xTaskCreate((TaskFunction_t)StartScanUsartsTask,
+// 				(const char *)"scanUartsTask",
+// 				(uint16_t    )256,
+// 				(void *		 )NULL,
+// 				(UBaseType_t )1,
+// 				(TaskHandle_t*)&scanUartsTaskHandle);
+// if(pdPASS == tReturn)
+// {
+//	printf(" Scan Core Board Task Create OK! \r\n");
+//}
   
   /*
   osThreadDef(scanBSPATask,StartScanBSPATask,osPriorityAboveNormal,0,128);
@@ -199,11 +199,11 @@ void StartDefaultTask(void const * argument)
 /* USER CODE BEGIN Application */
 void vApplicationIdleHook(void)
 {
-	for(;;)
-	{
-		//printf("Idle Hook Function\r\n");
+	//for(;;)
+	//{
+		printf("Idle Hook Function\r\n");
 		//
-	}
+	//}
 }
 void StartScanBSPATask(void const * argument)
 {
@@ -232,9 +232,11 @@ void StartScanUsartsTask(void const * argument)
 		err = xSemaphoreTake(xScanBSPABoardSemaphore, 5);
 		if(err == pdTRUE)
 		{
+			
 			printf("BSPABoardRx_Len = %03d\n %s\r\n",BSPABoardRx_InfoLen,BSPABoardReceiveInfo);
 			memset(BSPABoardReceiveInfo,0x00,BSPABoardRx_InfoLen);
 			BSPABoardRx_InfoLen = 0;
+			
 		}
 		
 		err = xSemaphoreTake(xScanBSPBBoardSemaphore, 5);

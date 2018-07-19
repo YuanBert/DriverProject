@@ -125,15 +125,17 @@ int main(void)
   /* Initialize interrupts */
   MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
-  DS_CoreBoardProtocolInit();
-  DS_BSPABoardProtocolInit();
+  //DS_CoreBoardProtocolInit();
+  //DS_BSPABoardProtocolInit();
+  //DS_BSPBBoardProtocolInit();
+  //printf("Enter FreeRTOS\r\n");
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in freertos.c) */
-  MX_FREERTOS_Init();
+  //MX_FREERTOS_Init();
 
   /* Start scheduler */
-  osKernelStart();
+  //osKernelStart();
   
   /* We should never get here as control is now taken by the scheduler */
 
@@ -145,6 +147,8 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
+  HAL_UART_Transmit(&huart1, (uint8_t *)"Hellow Main\r\n", 11, 0x0F);
+  HAL_Delay(1000);
 
   }
   /* USER CODE END 3 */

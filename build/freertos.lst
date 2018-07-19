@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 1
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 1
   31:Core/Src/freertos.c ****   *    this license. 
   32:Core/Src/freertos.c ****   *
   33:Core/Src/freertos.c ****   * THIS SOFTWARE IS PROVIDED BY STMICROELECTRONICS AND CONTRIBUTORS "AS IS" 
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 2
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s 			page 2
 
 
   34:Core/Src/freertos.c ****   * AND ANY EXPRESS, IMPLIED OR STATUTORY WARRANTIES, INCLUDING, BUT NOT 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 1
   88:Core/Src/freertos.c **** void StartDefaultTask(void const * argument);
   89:Core/Src/freertos.c **** 
   90:Core/Src/freertos.c **** void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 3
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s 			page 3
 
 
   91:Core/Src/freertos.c **** 
@@ -158,7 +158,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 1
  125:Core/Src/freertos.c **** 
  126:Core/Src/freertos.c ****   /* Create the thread(s) */
  127:Core/Src/freertos.c ****   /* definition and creation of defaultTask */
- 128:Core/Src/freertos.c ****   osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 1, 64);
+ 128:Core/Src/freertos.c ****   osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 64);
  129:Core/Src/freertos.c ****   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
  130:Core/Src/freertos.c **** 
  131:Core/Src/freertos.c ****   /* USER CODE BEGIN RTOS_THREADS */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 1
  145:Core/Src/freertos.c ****   tReturn = xTaskCreate((TaskFunction_t)StartScanBSPBTask,
  146:Core/Src/freertos.c ****   				(const char *)"scanBSPBTask",
  147:Core/Src/freertos.c ****   				(uint16_t    )64,
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 4
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s 			page 4
 
 
  148:Core/Src/freertos.c ****   				(void *		 )NULL,
@@ -190,16 +190,16 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 1
  154:Core/Src/freertos.c ****   }
  155:Core/Src/freertos.c ****   */
  156:Core/Src/freertos.c ****   
- 157:Core/Src/freertos.c ****   tReturn = xTaskCreate((TaskFunction_t)StartScanUsartsTask,
- 158:Core/Src/freertos.c ****   				(const char *)"scanUartsTask",
- 159:Core/Src/freertos.c ****   				(uint16_t    )256,
- 160:Core/Src/freertos.c ****   				(void *		 )NULL,
- 161:Core/Src/freertos.c ****   				(UBaseType_t )1,
- 162:Core/Src/freertos.c ****   				(TaskHandle_t*)&scanUartsTaskHandle);
- 163:Core/Src/freertos.c ****   if(pdPASS == tReturn)
- 164:Core/Src/freertos.c ****   {
- 165:Core/Src/freertos.c **** 	printf(" Scan Core Board Task Create OK! \r\n");
- 166:Core/Src/freertos.c ****   }
+ 157:Core/Src/freertos.c **** // tReturn = xTaskCreate((TaskFunction_t)StartScanUsartsTask,
+ 158:Core/Src/freertos.c **** // 				(const char *)"scanUartsTask",
+ 159:Core/Src/freertos.c **** // 				(uint16_t    )256,
+ 160:Core/Src/freertos.c **** // 				(void *		 )NULL,
+ 161:Core/Src/freertos.c **** // 				(UBaseType_t )1,
+ 162:Core/Src/freertos.c **** // 				(TaskHandle_t*)&scanUartsTaskHandle);
+ 163:Core/Src/freertos.c **** // if(pdPASS == tReturn)
+ 164:Core/Src/freertos.c **** // {
+ 165:Core/Src/freertos.c **** //	printf(" Scan Core Board Task Create OK! \r\n");
+ 166:Core/Src/freertos.c **** //}
  167:Core/Src/freertos.c ****   
  168:Core/Src/freertos.c ****   /*
  169:Core/Src/freertos.c ****   osThreadDef(scanBSPATask,StartScanBSPATask,osPriorityAboveNormal,0,128);
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 1
  189:Core/Src/freertos.c ****   /* USER CODE BEGIN StartDefaultTask */
  190:Core/Src/freertos.c ****   /* Infinite loop */
  191:Core/Src/freertos.c ****   for(;;)
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 5
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s 			page 5
 
 
  192:Core/Src/freertos.c ****   {
@@ -259,668 +259,626 @@ ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 1
   51 0014 00000000 		.word	.LC2
   52              		.cfi_endproc
   53              	.LFE9:
-  55              		.section	.text.StartScanUsartsTask,"ax",%progbits
+  55              		.section	.text.MX_FREERTOS_Init,"ax",%progbits
   56              		.align	1
-  57              		.global	StartScanUsartsTask
+  57              		.global	MX_FREERTOS_Init
   58              		.syntax unified
   59              		.thumb
   60              		.thumb_func
   61              		.fpu softvfp
-  63              	StartScanUsartsTask:
-  64              	.LFB13:
+  63              	MX_FREERTOS_Init:
+  64              	.LFB8:
+ 106:Core/Src/freertos.c ****   /* USER CODE BEGIN Init */
+  65              		.loc 1 106 0
+  66              		.cfi_startproc
+  67              		@ args = 0, pretend = 0, frame = 24
+  68              		@ frame_needed = 0, uses_anonymous_args = 0
+  69 0000 30B5     		push	{r4, r5, lr}
+  70              	.LCFI1:
+  71              		.cfi_def_cfa_offset 12
+  72              		.cfi_offset 4, -12
+  73              		.cfi_offset 5, -8
+  74              		.cfi_offset 14, -4
+  75 0002 87B0     		sub	sp, sp, #28
+  76              	.LCFI2:
+  77              		.cfi_def_cfa_offset 40
+ 117:Core/Src/freertos.c ****   xScanBSPABoardSemaphore = xSemaphoreCreateBinary();
+  78              		.loc 1 117 0
+  79 0004 0322     		movs	r2, #3
+  80 0006 0021     		movs	r1, #0
+  81 0008 0120     		movs	r0, #1
+  82 000a FFF7FEFF 		bl	xQueueGenericCreate
+  83              	.LVL4:
+  84 000e 0F4B     		ldr	r3, .L8
+  85 0010 1860     		str	r0, [r3]
+ 118:Core/Src/freertos.c ****   xScanBSPBBoardSemaphore = xSemaphoreCreateBinary();
+  86              		.loc 1 118 0
+  87 0012 0322     		movs	r2, #3
+  88 0014 0021     		movs	r1, #0
+  89 0016 0120     		movs	r0, #1
+  90 0018 FFF7FEFF 		bl	xQueueGenericCreate
+  91              	.LVL5:
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s 			page 6
+
+
+  92 001c 0C4B     		ldr	r3, .L8+4
+  93 001e 1860     		str	r0, [r3]
+ 119:Core/Src/freertos.c ****   /* USER CODE END RTOS_SEMAPHORES */
+  94              		.loc 1 119 0
+  95 0020 0322     		movs	r2, #3
+  96 0022 0021     		movs	r1, #0
+  97 0024 0120     		movs	r0, #1
+  98 0026 FFF7FEFF 		bl	xQueueGenericCreate
+  99              	.LVL6:
+ 100 002a 0A4B     		ldr	r3, .L8+8
+ 101 002c 1860     		str	r0, [r3]
+ 128:Core/Src/freertos.c ****   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+ 102              		.loc 1 128 0
+ 103 002e 01AC     		add	r4, sp, #4
+ 104 0030 094D     		ldr	r5, .L8+12
+ 105 0032 0FCD     		ldmia	r5!, {r0, r1, r2, r3}
+ 106 0034 0FC4     		stmia	r4!, {r0, r1, r2, r3}
+ 107 0036 2B68     		ldr	r3, [r5]
+ 108 0038 2360     		str	r3, [r4]
+ 129:Core/Src/freertos.c **** 
+ 109              		.loc 1 129 0
+ 110 003a 0021     		movs	r1, #0
+ 111 003c 01A8     		add	r0, sp, #4
+ 112 003e FFF7FEFF 		bl	osThreadCreate
+ 113              	.LVL7:
+ 114 0042 064B     		ldr	r3, .L8+16
+ 115 0044 1860     		str	r0, [r3]
+ 183:Core/Src/freertos.c **** 
+ 116              		.loc 1 183 0
+ 117 0046 07B0     		add	sp, sp, #28
+ 118              	.LCFI3:
+ 119              		.cfi_def_cfa_offset 12
+ 120              		@ sp needed
+ 121 0048 30BD     		pop	{r4, r5, pc}
+ 122              	.L9:
+ 123 004a 00BF     		.align	2
+ 124              	.L8:
+ 125 004c 00000000 		.word	xScanCoreBoardSemaphore
+ 126 0050 00000000 		.word	xScanBSPABoardSemaphore
+ 127 0054 00000000 		.word	xScanBSPBBoardSemaphore
+ 128 0058 00000000 		.word	.LANCHOR0
+ 129 005c 00000000 		.word	defaultTaskHandle
+ 130              		.cfi_endproc
+ 131              	.LFE8:
+ 133              		.section	.text.vApplicationIdleHook,"ax",%progbits
+ 134              		.align	1
+ 135              		.global	vApplicationIdleHook
+ 136              		.syntax unified
+ 137              		.thumb
+ 138              		.thumb_func
+ 139              		.fpu softvfp
+ 141              	vApplicationIdleHook:
+ 142              	.LFB10:
  195:Core/Src/freertos.c ****   }
  196:Core/Src/freertos.c ****   /* USER CODE END StartDefaultTask */
  197:Core/Src/freertos.c **** }
  198:Core/Src/freertos.c **** 
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s 			page 7
+
+
  199:Core/Src/freertos.c **** /* USER CODE BEGIN Application */
  200:Core/Src/freertos.c **** void vApplicationIdleHook(void)
  201:Core/Src/freertos.c **** {
- 202:Core/Src/freertos.c **** 	for(;;)
- 203:Core/Src/freertos.c **** 	{
- 204:Core/Src/freertos.c **** 		//printf("Idle Hook Function\r\n");
+ 143              		.loc 1 201 0
+ 144              		.cfi_startproc
+ 145              		@ args = 0, pretend = 0, frame = 0
+ 146              		@ frame_needed = 0, uses_anonymous_args = 0
+ 147 0000 08B5     		push	{r3, lr}
+ 148              	.LCFI4:
+ 149              		.cfi_def_cfa_offset 8
+ 150              		.cfi_offset 3, -8
+ 151              		.cfi_offset 14, -4
+ 202:Core/Src/freertos.c **** 	//for(;;)
+ 203:Core/Src/freertos.c **** 	//{
+ 204:Core/Src/freertos.c **** 		printf("Idle Hook Function\r\n");
+ 152              		.loc 1 204 0
+ 153 0002 0248     		ldr	r0, .L12
+ 154 0004 FFF7FEFF 		bl	puts
+ 155              	.LVL8:
  205:Core/Src/freertos.c **** 		//
- 206:Core/Src/freertos.c **** 	}
+ 206:Core/Src/freertos.c **** 	//}
  207:Core/Src/freertos.c **** }
+ 156              		.loc 1 207 0
+ 157 0008 08BD     		pop	{r3, pc}
+ 158              	.L13:
+ 159 000a 00BF     		.align	2
+ 160              	.L12:
+ 161 000c 00000000 		.word	.LC4
+ 162              		.cfi_endproc
+ 163              	.LFE10:
+ 165              		.section	.text.StartScanBSPATask,"ax",%progbits
+ 166              		.align	1
+ 167              		.global	StartScanBSPATask
+ 168              		.syntax unified
+ 169              		.thumb
+ 170              		.thumb_func
+ 171              		.fpu softvfp
+ 173              	StartScanBSPATask:
+ 174              	.LFB11:
  208:Core/Src/freertos.c **** void StartScanBSPATask(void const * argument)
  209:Core/Src/freertos.c **** {
+ 175              		.loc 1 209 0
+ 176              		.cfi_startproc
+ 177              		@ Volatile: function does not return.
+ 178              		@ args = 0, pretend = 0, frame = 0
+ 179              		@ frame_needed = 0, uses_anonymous_args = 0
+ 180              	.LVL9:
+ 181 0000 08B5     		push	{r3, lr}
+ 182              	.LCFI5:
+ 183              		.cfi_def_cfa_offset 8
+ 184              		.cfi_offset 3, -8
+ 185              		.cfi_offset 14, -4
+ 186              	.LVL10:
+ 187              	.L15:
  210:Core/Src/freertos.c **** 	for(;;)
  211:Core/Src/freertos.c **** 	{
  212:Core/Src/freertos.c **** 		vTaskDelay(500);
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s 			page 8
+
+
+ 188              		.loc 1 212 0 discriminator 1
+ 189 0002 4FF4FA70 		mov	r0, #500
+ 190 0006 FFF7FEFF 		bl	vTaskDelay
+ 191              	.LVL11:
  213:Core/Src/freertos.c **** 		printf("ScanBSPA \r\n");
+ 192              		.loc 1 213 0 discriminator 1
+ 193 000a 0248     		ldr	r0, .L17
+ 194 000c FFF7FEFF 		bl	puts
+ 195              	.LVL12:
+ 196 0010 F7E7     		b	.L15
+ 197              	.L18:
+ 198 0012 00BF     		.align	2
+ 199              	.L17:
+ 200 0014 00000000 		.word	.LC5
+ 201              		.cfi_endproc
+ 202              	.LFE11:
+ 204              		.section	.text.StartScanBSPBTask,"ax",%progbits
+ 205              		.align	1
+ 206              		.global	StartScanBSPBTask
+ 207              		.syntax unified
+ 208              		.thumb
+ 209              		.thumb_func
+ 210              		.fpu softvfp
+ 212              	StartScanBSPBTask:
+ 213              	.LFB12:
  214:Core/Src/freertos.c **** 	}
  215:Core/Src/freertos.c **** }
  216:Core/Src/freertos.c **** void StartScanBSPBTask(void const * argument)
  217:Core/Src/freertos.c **** {
+ 214              		.loc 1 217 0
+ 215              		.cfi_startproc
+ 216              		@ Volatile: function does not return.
+ 217              		@ args = 0, pretend = 0, frame = 0
+ 218              		@ frame_needed = 0, uses_anonymous_args = 0
+ 219              	.LVL13:
+ 220 0000 08B5     		push	{r3, lr}
+ 221              	.LCFI6:
+ 222              		.cfi_def_cfa_offset 8
+ 223              		.cfi_offset 3, -8
+ 224              		.cfi_offset 14, -4
+ 225              	.LVL14:
+ 226              	.L20:
  218:Core/Src/freertos.c **** 	for(;;)
  219:Core/Src/freertos.c **** 	{
  220:Core/Src/freertos.c **** 		vTaskDelay(500);
+ 227              		.loc 1 220 0 discriminator 1
+ 228 0002 4FF4FA70 		mov	r0, #500
+ 229 0006 FFF7FEFF 		bl	vTaskDelay
+ 230              	.LVL15:
  221:Core/Src/freertos.c **** 		printf("ScanBSPB \r\n");
+ 231              		.loc 1 221 0 discriminator 1
+ 232 000a 0248     		ldr	r0, .L22
+ 233 000c FFF7FEFF 		bl	puts
+ 234              	.LVL16:
+ 235 0010 F7E7     		b	.L20
+ 236              	.L23:
+ 237 0012 00BF     		.align	2
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s 			page 9
+
+
+ 238              	.L22:
+ 239 0014 00000000 		.word	.LC6
+ 240              		.cfi_endproc
+ 241              	.LFE12:
+ 243              		.section	.text.StartScanUsartsTask,"ax",%progbits
+ 244              		.align	1
+ 245              		.global	StartScanUsartsTask
+ 246              		.syntax unified
+ 247              		.thumb
+ 248              		.thumb_func
+ 249              		.fpu softvfp
+ 251              	StartScanUsartsTask:
+ 252              	.LFB13:
  222:Core/Src/freertos.c **** 	}
  223:Core/Src/freertos.c **** }
  224:Core/Src/freertos.c **** void StartScanUsartsTask(void const * argument)
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 6
-
-
  225:Core/Src/freertos.c **** {
-  65              		.loc 1 225 0
-  66              		.cfi_startproc
-  67              		@ args = 0, pretend = 0, frame = 0
-  68              		@ frame_needed = 0, uses_anonymous_args = 0
-  69              	.LVL4:
-  70 0000 70B5     		push	{r4, r5, r6, lr}
-  71              	.LCFI1:
-  72              		.cfi_def_cfa_offset 16
-  73              		.cfi_offset 4, -16
-  74              		.cfi_offset 5, -12
-  75              		.cfi_offset 6, -8
-  76              		.cfi_offset 14, -4
-  77              	.LVL5:
+ 253              		.loc 1 225 0
+ 254              		.cfi_startproc
+ 255              		@ args = 0, pretend = 0, frame = 0
+ 256              		@ frame_needed = 0, uses_anonymous_args = 0
+ 257              	.LVL17:
+ 258 0000 70B5     		push	{r4, r5, r6, lr}
+ 259              	.LCFI7:
+ 260              		.cfi_def_cfa_offset 16
+ 261              		.cfi_offset 4, -16
+ 262              		.cfi_offset 5, -12
+ 263              		.cfi_offset 6, -8
+ 264              		.cfi_offset 14, -4
+ 265              	.LVL18:
  226:Core/Src/freertos.c **** 	BaseType_t err = pdFALSE;
  227:Core/Src/freertos.c **** 	xSemaphoreTake(xScanBSPABoardSemaphore, 0);
-  78              		.loc 1 227 0
-  79 0002 0023     		movs	r3, #0
-  80 0004 1A46     		mov	r2, r3
-  81 0006 1946     		mov	r1, r3
-  82 0008 3248     		ldr	r0, .L16
-  83              	.LVL6:
-  84 000a 0068     		ldr	r0, [r0]
-  85 000c FFF7FEFF 		bl	xQueueGenericReceive
-  86              	.LVL7:
+ 266              		.loc 1 227 0
+ 267 0002 0023     		movs	r3, #0
+ 268 0004 1A46     		mov	r2, r3
+ 269 0006 1946     		mov	r1, r3
+ 270 0008 3248     		ldr	r0, .L34
+ 271              	.LVL19:
+ 272 000a 0068     		ldr	r0, [r0]
+ 273 000c FFF7FEFF 		bl	xQueueGenericReceive
+ 274              	.LVL20:
  228:Core/Src/freertos.c **** 	xSemaphoreTake(xScanBSPBBoardSemaphore, 0);
-  87              		.loc 1 228 0
-  88 0010 0023     		movs	r3, #0
-  89 0012 1A46     		mov	r2, r3
-  90 0014 1946     		mov	r1, r3
-  91 0016 3048     		ldr	r0, .L16+4
-  92 0018 0068     		ldr	r0, [r0]
-  93 001a FFF7FEFF 		bl	xQueueGenericReceive
-  94              	.LVL8:
+ 275              		.loc 1 228 0
+ 276 0010 0023     		movs	r3, #0
+ 277 0012 1A46     		mov	r2, r3
+ 278 0014 1946     		mov	r1, r3
+ 279 0016 3048     		ldr	r0, .L34+4
+ 280 0018 0068     		ldr	r0, [r0]
+ 281 001a FFF7FEFF 		bl	xQueueGenericReceive
+ 282              	.LVL21:
  229:Core/Src/freertos.c **** 	xSemaphoreTake(xScanCoreBoardSemaphore, 0);
-  95              		.loc 1 229 0
-  96 001e 0023     		movs	r3, #0
-  97 0020 1A46     		mov	r2, r3
-  98 0022 1946     		mov	r1, r3
-  99 0024 2D48     		ldr	r0, .L16+8
- 100 0026 0068     		ldr	r0, [r0]
- 101 0028 FFF7FEFF 		bl	xQueueGenericReceive
- 102              	.LVL9:
- 103 002c 1EE0     		b	.L10
- 104              	.LVL10:
- 105              	.L14:
+ 283              		.loc 1 229 0
+ 284 001e 0023     		movs	r3, #0
+ 285 0020 1A46     		mov	r2, r3
+ 286 0022 1946     		mov	r1, r3
+ 287 0024 2D48     		ldr	r0, .L34+8
+ 288 0026 0068     		ldr	r0, [r0]
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s 			page 10
+
+
+ 289 0028 FFF7FEFF 		bl	xQueueGenericReceive
+ 290              	.LVL22:
+ 291 002c 1EE0     		b	.L28
+ 292              	.LVL23:
+ 293              	.L32:
  230:Core/Src/freertos.c **** 	for(;;)
  231:Core/Src/freertos.c **** 	{
  232:Core/Src/freertos.c **** 		err = xSemaphoreTake(xScanBSPABoardSemaphore, 5);
  233:Core/Src/freertos.c **** 		if(err == pdTRUE)
  234:Core/Src/freertos.c **** 		{
- 235:Core/Src/freertos.c **** 			printf("BSPABoardRx_Len = %03d\n %s\r\n",BSPABoardRx_InfoLen,BSPABoardReceiveInfo);
- 106              		.loc 1 235 0
- 107 002e 2C4D     		ldr	r5, .L16+12
- 108 0030 2C4C     		ldr	r4, .L16+16
- 109 0032 2A46     		mov	r2, r5
- 110 0034 2178     		ldrb	r1, [r4]	@ zero_extendqisi2
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 7
+ 235:Core/Src/freertos.c **** 			
+ 236:Core/Src/freertos.c **** 			printf("BSPABoardRx_Len = %03d\n %s\r\n",BSPABoardRx_InfoLen,BSPABoardReceiveInfo);
+ 294              		.loc 1 236 0
+ 295 002e 2C4D     		ldr	r5, .L34+12
+ 296 0030 2C4C     		ldr	r4, .L34+16
+ 297 0032 2A46     		mov	r2, r5
+ 298 0034 2178     		ldrb	r1, [r4]	@ zero_extendqisi2
+ 299 0036 2C48     		ldr	r0, .L34+20
+ 300              	.LVL24:
+ 301 0038 FFF7FEFF 		bl	printf
+ 302              	.LVL25:
+ 237:Core/Src/freertos.c **** 			memset(BSPABoardReceiveInfo,0x00,BSPABoardRx_InfoLen);
+ 303              		.loc 1 237 0
+ 304 003c 2278     		ldrb	r2, [r4]	@ zero_extendqisi2
+ 305 003e 0021     		movs	r1, #0
+ 306 0040 2846     		mov	r0, r5
+ 307 0042 FFF7FEFF 		bl	memset
+ 308              	.LVL26:
+ 238:Core/Src/freertos.c **** 			BSPABoardRx_InfoLen = 0;
+ 309              		.loc 1 238 0
+ 310 0046 0023     		movs	r3, #0
+ 311 0048 2370     		strb	r3, [r4]
+ 312 004a 18E0     		b	.L25
+ 313              	.LVL27:
+ 314              	.L33:
+ 239:Core/Src/freertos.c **** 			
+ 240:Core/Src/freertos.c **** 		}
+ 241:Core/Src/freertos.c **** 		
+ 242:Core/Src/freertos.c **** 		err = xSemaphoreTake(xScanBSPBBoardSemaphore, 5);
+ 243:Core/Src/freertos.c **** 		if(err == pdTRUE)
+ 244:Core/Src/freertos.c **** 		{
+ 245:Core/Src/freertos.c **** 			printf("BSPBBoardRx_Len = %03d\n %s\r\n",BSPBBoardRx_InfoLen,BSPBBoardReceiveInfo);
+ 315              		.loc 1 245 0
+ 316 004c 274D     		ldr	r5, .L34+24
+ 317 004e 284C     		ldr	r4, .L34+28
+ 318 0050 2A46     		mov	r2, r5
+ 319 0052 2178     		ldrb	r1, [r4]	@ zero_extendqisi2
+ 320 0054 2748     		ldr	r0, .L34+32
+ 321              	.LVL28:
+ 322 0056 FFF7FEFF 		bl	printf
+ 323              	.LVL29:
+ 246:Core/Src/freertos.c **** 			memset(BSPBBoardReceiveInfo,0x00,BSPBBoardRx_InfoLen);
+ 324              		.loc 1 246 0
+ 325 005a 2278     		ldrb	r2, [r4]	@ zero_extendqisi2
+ 326 005c 0021     		movs	r1, #0
+ 327 005e 2846     		mov	r0, r5
+ 328 0060 FFF7FEFF 		bl	memset
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s 			page 11
 
 
- 111 0036 2C48     		ldr	r0, .L16+20
- 112              	.LVL11:
- 113 0038 FFF7FEFF 		bl	printf
- 114              	.LVL12:
- 236:Core/Src/freertos.c **** 			memset(BSPABoardReceiveInfo,0x00,BSPABoardRx_InfoLen);
- 115              		.loc 1 236 0
- 116 003c 2278     		ldrb	r2, [r4]	@ zero_extendqisi2
- 117 003e 0021     		movs	r1, #0
- 118 0040 2846     		mov	r0, r5
- 119 0042 FFF7FEFF 		bl	memset
- 120              	.LVL13:
- 237:Core/Src/freertos.c **** 			BSPABoardRx_InfoLen = 0;
- 121              		.loc 1 237 0
- 122 0046 0023     		movs	r3, #0
- 123 0048 2370     		strb	r3, [r4]
- 124 004a 18E0     		b	.L7
- 125              	.LVL14:
- 126              	.L15:
- 238:Core/Src/freertos.c **** 		}
- 239:Core/Src/freertos.c **** 		
- 240:Core/Src/freertos.c **** 		err = xSemaphoreTake(xScanBSPBBoardSemaphore, 5);
- 241:Core/Src/freertos.c **** 		if(err == pdTRUE)
- 242:Core/Src/freertos.c **** 		{
- 243:Core/Src/freertos.c **** 			printf("BSPBBoardRx_Len = %03d\n %s\r\n",BSPBBoardRx_InfoLen,BSPBBoardReceiveInfo);
- 127              		.loc 1 243 0
- 128 004c 274D     		ldr	r5, .L16+24
- 129 004e 284C     		ldr	r4, .L16+28
- 130 0050 2A46     		mov	r2, r5
- 131 0052 2178     		ldrb	r1, [r4]	@ zero_extendqisi2
- 132 0054 2748     		ldr	r0, .L16+32
- 133              	.LVL15:
- 134 0056 FFF7FEFF 		bl	printf
- 135              	.LVL16:
- 244:Core/Src/freertos.c **** 			memset(BSPBBoardReceiveInfo,0x00,BSPBBoardRx_InfoLen);
- 136              		.loc 1 244 0
- 137 005a 2278     		ldrb	r2, [r4]	@ zero_extendqisi2
- 138 005c 0021     		movs	r1, #0
- 139 005e 2846     		mov	r0, r5
- 140 0060 FFF7FEFF 		bl	memset
- 141              	.LVL17:
- 245:Core/Src/freertos.c **** 			BSPBBoardRx_InfoLen = 0;
- 142              		.loc 1 245 0
- 143 0064 0023     		movs	r3, #0
- 144 0066 2370     		strb	r3, [r4]
- 145 0068 12E0     		b	.L8
- 146              	.LVL18:
- 147              	.L9:
- 246:Core/Src/freertos.c **** 		}
- 247:Core/Src/freertos.c **** 		
- 248:Core/Src/freertos.c **** 		err = xSemaphoreTake(xScanCoreBoardSemaphore, 5);//portMAX_DELAY);
- 249:Core/Src/freertos.c **** 		if(err == pdTRUE)
- 250:Core/Src/freertos.c **** 		{
- 251:Core/Src/freertos.c **** 			printf("CoreBoardRx_Len = %03d\n %s\r\n",CoreBoardRx_InfoLen,CoreBoardReceiveInfo);
- 252:Core/Src/freertos.c **** 			memset(CoreBoardReceiveInfo,0x00,CoreBoardRx_InfoLen);
- 253:Core/Src/freertos.c **** 			CoreBoardRx_InfoLen = 0;
- 254:Core/Src/freertos.c **** 		}
- 255:Core/Src/freertos.c **** 
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 8
-
-
- 256:Core/Src/freertos.c **** 		if(err == pdFALSE)
- 148              		.loc 1 256 0
- 149 006a 54B3     		cbz	r4, .L13
- 150              	.LVL19:
- 151              	.L10:
+ 329              	.LVL30:
+ 247:Core/Src/freertos.c **** 			BSPBBoardRx_InfoLen = 0;
+ 330              		.loc 1 247 0
+ 331 0064 0023     		movs	r3, #0
+ 332 0066 2370     		strb	r3, [r4]
+ 333 0068 12E0     		b	.L26
+ 334              	.LVL31:
+ 335              	.L27:
+ 248:Core/Src/freertos.c **** 		}
+ 249:Core/Src/freertos.c **** 		
+ 250:Core/Src/freertos.c **** 		err = xSemaphoreTake(xScanCoreBoardSemaphore, 5);//portMAX_DELAY);
+ 251:Core/Src/freertos.c **** 		if(err == pdTRUE)
+ 252:Core/Src/freertos.c **** 		{
+ 253:Core/Src/freertos.c **** 			printf("CoreBoardRx_Len = %03d\n %s\r\n",CoreBoardRx_InfoLen,CoreBoardReceiveInfo);
+ 254:Core/Src/freertos.c **** 			memset(CoreBoardReceiveInfo,0x00,CoreBoardRx_InfoLen);
+ 255:Core/Src/freertos.c **** 			CoreBoardRx_InfoLen = 0;
+ 256:Core/Src/freertos.c **** 		}
+ 257:Core/Src/freertos.c **** 
+ 258:Core/Src/freertos.c **** 		if(err == pdFALSE)
+ 336              		.loc 1 258 0
+ 337 006a 54B3     		cbz	r4, .L31
+ 338              	.LVL32:
+ 339              	.L28:
  232:Core/Src/freertos.c **** 		if(err == pdTRUE)
- 152              		.loc 1 232 0
- 153 006c 0023     		movs	r3, #0
- 154 006e 0522     		movs	r2, #5
- 155 0070 1946     		mov	r1, r3
- 156 0072 1848     		ldr	r0, .L16
- 157 0074 0068     		ldr	r0, [r0]
- 158 0076 FFF7FEFF 		bl	xQueueGenericReceive
- 159              	.LVL20:
+ 340              		.loc 1 232 0
+ 341 006c 0023     		movs	r3, #0
+ 342 006e 0522     		movs	r2, #5
+ 343 0070 1946     		mov	r1, r3
+ 344 0072 1848     		ldr	r0, .L34
+ 345 0074 0068     		ldr	r0, [r0]
+ 346 0076 FFF7FEFF 		bl	xQueueGenericReceive
+ 347              	.LVL33:
  233:Core/Src/freertos.c **** 		{
- 160              		.loc 1 233 0
- 161 007a 0128     		cmp	r0, #1
- 162 007c D7D0     		beq	.L14
- 163              	.LVL21:
- 164              	.L7:
- 240:Core/Src/freertos.c **** 		if(err == pdTRUE)
- 165              		.loc 1 240 0
- 166 007e 0023     		movs	r3, #0
- 167 0080 0522     		movs	r2, #5
- 168 0082 1946     		mov	r1, r3
- 169 0084 1448     		ldr	r0, .L16+4
- 170 0086 0068     		ldr	r0, [r0]
- 171 0088 FFF7FEFF 		bl	xQueueGenericReceive
- 172              	.LVL22:
- 241:Core/Src/freertos.c **** 		{
- 173              		.loc 1 241 0
- 174 008c 0128     		cmp	r0, #1
- 175 008e DDD0     		beq	.L15
- 176              	.LVL23:
- 177              	.L8:
- 248:Core/Src/freertos.c **** 		if(err == pdTRUE)
- 178              		.loc 1 248 0
- 179 0090 0023     		movs	r3, #0
- 180 0092 0522     		movs	r2, #5
- 181 0094 1946     		mov	r1, r3
- 182 0096 1148     		ldr	r0, .L16+8
- 183 0098 0068     		ldr	r0, [r0]
- 184 009a FFF7FEFF 		bl	xQueueGenericReceive
- 185              	.LVL24:
- 186 009e 0446     		mov	r4, r0
- 187              	.LVL25:
- 249:Core/Src/freertos.c **** 		{
- 188              		.loc 1 249 0
- 189 00a0 0128     		cmp	r0, #1
- 190 00a2 E2D1     		bne	.L9
- 251:Core/Src/freertos.c **** 			memset(CoreBoardReceiveInfo,0x00,CoreBoardRx_InfoLen);
- 191              		.loc 1 251 0
- 192 00a4 144E     		ldr	r6, .L16+36
- 193 00a6 154D     		ldr	r5, .L16+40
- 194 00a8 3246     		mov	r2, r6
- 195 00aa 2978     		ldrb	r1, [r5]	@ zero_extendqisi2
- 196 00ac 1448     		ldr	r0, .L16+44
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 9
+ 348              		.loc 1 233 0
+ 349 007a 0128     		cmp	r0, #1
+ 350 007c D7D0     		beq	.L32
+ 351              	.LVL34:
+ 352              	.L25:
+ 242:Core/Src/freertos.c **** 		if(err == pdTRUE)
+ 353              		.loc 1 242 0
+ 354 007e 0023     		movs	r3, #0
+ 355 0080 0522     		movs	r2, #5
+ 356 0082 1946     		mov	r1, r3
+ 357 0084 1448     		ldr	r0, .L34+4
+ 358 0086 0068     		ldr	r0, [r0]
+ 359 0088 FFF7FEFF 		bl	xQueueGenericReceive
+ 360              	.LVL35:
+ 243:Core/Src/freertos.c **** 		{
+ 361              		.loc 1 243 0
+ 362 008c 0128     		cmp	r0, #1
+ 363 008e DDD0     		beq	.L33
+ 364              	.LVL36:
+ 365              	.L26:
+ 250:Core/Src/freertos.c **** 		if(err == pdTRUE)
+ 366              		.loc 1 250 0
+ 367 0090 0023     		movs	r3, #0
+ 368 0092 0522     		movs	r2, #5
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s 			page 12
 
 
- 197              	.LVL26:
- 198 00ae FFF7FEFF 		bl	printf
- 199              	.LVL27:
- 252:Core/Src/freertos.c **** 			CoreBoardRx_InfoLen = 0;
- 200              		.loc 1 252 0
- 201 00b2 2A78     		ldrb	r2, [r5]	@ zero_extendqisi2
- 202 00b4 0021     		movs	r1, #0
- 203 00b6 3046     		mov	r0, r6
- 204 00b8 FFF7FEFF 		bl	memset
- 205              	.LVL28:
- 253:Core/Src/freertos.c **** 		}
- 206              		.loc 1 253 0
- 207 00bc 0023     		movs	r3, #0
- 208 00be 2B70     		strb	r3, [r5]
- 209 00c0 D3E7     		b	.L9
- 210              	.L13:
- 257:Core/Src/freertos.c **** 		{
- 258:Core/Src/freertos.c **** 			vTaskDelay(500);
- 211              		.loc 1 258 0
- 212 00c2 4FF4FA70 		mov	r0, #500
- 213 00c6 FFF7FEFF 		bl	vTaskDelay
- 214              	.LVL29:
- 259:Core/Src/freertos.c **** 			printf("Scan Uarts Task\r\n");
- 215              		.loc 1 259 0
- 216 00ca 0E48     		ldr	r0, .L16+48
- 217 00cc FFF7FEFF 		bl	puts
- 218              	.LVL30:
- 219 00d0 CCE7     		b	.L10
- 220              	.L17:
- 221 00d2 00BF     		.align	2
- 222              	.L16:
- 223 00d4 00000000 		.word	xScanBSPABoardSemaphore
- 224 00d8 00000000 		.word	xScanBSPBBoardSemaphore
- 225 00dc 00000000 		.word	xScanCoreBoardSemaphore
- 226 00e0 00000000 		.word	BSPABoardReceiveInfo
- 227 00e4 00000000 		.word	BSPABoardRx_InfoLen
- 228 00e8 00000000 		.word	.LC3
- 229 00ec 00000000 		.word	BSPBBoardReceiveInfo
- 230 00f0 00000000 		.word	BSPBBoardRx_InfoLen
- 231 00f4 20000000 		.word	.LC4
- 232 00f8 00000000 		.word	CoreBoardReceiveInfo
- 233 00fc 00000000 		.word	CoreBoardRx_InfoLen
- 234 0100 40000000 		.word	.LC5
- 235 0104 60000000 		.word	.LC6
- 236              		.cfi_endproc
- 237              	.LFE13:
- 239              		.section	.text.MX_FREERTOS_Init,"ax",%progbits
- 240              		.align	1
- 241              		.global	MX_FREERTOS_Init
- 242              		.syntax unified
- 243              		.thumb
- 244              		.thumb_func
- 245              		.fpu softvfp
- 247              	MX_FREERTOS_Init:
- 248              	.LFB8:
- 106:Core/Src/freertos.c ****   /* USER CODE BEGIN Init */
- 249              		.loc 1 106 0
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 10
+ 369 0094 1946     		mov	r1, r3
+ 370 0096 1148     		ldr	r0, .L34+8
+ 371 0098 0068     		ldr	r0, [r0]
+ 372 009a FFF7FEFF 		bl	xQueueGenericReceive
+ 373              	.LVL37:
+ 374 009e 0446     		mov	r4, r0
+ 375              	.LVL38:
+ 251:Core/Src/freertos.c **** 		{
+ 376              		.loc 1 251 0
+ 377 00a0 0128     		cmp	r0, #1
+ 378 00a2 E2D1     		bne	.L27
+ 253:Core/Src/freertos.c **** 			memset(CoreBoardReceiveInfo,0x00,CoreBoardRx_InfoLen);
+ 379              		.loc 1 253 0
+ 380 00a4 144E     		ldr	r6, .L34+36
+ 381 00a6 154D     		ldr	r5, .L34+40
+ 382 00a8 3246     		mov	r2, r6
+ 383 00aa 2978     		ldrb	r1, [r5]	@ zero_extendqisi2
+ 384 00ac 1448     		ldr	r0, .L34+44
+ 385              	.LVL39:
+ 386 00ae FFF7FEFF 		bl	printf
+ 387              	.LVL40:
+ 254:Core/Src/freertos.c **** 			CoreBoardRx_InfoLen = 0;
+ 388              		.loc 1 254 0
+ 389 00b2 2A78     		ldrb	r2, [r5]	@ zero_extendqisi2
+ 390 00b4 0021     		movs	r1, #0
+ 391 00b6 3046     		mov	r0, r6
+ 392 00b8 FFF7FEFF 		bl	memset
+ 393              	.LVL41:
+ 255:Core/Src/freertos.c **** 		}
+ 394              		.loc 1 255 0
+ 395 00bc 0023     		movs	r3, #0
+ 396 00be 2B70     		strb	r3, [r5]
+ 397 00c0 D3E7     		b	.L27
+ 398              	.L31:
+ 259:Core/Src/freertos.c **** 		{
+ 260:Core/Src/freertos.c **** 			vTaskDelay(500);
+ 399              		.loc 1 260 0
+ 400 00c2 4FF4FA70 		mov	r0, #500
+ 401 00c6 FFF7FEFF 		bl	vTaskDelay
+ 402              	.LVL42:
+ 261:Core/Src/freertos.c **** 			printf("Scan Uarts Task\r\n");
+ 403              		.loc 1 261 0
+ 404 00ca 0E48     		ldr	r0, .L34+48
+ 405 00cc FFF7FEFF 		bl	puts
+ 406              	.LVL43:
+ 407 00d0 CCE7     		b	.L28
+ 408              	.L35:
+ 409 00d2 00BF     		.align	2
+ 410              	.L34:
+ 411 00d4 00000000 		.word	xScanBSPABoardSemaphore
+ 412 00d8 00000000 		.word	xScanBSPBBoardSemaphore
+ 413 00dc 00000000 		.word	xScanCoreBoardSemaphore
+ 414 00e0 00000000 		.word	BSPABoardReceiveInfo
+ 415 00e4 00000000 		.word	BSPABoardRx_InfoLen
+ 416 00e8 00000000 		.word	.LC7
+ 417 00ec 00000000 		.word	BSPBBoardReceiveInfo
+ 418 00f0 00000000 		.word	BSPBBoardRx_InfoLen
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s 			page 13
 
 
- 250              		.cfi_startproc
- 251              		@ args = 0, pretend = 0, frame = 24
- 252              		@ frame_needed = 0, uses_anonymous_args = 0
- 253 0000 30B5     		push	{r4, r5, lr}
- 254              	.LCFI2:
- 255              		.cfi_def_cfa_offset 12
- 256              		.cfi_offset 4, -12
- 257              		.cfi_offset 5, -8
- 258              		.cfi_offset 14, -4
- 259 0002 89B0     		sub	sp, sp, #36
- 260              	.LCFI3:
- 261              		.cfi_def_cfa_offset 48
- 117:Core/Src/freertos.c ****   xScanBSPABoardSemaphore = xSemaphoreCreateBinary();
- 262              		.loc 1 117 0
- 263 0004 0322     		movs	r2, #3
- 264 0006 0021     		movs	r1, #0
- 265 0008 0120     		movs	r0, #1
- 266 000a FFF7FEFF 		bl	xQueueGenericCreate
- 267              	.LVL31:
- 268 000e 184B     		ldr	r3, .L22
- 269 0010 1860     		str	r0, [r3]
- 118:Core/Src/freertos.c ****   xScanBSPBBoardSemaphore = xSemaphoreCreateBinary();
- 270              		.loc 1 118 0
- 271 0012 0322     		movs	r2, #3
- 272 0014 0021     		movs	r1, #0
- 273 0016 0120     		movs	r0, #1
- 274 0018 FFF7FEFF 		bl	xQueueGenericCreate
- 275              	.LVL32:
- 276 001c 154B     		ldr	r3, .L22+4
- 277 001e 1860     		str	r0, [r3]
- 119:Core/Src/freertos.c ****   /* USER CODE END RTOS_SEMAPHORES */
- 278              		.loc 1 119 0
- 279 0020 0322     		movs	r2, #3
- 280 0022 0021     		movs	r1, #0
- 281 0024 0120     		movs	r0, #1
- 282 0026 FFF7FEFF 		bl	xQueueGenericCreate
- 283              	.LVL33:
- 284 002a 134B     		ldr	r3, .L22+8
- 285 002c 1860     		str	r0, [r3]
- 128:Core/Src/freertos.c ****   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
- 286              		.loc 1 128 0
- 287 002e 03AC     		add	r4, sp, #12
- 288 0030 124D     		ldr	r5, .L22+12
- 289 0032 0FCD     		ldmia	r5!, {r0, r1, r2, r3}
- 290 0034 0FC4     		stmia	r4!, {r0, r1, r2, r3}
- 291 0036 2B68     		ldr	r3, [r5]
- 292 0038 2360     		str	r3, [r4]
- 129:Core/Src/freertos.c **** 
- 293              		.loc 1 129 0
- 294 003a 0021     		movs	r1, #0
- 295 003c 03A8     		add	r0, sp, #12
- 296 003e FFF7FEFF 		bl	osThreadCreate
- 297              	.LVL34:
- 298 0042 0F4B     		ldr	r3, .L22+16
- 299 0044 1860     		str	r0, [r3]
- 157:Core/Src/freertos.c ****   				(const char *)"scanUartsTask",
- 300              		.loc 1 157 0
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 11
-
-
- 301 0046 0F4B     		ldr	r3, .L22+20
- 302 0048 0193     		str	r3, [sp, #4]
- 303 004a 0123     		movs	r3, #1
- 304 004c 0093     		str	r3, [sp]
- 305 004e 0023     		movs	r3, #0
- 306 0050 4FF48072 		mov	r2, #256
- 307 0054 0C49     		ldr	r1, .L22+24
- 308 0056 0D48     		ldr	r0, .L22+28
- 309 0058 FFF7FEFF 		bl	xTaskCreate
- 310              	.LVL35:
- 311 005c 0C4B     		ldr	r3, .L22+32
- 312 005e 1860     		str	r0, [r3]
- 163:Core/Src/freertos.c ****   {
- 313              		.loc 1 163 0
- 314 0060 0128     		cmp	r0, #1
- 315 0062 01D0     		beq	.L21
- 316              	.L18:
- 183:Core/Src/freertos.c **** 
- 317              		.loc 1 183 0
- 318 0064 09B0     		add	sp, sp, #36
- 319              	.LCFI4:
- 320              		.cfi_remember_state
- 321              		.cfi_def_cfa_offset 12
- 322              		@ sp needed
- 323 0066 30BD     		pop	{r4, r5, pc}
- 324              	.L21:
- 325              	.LCFI5:
- 326              		.cfi_restore_state
- 165:Core/Src/freertos.c ****   }
- 327              		.loc 1 165 0
- 328 0068 0A48     		ldr	r0, .L22+36
- 329 006a FFF7FEFF 		bl	puts
- 330              	.LVL36:
- 183:Core/Src/freertos.c **** 
- 331              		.loc 1 183 0
- 332 006e F9E7     		b	.L18
- 333              	.L23:
- 334              		.align	2
- 335              	.L22:
- 336 0070 00000000 		.word	xScanCoreBoardSemaphore
- 337 0074 00000000 		.word	xScanBSPABoardSemaphore
- 338 0078 00000000 		.word	xScanBSPBBoardSemaphore
- 339 007c 00000000 		.word	.LANCHOR0
- 340 0080 00000000 		.word	defaultTaskHandle
- 341 0084 00000000 		.word	scanUartsTaskHandle
- 342 0088 00000000 		.word	.LC8
- 343 008c 00000000 		.word	StartScanUsartsTask
- 344 0090 00000000 		.word	tReturn
- 345 0094 10000000 		.word	.LC9
- 346              		.cfi_endproc
- 347              	.LFE8:
- 349              		.section	.text.vApplicationIdleHook,"ax",%progbits
- 350              		.align	1
- 351              		.global	vApplicationIdleHook
- 352              		.syntax unified
- 353              		.thumb
- 354              		.thumb_func
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 12
-
-
- 355              		.fpu softvfp
- 357              	vApplicationIdleHook:
- 358              	.LFB10:
- 201:Core/Src/freertos.c **** 	for(;;)
- 359              		.loc 1 201 0
- 360              		.cfi_startproc
- 361              		@ Volatile: function does not return.
- 362              		@ args = 0, pretend = 0, frame = 0
- 363              		@ frame_needed = 0, uses_anonymous_args = 0
- 364              		@ link register save eliminated.
- 365              	.L25:
- 366 0000 FEE7     		b	.L25
- 367              		.cfi_endproc
- 368              	.LFE10:
- 370              		.section	.text.StartScanBSPATask,"ax",%progbits
- 371              		.align	1
- 372              		.global	StartScanBSPATask
- 373              		.syntax unified
- 374              		.thumb
- 375              		.thumb_func
- 376              		.fpu softvfp
- 378              	StartScanBSPATask:
- 379              	.LFB11:
- 209:Core/Src/freertos.c **** 	for(;;)
- 380              		.loc 1 209 0
- 381              		.cfi_startproc
- 382              		@ Volatile: function does not return.
- 383              		@ args = 0, pretend = 0, frame = 0
- 384              		@ frame_needed = 0, uses_anonymous_args = 0
- 385              	.LVL37:
- 209:Core/Src/freertos.c **** 	for(;;)
- 386              		.loc 1 209 0
- 387 0000 08B5     		push	{r3, lr}
- 388              	.LCFI6:
- 389              		.cfi_def_cfa_offset 8
- 390              		.cfi_offset 3, -8
- 391              		.cfi_offset 14, -4
- 392              	.LVL38:
- 393              	.L27:
- 212:Core/Src/freertos.c **** 		printf("ScanBSPA \r\n");
- 394              		.loc 1 212 0 discriminator 1
- 395 0002 4FF4FA70 		mov	r0, #500
- 396 0006 FFF7FEFF 		bl	vTaskDelay
- 397              	.LVL39:
- 213:Core/Src/freertos.c **** 	}
- 398              		.loc 1 213 0 discriminator 1
- 399 000a 0248     		ldr	r0, .L29
- 400 000c FFF7FEFF 		bl	puts
- 401              	.LVL40:
- 402 0010 F7E7     		b	.L27
- 403              	.L30:
- 404 0012 00BF     		.align	2
- 405              	.L29:
- 406 0014 00000000 		.word	.LC10
- 407              		.cfi_endproc
- 408              	.LFE11:
- 410              		.section	.text.StartScanBSPBTask,"ax",%progbits
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 13
-
-
- 411              		.align	1
- 412              		.global	StartScanBSPBTask
- 413              		.syntax unified
- 414              		.thumb
- 415              		.thumb_func
- 416              		.fpu softvfp
- 418              	StartScanBSPBTask:
- 419              	.LFB12:
- 217:Core/Src/freertos.c **** 	for(;;)
- 420              		.loc 1 217 0
- 421              		.cfi_startproc
- 422              		@ Volatile: function does not return.
- 423              		@ args = 0, pretend = 0, frame = 0
- 424              		@ frame_needed = 0, uses_anonymous_args = 0
- 425              	.LVL41:
- 426 0000 08B5     		push	{r3, lr}
- 427              	.LCFI7:
- 428              		.cfi_def_cfa_offset 8
- 429              		.cfi_offset 3, -8
- 430              		.cfi_offset 14, -4
- 431              	.LVL42:
- 432              	.L32:
- 220:Core/Src/freertos.c **** 		printf("ScanBSPB \r\n");
- 433              		.loc 1 220 0 discriminator 1
- 434 0002 4FF4FA70 		mov	r0, #500
- 435 0006 FFF7FEFF 		bl	vTaskDelay
- 436              	.LVL43:
- 221:Core/Src/freertos.c **** 	}
- 437              		.loc 1 221 0 discriminator 1
- 438 000a 0248     		ldr	r0, .L34
- 439 000c FFF7FEFF 		bl	puts
- 440              	.LVL44:
- 441 0010 F7E7     		b	.L32
- 442              	.L35:
- 443 0012 00BF     		.align	2
- 444              	.L34:
- 445 0014 00000000 		.word	.LC11
- 446              		.cfi_endproc
- 447              	.LFE12:
- 449              		.comm	tReturn,4,4
- 450              		.comm	xScanCoreBoardSemaphore,4,4
- 451              		.comm	xScanBSPBBoardSemaphore,4,4
- 452              		.comm	xScanBSPABoardSemaphore,4,4
- 453              		.comm	scanUartsTaskHandle,4,4
- 454              		.comm	scanBSPBTaskHandle,4,4
- 455              		.comm	scanBSPATaskHandle,4,4
- 456              		.comm	defaultTaskHandle,4,4
- 457              		.section	.rodata
+ 419 00f4 20000000 		.word	.LC8
+ 420 00f8 00000000 		.word	CoreBoardReceiveInfo
+ 421 00fc 00000000 		.word	CoreBoardRx_InfoLen
+ 422 0100 40000000 		.word	.LC9
+ 423 0104 60000000 		.word	.LC10
+ 424              		.cfi_endproc
+ 425              	.LFE13:
+ 427              		.comm	tReturn,4,4
+ 428              		.comm	xScanCoreBoardSemaphore,4,4
+ 429              		.comm	xScanBSPBBoardSemaphore,4,4
+ 430              		.comm	xScanBSPABoardSemaphore,4,4
+ 431              		.comm	scanUartsTaskHandle,4,4
+ 432              		.comm	scanBSPBTaskHandle,4,4
+ 433              		.comm	scanBSPATaskHandle,4,4
+ 434              		.comm	defaultTaskHandle,4,4
+ 435              		.section	.rodata
+ 436              		.align	2
+ 437              		.set	.LANCHOR0,. + 0
+ 438              	.LC3:
+ 439 0000 00000000 		.word	.LC0
+ 440 0004 00000000 		.word	StartDefaultTask
+ 441 0008 0000     		.short	0
+ 442 000a 0000     		.space	2
+ 443 000c 00000000 		.word	0
+ 444 0010 40000000 		.word	64
+ 445              		.section	.rodata.StartDefaultTask.str1.4,"aMS",%progbits,1
+ 446              		.align	2
+ 447              	.LC2:
+ 448 0000 57656C63 		.ascii	"Welcome to USE FreeRTOS \015\000"
+ 448      6F6D6520 
+ 448      746F2055 
+ 448      53452046 
+ 448      72656552 
+ 449              		.section	.rodata.StartScanBSPATask.str1.4,"aMS",%progbits,1
+ 450              		.align	2
+ 451              	.LC5:
+ 452 0000 5363616E 		.ascii	"ScanBSPA \015\000"
+ 452      42535041 
+ 452      200D00
+ 453              		.section	.rodata.StartScanBSPBTask.str1.4,"aMS",%progbits,1
+ 454              		.align	2
+ 455              	.LC6:
+ 456 0000 5363616E 		.ascii	"ScanBSPB \015\000"
+ 456      42535042 
+ 456      200D00
+ 457              		.section	.rodata.StartScanUsartsTask.str1.4,"aMS",%progbits,1
  458              		.align	2
- 459              		.set	.LANCHOR0,. + 0
- 460              	.LC7:
- 461 0000 00000000 		.word	.LC0
- 462 0004 00000000 		.word	StartDefaultTask
- 463 0008 0000     		.short	0
- 464 000a 0000     		.space	2
- 465 000c 01000000 		.word	1
- 466 0010 40000000 		.word	64
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 14
+ 459              	.LC7:
+ 460 0000 42535041 		.ascii	"BSPABoardRx_Len = %03d\012 %s\015\012\000"
+ 460      426F6172 
+ 460      6452785F 
+ 460      4C656E20 
+ 460      3D202530 
+ 461 001d 000000   		.space	3
+ 462              	.LC8:
+ 463 0020 42535042 		.ascii	"BSPBBoardRx_Len = %03d\012 %s\015\012\000"
+ 463      426F6172 
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s 			page 14
 
 
- 467              		.section	.rodata.MX_FREERTOS_Init.str1.4,"aMS",%progbits,1
- 468              		.align	2
- 469              	.LC8:
- 470 0000 7363616E 		.ascii	"scanUartsTask\000"
- 470      55617274 
- 470      73546173 
- 470      6B00
- 471 000e 0000     		.space	2
- 472              	.LC9:
- 473 0010 20536361 		.ascii	" Scan Core Board Task Create OK! \015\000"
- 473      6E20436F 
- 473      72652042 
- 473      6F617264 
- 473      20546173 
- 474              		.section	.rodata.StartDefaultTask.str1.4,"aMS",%progbits,1
+ 463      6452785F 
+ 463      4C656E20 
+ 463      3D202530 
+ 464 003d 000000   		.space	3
+ 465              	.LC9:
+ 466 0040 436F7265 		.ascii	"CoreBoardRx_Len = %03d\012 %s\015\012\000"
+ 466      426F6172 
+ 466      6452785F 
+ 466      4C656E20 
+ 466      3D202530 
+ 467 005d 000000   		.space	3
+ 468              	.LC10:
+ 469 0060 5363616E 		.ascii	"Scan Uarts Task\015\000"
+ 469      20556172 
+ 469      74732054 
+ 469      61736B0D 
+ 469      00
+ 470              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 471              		.align	2
+ 472              	.LC0:
+ 473 0000 64656661 		.ascii	"defaultTask\000"
+ 473      756C7454 
+ 473      61736B00 
+ 474              		.section	.rodata.vApplicationIdleHook.str1.4,"aMS",%progbits,1
  475              		.align	2
- 476              	.LC2:
- 477 0000 57656C63 		.ascii	"Welcome to USE FreeRTOS \015\000"
- 477      6F6D6520 
- 477      746F2055 
- 477      53452046 
- 477      72656552 
- 478              		.section	.rodata.StartScanBSPATask.str1.4,"aMS",%progbits,1
- 479              		.align	2
- 480              	.LC10:
- 481 0000 5363616E 		.ascii	"ScanBSPA \015\000"
- 481      42535041 
- 481      200D00
- 482              		.section	.rodata.StartScanBSPBTask.str1.4,"aMS",%progbits,1
- 483              		.align	2
- 484              	.LC11:
- 485 0000 5363616E 		.ascii	"ScanBSPB \015\000"
- 485      42535042 
- 485      200D00
- 486              		.section	.rodata.StartScanUsartsTask.str1.4,"aMS",%progbits,1
- 487              		.align	2
- 488              	.LC3:
- 489 0000 42535041 		.ascii	"BSPABoardRx_Len = %03d\012 %s\015\012\000"
- 489      426F6172 
- 489      6452785F 
- 489      4C656E20 
- 489      3D202530 
- 490 001d 000000   		.space	3
- 491              	.LC4:
- 492 0020 42535042 		.ascii	"BSPBBoardRx_Len = %03d\012 %s\015\012\000"
- 492      426F6172 
- 492      6452785F 
- 492      4C656E20 
- 492      3D202530 
- 493 003d 000000   		.space	3
- 494              	.LC5:
- 495 0040 436F7265 		.ascii	"CoreBoardRx_Len = %03d\012 %s\015\012\000"
- 495      426F6172 
- 495      6452785F 
- 495      4C656E20 
- 495      3D202530 
- 496 005d 000000   		.space	3
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 15
-
-
- 497              	.LC6:
- 498 0060 5363616E 		.ascii	"Scan Uarts Task\015\000"
- 498      20556172 
- 498      74732054 
- 498      61736B0D 
- 498      00
- 499              		.section	.rodata.str1.4,"aMS",%progbits,1
- 500              		.align	2
- 501              	.LC0:
- 502 0000 64656661 		.ascii	"defaultTask\000"
- 502      756C7454 
- 502      61736B00 
- 503              		.text
- 504              	.Letext0:
- 505              		.file 2 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
- 506              		.file 3 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
- 507              		.file 4 "Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h"
- 508              		.file 5 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h"
- 509              		.file 6 "Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
- 510              		.file 7 "Middlewares/Third_Party/FreeRTOS/Source/include/queue.h"
- 511              		.file 8 "Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h"
- 512              		.file 9 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h"
- 513              		.file 10 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\includ
- 514              		.file 11 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\includ
- 515              		.file 12 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\lib\\gcc\\arm-none-ea
- 516              		.file 13 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\includ
- 517              		.file 14 "Core/Inc/FreeRTOSConfig.h"
- 518              		.file 15 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\includ
- 519              		.file 16 "<built-in>"
-ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s 			page 16
+ 476              	.LC4:
+ 477 0000 49646C65 		.ascii	"Idle Hook Function\015\000"
+ 477      20486F6F 
+ 477      6B204675 
+ 477      6E637469 
+ 477      6F6E0D00 
+ 478              		.text
+ 479              	.Letext0:
+ 480              		.file 2 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 481              		.file 3 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 482              		.file 4 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h"
+ 483              		.file 5 "Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
+ 484              		.file 6 "Middlewares/Third_Party/FreeRTOS/Source/include/queue.h"
+ 485              		.file 7 "Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h"
+ 486              		.file 8 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h"
+ 487              		.file 9 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\include
+ 488              		.file 10 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\includ
+ 489              		.file 11 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\lib\\gcc\\arm-none-ea
+ 490              		.file 12 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\includ
+ 491              		.file 13 "Core/Inc/FreeRTOSConfig.h"
+ 492              		.file 14 "c:\\program files (x86)\\gnu tools arm embedded\\7 2018-q2-update\\arm-none-eabi\\includ
+ 493              		.file 15 "<built-in>"
+ARM GAS  C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 freertos.c
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:16     .text.StartDefaultTask:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:23     .text.StartDefaultTask:00000000 StartDefaultTask
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:51     .text.StartDefaultTask:00000014 $d
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:56     .text.StartScanUsartsTask:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:63     .text.StartScanUsartsTask:00000000 StartScanUsartsTask
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:223    .text.StartScanUsartsTask:000000d4 $d
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:16     .text.StartDefaultTask:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:23     .text.StartDefaultTask:00000000 StartDefaultTask
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:51     .text.StartDefaultTask:00000014 $d
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:56     .text.MX_FREERTOS_Init:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:63     .text.MX_FREERTOS_Init:00000000 MX_FREERTOS_Init
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:125    .text.MX_FREERTOS_Init:0000004c $d
+                            *COM*:00000004 xScanCoreBoardSemaphore
                             *COM*:00000004 xScanBSPABoardSemaphore
                             *COM*:00000004 xScanBSPBBoardSemaphore
-                            *COM*:00000004 xScanCoreBoardSemaphore
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:240    .text.MX_FREERTOS_Init:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:247    .text.MX_FREERTOS_Init:00000000 MX_FREERTOS_Init
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:336    .text.MX_FREERTOS_Init:00000070 $d
                             *COM*:00000004 defaultTaskHandle
-                            *COM*:00000004 scanUartsTaskHandle
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:134    .text.vApplicationIdleHook:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:141    .text.vApplicationIdleHook:00000000 vApplicationIdleHook
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:161    .text.vApplicationIdleHook:0000000c $d
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:166    .text.StartScanBSPATask:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:173    .text.StartScanBSPATask:00000000 StartScanBSPATask
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:200    .text.StartScanBSPATask:00000014 $d
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:205    .text.StartScanBSPBTask:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:212    .text.StartScanBSPBTask:00000000 StartScanBSPBTask
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:239    .text.StartScanBSPBTask:00000014 $d
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:244    .text.StartScanUsartsTask:00000000 $t
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:251    .text.StartScanUsartsTask:00000000 StartScanUsartsTask
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:411    .text.StartScanUsartsTask:000000d4 $d
                             *COM*:00000004 tReturn
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:350    .text.vApplicationIdleHook:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:357    .text.vApplicationIdleHook:00000000 vApplicationIdleHook
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:371    .text.StartScanBSPATask:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:378    .text.StartScanBSPATask:00000000 StartScanBSPATask
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:406    .text.StartScanBSPATask:00000014 $d
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:411    .text.StartScanBSPBTask:00000000 $t
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:418    .text.StartScanBSPBTask:00000000 StartScanBSPBTask
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:445    .text.StartScanBSPBTask:00000014 $d
+                            *COM*:00000004 scanUartsTaskHandle
                             *COM*:00000004 scanBSPBTaskHandle
                             *COM*:00000004 scanBSPATaskHandle
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:458    .rodata:00000000 $d
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:468    .rodata.MX_FREERTOS_Init.str1.4:00000000 $d
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:475    .rodata.StartDefaultTask.str1.4:00000000 $d
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:479    .rodata.StartScanBSPATask.str1.4:00000000 $d
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:483    .rodata.StartScanBSPBTask.str1.4:00000000 $d
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:487    .rodata.StartScanUsartsTask.str1.4:00000000 $d
-C:\Users\bertz\AppData\Local\Temp\ccWftJE8.s:500    .rodata.str1.4:00000000 $d
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:436    .rodata:00000000 $d
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:446    .rodata.StartDefaultTask.str1.4:00000000 $d
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:450    .rodata.StartScanBSPATask.str1.4:00000000 $d
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:454    .rodata.StartScanBSPBTask.str1.4:00000000 $d
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:458    .rodata.StartScanUsartsTask.str1.4:00000000 $d
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:471    .rodata.str1.4:00000000 $d
+C:\Users\bertz\AppData\Local\Temp\ccWPTU4N.s:475    .rodata.vApplicationIdleHook.str1.4:00000000 $d
 
 UNDEFINED SYMBOLS
 osDelay
 puts
+xQueueGenericCreate
+osThreadCreate
+vTaskDelay
 xQueueGenericReceive
 printf
 memset
-vTaskDelay
 BSPABoardReceiveInfo
 BSPABoardRx_InfoLen
 BSPBBoardReceiveInfo
 BSPBBoardRx_InfoLen
 CoreBoardReceiveInfo
 CoreBoardRx_InfoLen
-xQueueGenericCreate
-osThreadCreate
-xTaskCreate
